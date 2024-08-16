@@ -26,10 +26,15 @@ Additionally, I needed an upgrade! My first React projects were coded using sand
 
 ### Credits
 🏗️ Built using [Vite + React](https://github.com/SafdarJamal/vite-template-react) template with [degit](https://github.com/Rich-Harris/degit).
+
 🔲 Button icons are from the [Noun Project](https://thenounproject.com).
+
 💻 MPB mockup template is from [Figma](https://www.figma.com/community/file/1162016271988369755/free-macbook-pro-16-mockups).
+
 📱 iPhone13 mockup template is also from [Figma](https://www.figma.com/community/file/1024660344079637299/iphone-13-pro-iphone-13-mockups).
+
 🖋️ Procreate used to draw the script logo, vectorized with Inkscape.
+
 🛸 Deployed using Heroku CLI
 
 <!-- Deployed using Heroku CLI -->
