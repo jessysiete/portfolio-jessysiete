@@ -6,9 +6,8 @@ export default function Footer() {
       <p>© 2024 JessySiete</p>
       <a
     className="Project-link"
-    href="../../../README.md"
+    href="https://github.com/siguejessy/jessysiete?tab=readme-ov-file#--jessysiete"
     target="_blank"
-    rel="noopener noreferrer"
   >
     About
   </a>
