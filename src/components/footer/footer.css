@@ -1,0 +1,18 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 10vw;
+  margin-top: 4vh;
+}
+
+@media (max-width: 600px) {
+  .Footer {
+    display: flex;
+    padding-top:4vh;
+  }
+}
+
+.Project-link {
+  color: #ff4df9;
+}

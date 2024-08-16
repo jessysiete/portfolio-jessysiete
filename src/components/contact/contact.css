@@ -1,0 +1,38 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 4vh;
+}
+
+img {
+  height: 36px;
+}
+
+button {
+  background-color: rgb(29, 23, 57);
+  height: 80px;
+  width: 220px;
+  border-color: #7e2be4;
+  border-width: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .Container {
+    flex-direction: column;
+    margin-top: 8vh;
+  }
+
+  button {
+    background-color: rgb(29, 23, 57);
+    height: 80px;
+    width: 320px;
+    border-color: #7e2be4;
+    border-width: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
