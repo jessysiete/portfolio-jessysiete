@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import logo from './assets/logo.svg';
+// import logo from './assets/logo.svg';
 import './App.css';
 import Contact from './components/contact/contact';
-import Footer from './components/footer/footer';
+import Header from './components/Header/Header';
+import Nav from './components/Nav/Nav';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
     <div className="App">
-      <header><h1>JessySiete</h1>
-      </header>
+      <Header />
+      <Nav />
       <main className="App-body">
-        <img src={logo} className="App-logo" alt="logo" />
-        <br />
+        {/* <br /> */}
         <Contact />
       </main>
       <Footer />

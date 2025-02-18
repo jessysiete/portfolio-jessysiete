@@ -1,0 +1,11 @@
+.Menu {
+  display: flex; 
+  padding-top: 1vh;
+}
+
+@media (max-width: 600px) {
+  .Menu {
+    display: flex;
+    padding-top: 2vh;
+  }
+}
