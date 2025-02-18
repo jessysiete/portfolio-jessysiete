@@ -1,0 +1,27 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.App-logo {
+  height: 80px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .Header {
+    display: flex;
+    padding-top:4vh;
+  }
+
+  .App-logo {
+    padding: 5px;
+    margin-top: -20px;
+  }
+}
+
+.Project-link {
+  color: #ff4df9;
+}
