@@ -2,17 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30px;
-  padding: 1vh 10vw;
-  margin-top: 78vh;
-
+  padding: 0vh 10vw;
+  margin-top: 12vh;
 }
 
 @media (max-width: 600px) {
   .Footer {
     display: flex;
-    padding: 1vh 10vw;
-    margin-top: 74vh;
+    margin-top: 18vh;
   }
 }
 
