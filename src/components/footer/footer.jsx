@@ -9,7 +9,7 @@ export default function Footer() {
     href="https://github.com/siguejessy/jessysiete?tab=readme-ov-file#--jessysiete"
     target="_blank"
   >
-    About
+    View on GitHub
   </a>
     </footer>
   );
