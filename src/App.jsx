@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
-import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
-
+import Nav from './components/Nav/Nav';
 
 const App = () => {
   return (
