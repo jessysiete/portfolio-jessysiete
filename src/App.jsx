@@ -9,7 +9,6 @@ const App = () => {
       <Header />
       <Nav />
       <main className="App-body">
-        {/* <br /> */}
       </main>
     </div>
   );
