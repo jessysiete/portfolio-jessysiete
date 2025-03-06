@@ -2,8 +2,8 @@ import './Toggle.css';
 import { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState( () => {;
-  const savedTheme = localStorage.getItem('theme');
+  const [theme, setTheme] = useState( () => {
+  const savedTheme = localStorage.getItem('theme') || 'dark';
   if (savedTheme) return savedTheme;
 
   return window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -22,15 +22,20 @@ const ThemeToggle = () => {
   };
 
   return (
-    <label className="switch">
-      <input
-        type="checkbox"
-        onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      />
-      <span className="slider round"></span>
-    </label>
-  );
+    <div className="toggle-container">
+    {/* Hidden checkbox that controls the toggle */}
+    <input 
+      type="checkbox" 
+      id="theme-toggle" 
+      onChange={toggleTheme} 
+      checked={theme === 'dark'} 
+    />
+    {/* Label styled as the switch, associated with the checkbox */}
+    <label className="toggle-switch" htmlFor="theme-toggle"></label>
+  </div>
+);
 };
+
 
 
 
