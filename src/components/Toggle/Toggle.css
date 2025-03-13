@@ -1,5 +1,5 @@
 .toggle-container {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 48px;
   height: 34px;
@@ -36,7 +36,7 @@
   bottom: 8px;
   top: 4px;
   border-radius: 50%;
-  background-color: #ead700;
+  background-color: #eabf00;
   transition: 0.4s;
 }
 
@@ -44,7 +44,7 @@
 /* Move the knob and change its color to white */
 input:checked + .toggle-switch:before {
   transform: translateX(8px);
-  background-color: #ead700; /* Moon color */
+  background-color: #f2d51c; /* Moon color */
 }
 
 /* smaller circle overlay to “cut” the moon circle into crescent */
