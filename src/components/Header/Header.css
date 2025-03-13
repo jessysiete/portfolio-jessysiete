@@ -1,10 +1,11 @@
 .Header {
   display: flex;
-  height: 70px;
+  height: 140px;
   width: 100%;
   padding: 0 0;
-  position: relative;
-  /* z-index: 1000 */
+  position: fixed;
+  z-index: 1000;
+  background-color: var(--background-color);
 } 
 
 
@@ -19,22 +20,23 @@
   height: 80px;
   width: auto;
   color: var(--logo-fill);
-    /* margin-top: 5px; */
+  /* margin-top: 5px; */
 }
 
-  @media (max-width: 600px) {
-    .Header {
-      display: flex;
-      position: relative;
-      height: 70px;
-    }
-    
-    .App-logo {
-      position: fixed;
-      height: 48px;
-      width: auto;
-      margin-top: 5px;
-    }
+@media (max-width: 600px) {
+  .Header {
+    display: flex;
+    position: fixed;
+    height: 98px;
+    z-index: 1000;
+  }
+  
+  .App-logo {
+    position: fixed;
+    height: 48px;
+    width: auto;
+    margin-top: 5px;
+  }
 }
 
 .Project-link {
