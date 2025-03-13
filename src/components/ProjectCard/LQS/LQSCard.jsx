@@ -1,11 +1,11 @@
-import './PantoneCard.css';
+import './LQSCard.css';
 import { Link } from 'react-router-dom';
 
-export default function PantoneCard() {
+export default function LQSCard() {
 
   return ( 
     <main className="Project-Card">
-      <h2>Pantone 14k</h2>
+      <h2>Las Que Sueñan</h2>
       </main>
   );
 }

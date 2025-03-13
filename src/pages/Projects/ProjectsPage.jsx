@@ -2,6 +2,10 @@ import './ProjectsPage.css';
 import { Link } from 'react-router-dom';
 import PantoneCard from '../../components/ProjectCard/Pantone14k/PantoneCard';
 import PinternCard from '../../components/ProjectCard/Pintern/PinternCard';
+import GraphicsCard from '../../components/ProjectCard/Graphics/GraphicsCard';
+import LQSCard from '../../components/ProjectCard/LQS/LQSCard';
+import TextilesCard from '../../components/ProjectCard/Textiles/TextilesCard';
+import GalleryCard from '../../components/ProjectCard/Gallery/GalleryCard';
 
 export default function ProjectsPage() {
   return (
@@ -17,10 +21,14 @@ up during my downtime. I also learned how to code in 2024 so I built
 this website and published it to the internet directly from my 
 command line. 🤓👩🏼‍💻
       </p>
-      <section className="Projects-Grid">
-        <PantoneCard />
-        <PinternCard />
-      
+
+      <section className="projects-grid">
+        <div className="one"><PantoneCard /></div>
+        <div className="two"><PinternCard /></div>
+        <div className="three"><GraphicsCard /></div>
+        <div className="four"><LQSCard /></div>
+        <div className="five"><TextilesCard /></div>
+        <div className="six"><GalleryCard /></div>
         </section>
       </main>
       </>

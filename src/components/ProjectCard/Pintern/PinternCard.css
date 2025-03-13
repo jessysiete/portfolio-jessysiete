@@ -2,8 +2,8 @@
 position: absolute;
 display: inline-flex;
 flex-direction: row;
-width: 250px;
-height: 350px;
+width: 200px;
+height: 232px;
 border: 2px solid var(--link-color);
 border-radius: 10px;
 /* padding: 10px; */

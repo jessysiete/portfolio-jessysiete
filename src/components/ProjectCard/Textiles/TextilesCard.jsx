@@ -1,11 +1,11 @@
-import './PantoneCard.css';
+import './TextilesCard.css';
 import { Link } from 'react-router-dom';
 
-export default function PantoneCard() {
+export default function TextilesCard() {
 
   return ( 
     <main className="Project-Card">
-      <h2>Pantone 14k</h2>
+      <h2>Textile Works</h2>
       </main>
   );
 }

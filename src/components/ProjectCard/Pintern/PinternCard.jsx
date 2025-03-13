@@ -1,7 +1,7 @@
 import './PinternCard.css';
 import { Link } from 'react-router-dom';
 
-export default function ProjectCard() {
+export default function PinternCard() {
 
   return ( 
     <main className="Project-Card">
