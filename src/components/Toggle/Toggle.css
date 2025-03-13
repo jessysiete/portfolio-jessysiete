@@ -1,5 +1,5 @@
 .toggle-container {
-  position: absolute;
+  position: fixed;
   display: inline-block;
   width: 48px;
   height: 34px;

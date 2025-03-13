@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import './App.css';
 import Header from '../../components/Header/Header';
-import Nav from '../../components/Nav/Nav';
+import { Routes, Route } from 'react-router-dom';
+import ProjectsPage from '../Projects/ProjectsPage';
 
-const App = () => {
+export default function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <main className="App-body">
+    <main className="App-body">
+      <Routes>
+      <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
       </main>
-    </div>
+      </>
   );
 };
 
-export default App;

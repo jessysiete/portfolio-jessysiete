@@ -1,10 +1,14 @@
 import './Nav.css';
 import Pdf from '../../assets/Documents/resume.pdf';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
     <nav className="menu">
       <ul className="menu-list">
+        <li className="menu-item">
+        <Link to="/projects">Projects</Link>
+        </li>
         <li className="menu-item">
           <a href= {Pdf} target="blank" className="menu-link">Resume</a>
         </li>

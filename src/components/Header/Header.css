@@ -1,19 +1,23 @@
 .Header {
   display: flex;
-  justify-content: space-between;
   height: 70px;
-  padding: 1vh 0vw 1vh 0vw;
-}
+  width: 100%;
+  padding: 0 0;
+  position: relative;
+  /* z-index: 1000 */
+} 
+
 
 .App-logo path {
   fill: var(--logo-fill);
 }
 
 .App-logo {
-  position: absolute;
+  margin-top: 10px;
+  margin-left: 8px;
+  position: fixed;
   height: 80px;
   width: auto;
-  padding: 1vh 1vw 1vh 1vw;
   color: var(--logo-fill);
     /* margin-top: 5px; */
 }
@@ -21,13 +25,15 @@
   @media (max-width: 600px) {
     .Header {
       display: flex;
+      position: relative;
+      height: 70px;
     }
     
     .App-logo {
+      position: fixed;
       height: 48px;
       width: auto;
-      padding: 1vh 1vw 1vh 2vw;
-      /* margin-top: 5px; */
+      margin-top: 5px;
     }
 }
 

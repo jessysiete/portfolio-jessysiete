@@ -1,0 +1,32 @@
+.Projects-Page {
+  padding: 0 10px 0 10px;
+  /* position: fixed; */
+
+}
+
+.intro {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 590px;
+  margin-top: 88px;
+  font-size: 1.3rem;
+  /* border: 2px solid var(--link-color); */
+  
+}
+
+.project-cards {
+  margin-left: 180px;
+  border: 2px solid #ff4df9;
+}
+
+
+@media (max-width: 600px) {
+  .intro {
+    margin-top: 48px;
+    width: 485px;
+    font-size: 1.2rem;
+  }
+  
+}

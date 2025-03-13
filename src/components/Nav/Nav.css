@@ -1,26 +1,32 @@
-.Menu {
+.menu {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 ul {
   display: flex;
   list-style-type: none;
-  margin-top: 12vh;
-  padding: 1vh 4vh;
-  width: auto;
-  font-size: 2rem;
+  margin-top: 92px;
+  padding: 0px 0px;
+  width: 100%;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  font-size: 1.35rem;
+  
+}
+
+li {
+  display: inline-flex;
+  text-align: center;
 }
 
 li a {
-  display: flex;
   color: var(--link-color);
-  padding: 1vh 4vh;
+  padding: 6px 28px;
   text-decoration: none;
   justify-content: center;
-  width: auto;
   align-items: center;
   flex-direction: row;
   border: 4px solid transparent;
@@ -41,17 +47,20 @@ li a:hover {
   
   ul {
     list-style-type: none;
-    margin-top: 8vh;
-    padding: 1vh auto;
-    width: auto;
+    margin-top: 50px;
+    padding: 8px 10px;
     font-size: 1rem;
+    display: inline-flex;
+    justify-content: center;
   }
-  
+
+  li {
+    text-align: center;
+  }
+
   li a {
     display: flex;
-    padding: 1vh 3vh;
+    padding: 8px 12px;
     text-decoration: none;
-    justify-content: left;
-    width: auto;
   }
 }
