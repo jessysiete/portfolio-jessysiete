@@ -5,9 +5,7 @@ export default function HomePage() {
   return (
     <>
     <main className="home-page">
-      <p className="intro">
-        Home
-      </p>
+        Home Page
       </main>
       </>
   );
