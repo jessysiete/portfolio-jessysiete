@@ -1,11 +1,16 @@
 :root {
---background-color: #f3f3f3;
---text-color: #383838;
---primary-color: #764300;
---logo-fill: #03227f;
---link-color: #085E08;
-/* --link-color: #994d00; */
+  --background-color: #f3f3f3;
+  --text-color: #383838;
+  --primary-color: #764300;
+  --logo-fill: #03227f;
+  --link-color: #085E08;
+  --pintern-logo: var(--pintern-logo-light);
+  --pintern-logo-light: url('../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-light.svg');
+  --pintern-logo-dark: url('../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-dark.svg');
 }
+
+
+
 
 /* dark mode */
 [theme="dark"] {
@@ -14,6 +19,7 @@
   --primary-color: #799AFA;
   --logo-fill: #799AFA;
   --link-color: #edb226;
+  --pintern-logo: var(--pintern-logo-dark);
 }
 
 body {
