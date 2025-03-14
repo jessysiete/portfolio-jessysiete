@@ -20,6 +20,7 @@
   height: 80px;
   width: auto;
   color: var(--logo-fill);
+  z-index: 1000;
   /* margin-top: 5px; */
 }
 
