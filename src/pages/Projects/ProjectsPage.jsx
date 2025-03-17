@@ -11,6 +11,7 @@ export default function ProjectsPage() {
   return (
     <>
     <main className="Projects-Page">
+      <div className="projects-body">
       <p className="intro">
         A tinkerer by nature, my passion for turning ideas into tangible
 items begins here. Combining imagination, online design tools, a
@@ -30,6 +31,7 @@ command line. 🤓👩🏼‍💻
         <div className="five"><TextilesCard /></div>
         <div className="six"><GalleryCard /></div>
         </section>
+      </div>
       </main>
       </>
   );
