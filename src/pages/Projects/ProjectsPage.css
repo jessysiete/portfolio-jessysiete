@@ -179,8 +179,9 @@
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 2px;
     height: 632px;
-    max-width: 100%;
+    max-width: 90vw;
     min-width: 320px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 0px 0px 0px;
