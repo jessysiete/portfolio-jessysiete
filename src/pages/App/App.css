@@ -31,11 +31,11 @@ body {
   align-items: center;
   transition: var(--background-color) 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
+/* 
 h1 {
   color: #ff4df9;
   visibility: hidden;
-}
+} */
 
  .App-body {
   display: flex;

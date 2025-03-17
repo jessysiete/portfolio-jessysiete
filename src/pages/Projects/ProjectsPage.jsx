@@ -10,7 +10,7 @@ import GalleryCard from '../../components/ProjectCard/Gallery/GalleryCard';
 export default function ProjectsPage() {
   return (
     <>
-    <main className="Projects-Page">
+    <div className="Projects-Page">
       <div className="projects-body">
       <p className="intro">
         A tinkerer by nature, my passion for turning ideas into tangible
@@ -32,7 +32,7 @@ command line. 🤓👩🏼‍💻
         <div className="six"><GalleryCard /></div>
         </section>
       </div>
-      </main>
+      </div>
       </>
   );
 }
