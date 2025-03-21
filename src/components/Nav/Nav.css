@@ -43,6 +43,10 @@ li a:hover {
   border: 4px solid var(--link-color);
 }
 
+.active {
+  background-color: aqua;
+}
+
 @media (max-width: 800px) {
   ul {
     padding: 0% 2vw;

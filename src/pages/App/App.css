@@ -22,7 +22,7 @@
 body {
   width: 100%;
   /* min-height: min-content; */
-  min-height: 900px;
+  min-height: 750px;
   margin: 140;
   /* max-width: 100%; */
   background-color: var(--background-color);
@@ -31,11 +31,6 @@ body {
   align-items: center;
   transition: var(--background-color) 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-/* 
-h1 {
-  color: #ff4df9;
-  visibility: hidden;
-} */
 
  .App-body {
   display: flex;

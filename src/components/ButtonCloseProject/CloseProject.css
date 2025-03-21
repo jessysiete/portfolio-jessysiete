@@ -1,11 +1,14 @@
 .close-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   right: 12px;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
   top: 149px;
   border-radius: 50%;
   background-color: gray;
@@ -16,7 +19,13 @@
 }
 
 .close {
+  display: flex;
+  position: relative;
+  cursor: pointer;
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
+  justify-self: center;
+  background-color: transparent;
+  border: none;
 }

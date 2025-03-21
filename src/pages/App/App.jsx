@@ -6,6 +6,7 @@ import ProjectsPage from '../ProjectsPage/ProjectsPage';
 import HomePage from '../Home/HomePage';
 import PantoneProjectPage from '../ProjectDetailPage/PantonePage/PantoneProjectPage';
 import PinternProjectPage from '../ProjectDetailPage/PinternPage/PinternProjectPage';
+import SimonProjectPage from '../ProjectDetailPage/SimonPage/SimonProjectPage';
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/projects/pantone14k" element={<PantoneProjectPage />} />
       <Route path="/projects/the-pintern" element={<PinternProjectPage />} />
+      <Route path="/projects/virtual-simon" element={<SimonProjectPage />} />
       </Routes>
       </main>
       </>

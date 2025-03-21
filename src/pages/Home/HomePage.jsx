@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
   return (
     <>
-    <main className="home-page">
-      <p className="intro">
+    <div className="home-page">
+      <h1 className="intro">
         Home
-      </p>
-      </main>
+      </h1>
+      </div>
       </>
   );
 }

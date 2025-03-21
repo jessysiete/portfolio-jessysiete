@@ -1,10 +1,10 @@
 import "../ProjectCard.css";
 import { Link } from "react-router-dom";
-import pinternLogo from "../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-dark.svg";
+
 
 export default function PinternCard() {
   return (
-    <main className="Project-Card">
+    <div className="Project-Card">
       <div className="card-title">
         <Link to="/projects/the-pintern">
           <h2 className="title">The Pintern</h2>
@@ -15,7 +15,7 @@ export default function PinternCard() {
           <div className="image-pintern" aria-label="The Pintern logo" />
         </Link>
       </div>
-    </main>
+    </div>
   );
 }
 
