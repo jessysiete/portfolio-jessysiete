@@ -19,6 +19,6 @@ export default function PinternCard() {
   );
 }
 
-{
+// {
   /* <img className="pintern" src={pinternLogo} alt="A round shape with a semi-circle protruding from its left side and a small oval on the inside right. A pictogram of an abstract rubber clasp for enamel pins." /> */
-}
+// }
