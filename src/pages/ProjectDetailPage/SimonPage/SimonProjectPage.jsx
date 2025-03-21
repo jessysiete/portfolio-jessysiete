@@ -20,6 +20,11 @@ export default function SimonProjectPage() {
       <div className="project-page">
         <CloseProject />
         <section className="simon-hero-section">
+          <section className="execution-section">
+            <div className="simon-component">
+              <SimonGame />
+              </div>
+          </section>
     {/* <div className="hero-left">
       <h1 className="project-title">Virtual Simon <br/><span className="title-tagline">A Wearable Color Swatch</span></h1>
       <div className="main-image">
@@ -51,7 +56,7 @@ export default function SimonProjectPage() {
         <li className="summary-item"><strong>Key Themes:</strong> Interactive Design, Material Exploration, Human-Centered Aesthetics</li>
       </ul>
 
-    </div> */}
+      </div> */}
           </section>
 
 
@@ -124,11 +129,6 @@ export default function SimonProjectPage() {
             I experimented with different chain lengths to enhance the pendant's visual effect when worn.
             </li>
           </ul> */}
-        </section>
-        <section className="execution-section">
-          <div className="simon-component">
-            <SimonGame />
-            </div>
         </section>
         <section className="final-notes-section">
           <h2 className="final-notes-title">Final Notes & Reflection</h2>
