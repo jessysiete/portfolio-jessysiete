@@ -1,8 +1,5 @@
 import "./PinternProjectPage.css";
 
-
-
-
 import { useState } from "react";
 
 export default function ThePinternProjectPage() {
@@ -155,9 +152,9 @@ export default function ThePinternProjectPage() {
         <section className="design-process-section">
           <h2 className="design-process-title">Enamel Pin Design Process</h2>
           <p className="design-process-text">
-          Step 1: Concept & Ideation Each pin started with a purpose—either as a brand collaboration, sorority keepsake, or standalone art piece.
-Step 2: Digital Illustration Using Adobe Illustrator, I refined sketches into vector artwork, ensuring proper line weights and color separations for manufacturing.
-Step 3: Prototyping & Feedback Before production, I worked with manufacturers to to tweak colors and finishes, ensuring the final product matched the vision.
+          Step 1: Concept & IdeationEach pin started with a purpose—either as a brand collaboration, sorority keepsake, or standalone art piece.
+Step 2: Digital IllustrationUsing Adobe Illustrator, I refined sketches into vector artwork, ensuring proper line weights and color separations for manufacturing.
+Step 3: Prototyping & FeedbackBefore production, I worked with manufacturers to to tweak colors and finishes, ensuring the final product matched the vision.
           </p>
           📸 Photos & Interactive Elements:
 * Swipe-through slider of initial sketches vs. final pins

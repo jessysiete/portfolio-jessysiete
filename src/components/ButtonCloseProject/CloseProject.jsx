@@ -1,10 +1,15 @@
 import './CloseProject.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function CloseProject() {
+  const navigate = useNavigate();
+
+  const handleClose = () => {
+    // Perform navigation to '/projects', which triggers a component re-render
+    navigate('/projects');
+  };
+
   return (
-    <Link className="close-project" to="/projects">
-      <button className="close">X</button>
-    </Link>
+    <button className="close" onClick={handleClose}>X</button>
   );
 }

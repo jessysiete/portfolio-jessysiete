@@ -53,8 +53,8 @@
 }
 
 .main-image {
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 350px;
   align-self: center;
   margin-bottom: 40px;
   border: 2px solid var(--link-color);
@@ -64,7 +64,11 @@
 }
 
 .main-image img {
-  height: 100%;
+  object-fit: contain;
+  width: 350px;
+  max-width: 350px;
+  height: 350px;
+  max-height: 350px;
   display: block; 
 }
 

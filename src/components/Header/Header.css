@@ -1,6 +1,7 @@
 .Header {
-  display: flex;
-  height: 140px;
+  display: inline-flex;
+  flex-direction: row;
+  height: 72px;
   width: 100%;
   padding: 0 0;
   position: fixed;
@@ -15,15 +16,16 @@
 }
 
 .App-logo {
-  margin-top: 10px;
-  margin-left: 8px;
+  margin-top: 12px;
+  margin-left: 12px;
   position: fixed;
-  height: 80px;
+  height: 48px;
   width: auto;
   color: var(--logo-fill);
   z-index: 1000;
-  /* margin-top: 5px; */
 }
+
+
 
 @media (max-width: 600px) {
   .Header {
@@ -35,9 +37,8 @@
   
   .App-logo {
     position: fixed;
-    height: 48px;
+    height: 40px;
     width: auto;
-    margin-top: 5px;
   }
 }
 

@@ -1,31 +1,24 @@
-.close-project {
+.close {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Ensure the "X" is centered */
+  justify-content: center; /* Ensure the "X" is centered */
   position: fixed;
   right: 12px;
+  top: 149px;
   padding: 10px;
   cursor: pointer;
   z-index: 1;
   height: 32px;
   width: 32px;
-  top: 149px;
   border-radius: 50%;
   background-color: gray;
-}
-
-.close-project:hover {
-  background-color: var(--link-color);
-}
-
-.close {
-  display: flex;
-  position: relative;
-  cursor: pointer;
-  color: white;
   font-size: 1.5rem;
   font-weight: bold;
-  justify-self: center;
+  color: white;
   background-color: transparent;
   border: none;
+}
+
+.close:hover {
+  background-color: var(--link-color);
 }

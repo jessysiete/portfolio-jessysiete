@@ -11,15 +11,17 @@ export default function ProjectsPage() {
   return (
     <>
       <div className="projects-body">
+        <div className="page-color"></div>
+      <div className="content">
       <h1 className="heading">Personal Projects</h1>
-      <p className="intro">
+      <p className="about">
         A tinkerer by nature, my passion for turning ideas into tangible
 items begins here. Combining imagination, design tools, a
 laser CNC, & power tools, I give life to home goods and apparel
 accessories. Featured projects range from sculptural works, textile
 manipulation, graphic design, and a small e-commerce business I spun
 up during my downtime. I also learned how to code in 2024 so I built
-this website and published it to the internet directly from my 
+this website with VSCode and published it to the internet directly from my 
 command line. 🤓👩🏼‍💻
       </p>
 
@@ -31,6 +33,7 @@ command line. 🤓👩🏼‍💻
         <div className="five"><TextilesCard /></div>
         <div className="six"><GalleryCard /></div>
         </section>
+        </div>
       </div>
       </>
   );

@@ -1,14 +1,21 @@
 import "./PantoneProjectPage.css";
 import { useState } from "react";
-import pantonePendant from '../../../../public/assets/images/project-images/pantone-pendant/pantone-pendant.png';
 import CloseProject from "../../../components/ButtonCloseProject/CloseProject";
+import pantonePendant from '../../../../public/assets/images/project-images/pantone-pendant/pantone-pendant.png';
+import pantoneSky from '../../../../public/assets/images/project-images/pantone-pendant/pantone-sky.png'
+import pantoneWorn from '../../../../public/assets/images/project-images/pantone-pendant/pantone-worn.png'
+import pantoneRender from '../../../../public/assets/images/project-images/pantone-pendant/pantone-render.png'
+import pantoneInspo1 from '../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-1.png'
+import pantoneInspo2 from '../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-2.png'
+import pantoneMockup from '../../../../public/assets/images/project-images/pantone-pendant/pantone-mockup.png'
 
 export default function PantoneProjectPage() {
   const images = [
     pantonePendant,
-    "/images/pantone14k_3drender.jpg",
-    "/images/pantone14k_3dprint.jpg",
-    "/images/pantone14k_final.jpg",
+    pantoneSky,
+    pantoneWorn,
+    pantoneRender,
+    // "/images/pantone14k_final.jpg",
   ];
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -78,8 +85,8 @@ export default function PantoneProjectPage() {
             The Pantone color library holds personal significance for me, as I use it extensively in my enamel pin designs to ensure color consistency in manufacturing. This pendant became an extension of my work in color theory, reimagined as a functional and interactive piece of jewelry.
           </p>
           <div className="concept-images">
-            <img className="concept-image" src="/images/pantone14k_concept1.jpg" alt="Pantone 14K Concept 1" />
-            <img className="concept-image" src="/images/pantone14k_concept2.jpg" alt="Pantone 14K Concept"/> 
+            <img className="concept-image" src={pantoneInspo1} alt="Pantone 14K Concept"/> 
+            <img className="concept-image" src={pantoneInspo2} alt="Pantone 14K Concept 1" />
             </div>
         </section>
         <section className="prototyping-section">
@@ -88,8 +95,8 @@ export default function PantoneProjectPage() {
           I started with rough prototyping—cutting out cardboard mockups and using string to test pendant dimensions and visual weight. This hands-on approach allowed me to refine the proportions before committing to final materials. The process mirrored the way I test physical product ideas before refining them for mass production.
           </p>
           <div className="prototyping-images">
-            <img className="prototype-image" src="/images/pantone14k_prototype1.jpg" alt="Pantone 14K prototype 1" />
-            <img className="prototype-image" src="/images/pantone14k_prototype2.jpg" alt="Pantone 14K Concept"/> 
+            <img className="concept-image" src={pantoneMockup} alt="Pantone 14K Concept"/> 
+            <img className="concept-image" src={pantoneInspo2} alt="Pantone 14K Concept 1" />
             </div>
           <ul className="notes-list">
             <li className="note-line">
@@ -108,7 +115,7 @@ export default function PantoneProjectPage() {
           Working with a friend and master jeweler, Twiz, hee translated my sketches into a 3D CAD model, ensuring precision in dimensions and structural integrity. This step introduced me to the intersection of jewelry craftsmanship and digital modeling, bridging traditional artistry with modern fabrication.
           </p>
           <div className="collaboration-images">
-            <img className="collaboration-image" src="/images/pantone14k_prototype1.jpg" alt="Pantone 14K prototype 1" />
+            <img className="concept-image" src={pantoneRender} alt="Pantone 14K prototype 1" />
             <img className="collaboration-image" src="/images/pantone14k_prototype2.jpg" alt="Pantone 14K Concept"/> 
             </div>
           <ul className="collaborations-list">
@@ -174,3 +181,6 @@ export default function PantoneProjectPage() {
 // of the wearer's clothing, turning fashion into a living Pantone reference.
 // This project involved rapid prototyping, CAD modeling, and traditional jewelry
 //  casting techniques in collaboration with a master jeweler.
+
+
+//inspo original blog post: https://theawesomer.com/pantone-pin/523569/

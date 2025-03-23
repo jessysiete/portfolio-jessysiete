@@ -2,29 +2,34 @@ import "./SimonProjectPage.css";
 import { useState, useEffect } from "react";
 import pantonePendant from '../../../../public/assets/images/project-images/pantone-pendant/pantone-pendant.png';
 import CloseProject from "../../../components/ButtonCloseProject/CloseProject";
-import SimonGame from "../../../components/SimonGame/simon";
+import { useLocation } from "react-router-dom"; // Import useLocation from React Router
+
 
 
 export default function SimonProjectPage() {
+
   const images = [
     pantonePendant,
     "/images/pantone14k_3drender.jpg",
     "/images/pantone14k_3dprint.jpg",
     "/images/pantone14k_final.jpg",
   ];
-
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
+
+  
   return (
     <>
       <div className="project-page">
         <CloseProject />
-        <section className="simon-hero-section">
           <section className="execution-section">
             <div className="simon-component">
-              <SimonGame />
-              </div>
+            {/* <SimonGame /> */}
+            <iframe className="simon-game" src="https://siguejessy.github.io/virtual-simon/" title="Simon Game"></iframe>
+
+            </div>
           </section>
+        <section className="simon-hero-section">
     {/* <div className="hero-left">
       <h1 className="project-title">Virtual Simon <br/><span className="title-tagline">A Wearable Color Swatch</span></h1>
       <div className="main-image">

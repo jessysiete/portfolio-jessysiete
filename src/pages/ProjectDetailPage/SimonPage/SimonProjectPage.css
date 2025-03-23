@@ -389,9 +389,17 @@
 }
 
 
-
-
-
+.simon-game {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 460px;
+  margin: 0px;
+  text-align: left;
+  top: 130px;
+  border: 15px solid black;
+}
 
 .final-notes-list {
   top: 0px;

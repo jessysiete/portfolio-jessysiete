@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ProjectsPage from '../ProjectsPage/ProjectsPage';
 import HomePage from '../Home/HomePage';
@@ -12,8 +13,8 @@ import SimonProjectPage from '../ProjectDetailPage/SimonPage/SimonProjectPage';
 export default function App() {
   return (
     <>
-      <Header />
     <main className="App-body">
+      <Header />
       <Routes>
       <Route path="/*" element={<Navigate to="/" />} />
       <Route path="/" element={<HomePage />} />
@@ -22,6 +23,7 @@ export default function App() {
       <Route path="/projects/the-pintern" element={<PinternProjectPage />} />
       <Route path="/projects/virtual-simon" element={<SimonProjectPage />} />
       </Routes>
+      <Footer />
       </main>
       </>
   );

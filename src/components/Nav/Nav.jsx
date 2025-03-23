@@ -33,12 +33,12 @@ export default function Nav() {
         <li className="menu-item">
           <a href="https://github.com/siguejessy" target="blank" className="menu-link" onClick={handleLinkClick}>Github</a>
         </li>
-        <li className="menu-item">
+        {/* <li className="menu-item">
           <a href="https://www.linkedin.com/in/siguejessy" target="blank" className="menu-link" onClick={handleLinkClick}>LinkedIn</a>
-        </li>
-        <li className="menu-item">
+        </li> */}
+        {/* <li className="menu-item">
           <a href="mailto:jessica@jessysiete.com?subject=Greetings" className="menu-link" onClick={handleLinkClick}>Email</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
