@@ -23,6 +23,7 @@ export default function PantoneProjectPage() {
   return (
     <>
       <div className="project-page">
+        <div className="page-marker-pantone"></div>
         <CloseProject />
         <section className="pantone-hero-section">
     <div className="hero-left">

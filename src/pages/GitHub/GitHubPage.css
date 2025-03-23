@@ -1,4 +1,4 @@
-.home-page {
+.gh-profile {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,17 +6,16 @@
   height: 400px;
 }
 
-.page-marker-home {
-  background-color: var(--logo-fill);
+.page-marker-github {
+  background-color: #90372d;
   display: absolute;
   position: fixed;
-  height: 4px;
-  width: 276px;
-  top: 54px;
-  margin-left: 32px;
+  height: 8px;
+  width: 100%;
+  top: 70px;
+  margin-left: 0px;
   z-index: 1000;
 }
-
 
 .intro {
   position: relative;

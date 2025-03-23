@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <>
       <div className="projects-body">
-        <div className="page-color"></div>
+        <div className="page-marker-projects"></div>
       <div className="content">
       <h1 className="heading">Personal Projects</h1>
       <p className="about">

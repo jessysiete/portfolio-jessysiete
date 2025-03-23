@@ -25,7 +25,34 @@
   z-index: 1000;
 }
 
+.App-logo:hover {
+  cursor: pointer;
+  /* border-bottom: 4px solid var(--logo-fill); */
+  /* border-bottom: 4px solid var(--logo-fill); */
 
+
+}
+
+.page-marker-home-hover {
+  background-color: transparent;
+  border-bottom: 4px transparent;
+  display: absolute;
+  position: fixed;
+  height: 42px;
+  width: 276px;
+  top: 12px;
+  margin-left: 32px;
+  z-index: 1000;
+}
+
+.page-marker-home-hover:hover {
+  display: absolute;
+  position: fixed;
+  border-bottom: 4px solid var(--logo-fill);
+  width: 276px;
+  margin-left: 32px;
+  z-index: 1000;
+}
 
 @media (max-width: 600px) {
   .Header {

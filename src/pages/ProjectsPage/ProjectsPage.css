@@ -7,10 +7,20 @@
   height: 100%;
   margin-top:54px;
   background-size: 40px 40px;
-  background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+  /* background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
+  background-image: var(--background-image);
 }
-
-.page-color{
+.page-marker-projects {
+  background-color: #4e6851;
+  display: absolute;
+  position: fixed;
+  height: 8px;
+  width: 100%;
+  top: 70px;
+  margin-left: 0px;
+  z-index: 1000;
+}
+/* .page-color{
   display: absolute;
   position: fixed;
   height: 6px;
@@ -18,8 +28,7 @@
   width: 100%;
   margin-top: 16px;
   z-index: 1000;
-
-}
+} */
 .content {
   position: relative;
   display: flex;
@@ -139,4 +148,5 @@
     
   }
 
+}
 }

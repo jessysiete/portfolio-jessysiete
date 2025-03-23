@@ -24,14 +24,16 @@ export default function Nav() {
   return (
     <nav className="menu">
       <ul className="menu-list">
-        <li className="menu-item">
+        <li className="menu-item-projects">
           <Link to="/projects" className="menu-link" onClick={handleLinkClick}>Projects</Link>
         </li>
-        <li className="menu-item">
-          <a href={Pdf} target="blank" className="menu-link" onClick={handleLinkClick}>Resume</a>
+        <li className="menu-item-github">
+          <Link to="/github" className="menu-link" onClick={handleLinkClick}>GitHub</Link>
+          {/* <a href="https://github.com/siguejessy" target="blank" className="menu-link" onClick={handleLinkClick}>Github</a> */}
         </li>
-        <li className="menu-item">
-          <a href="https://github.com/siguejessy" target="blank" className="menu-link" onClick={handleLinkClick}>Github</a>
+        <li className="menu-item-resume">
+          <Link to="/resume" className="menu-link" onClick={handleLinkClick}>Resume</Link>
+          {/* <a href={Pdf} target="blank" className="menu-link" onClick={handleLinkClick}>Resume</a> */}
         </li>
         {/* <li className="menu-item">
           <a href="https://www.linkedin.com/in/siguejessy" target="blank" className="menu-link" onClick={handleLinkClick}>LinkedIn</a>

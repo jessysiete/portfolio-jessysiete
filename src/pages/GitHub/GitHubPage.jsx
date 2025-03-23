@@ -1,13 +1,12 @@
-import './HomePage.css';
 import { Link } from 'react-router-dom';
-import ProjectsPage from '../ProjectsPage/ProjectsPage';
 
-export default function HomePage() {
+import './GitHubPage.css';
+
+export default function GitHubPage() {
   return (
     <>
-    <div className="home-page">
-    <div className="page-marker-home"></div>
-
+    <div className="gh-profile">
+    <div className="page-marker-github"></div>
       <h1 className="intro">
         Home
       </h1>
@@ -25,7 +24,6 @@ export default function HomePage() {
       <br />
       <br />
       <br />
-      {/* <ProjectsPage /> */}
       </div>
       </>
   );

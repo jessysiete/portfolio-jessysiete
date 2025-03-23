@@ -1,19 +1,27 @@
-import './HomePage.css';
 import { Link } from 'react-router-dom';
-import ProjectsPage from '../ProjectsPage/ProjectsPage';
+import Pdf from '../../assets/Documents/resume.pdf';
 
-export default function HomePage() {
+
+import './ResumePage.css';
+
+export default function ResumePage() {
   return (
     <>
-    <div className="home-page">
-    <div className="page-marker-home"></div>
-
+    <div className="resume-page">
+    <div className="page-marker-resume"></div>
       <h1 className="intro">
-        Home
+        Work Experience
       </h1>
       <p className="intro">
         Welcome to my portfolio. I am a full stack web developer with a passion for creating beautiful and functional web applications. I have experience with HTML, CSS, JavaScript, React, Node, Express, and MongoDB. I am always looking for new opportunities to learn and grow as a developer.
       </p>
+
+        <button className="view-resume">
+          <a href={Pdf} target="blank" className="menu-link">View PDF Resume</a>
+        </button>
+
+
+
       <br />
       <br />
       <br />
@@ -25,7 +33,6 @@ export default function HomePage() {
       <br />
       <br />
       <br />
-      {/* <ProjectsPage /> */}
       </div>
       </>
   );
