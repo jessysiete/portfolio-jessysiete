@@ -8,7 +8,7 @@
   margin-top: -1px;
   z-index: 1000;
   background-color: var(--background-color);
-} 
+}
 
 
 .App-logo path {
@@ -26,7 +26,6 @@
 }
 
 .App-logo:hover {
-  cursor: pointer;
   /* border-bottom: 4px solid var(--logo-fill); */
   /* border-bottom: 4px solid var(--logo-fill); */
 
@@ -54,20 +53,37 @@
   z-index: 1000;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .Header {
     display: flex;
     position: fixed;
     height: 98px;
     z-index: 1000;
+
   }
+  .page-marker-home-hover:hover {
+    display: absolute;
+    position: fixed;
+    border-bottom: 4px solid var(--logo-fill);
+    width: 230px;
+    height: 35px;
+    top: 11px;
+    margin-left: 29px;
+    z-index: 1000;
+
+  }
+
   
+  
+
   .App-logo {
     position: fixed;
     height: 40px;
     width: auto;
+    cursor: pointer;
   }
 }
+
 
 .Project-link {
   color: #ff4df9;

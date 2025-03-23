@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="Header">
       {/* Logo SVG (using inline SVG for full CSS control) */}
-      <Link to="/">
+      <Link className="link"to="/">
       <svg
         className="App-logo"
         width="223"

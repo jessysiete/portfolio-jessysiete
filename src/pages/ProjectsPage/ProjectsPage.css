@@ -116,16 +116,14 @@
   .projects-body {
     margin-top: 100px;
   }
-  .page-color{
-    display: absolute;
-    position: fixed;
-    height: 6px;
-    background-color: rgb(223, 196, 255);
-    width: 100%;
-    margin-top: 8px;
-    z-index: 1000;
+ 
+.page-marker-projects {
+  top: 112px;
+  margin-left: 0px;
+  z-index: 1000;
 }
 
+}
 
 @media (max-width: 600px) {
   .projects-body {
