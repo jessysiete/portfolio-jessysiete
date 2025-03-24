@@ -1,21 +1,44 @@
-.home-page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 400px;
-}
-
 .page-marker-home {
   background-color: var(--logo-fill);
   display: absolute;
   position: fixed;
   height: 4px;
-  width: 276px;
+  width: 146px;
   top: 54px;
-  margin-left: 32px;
+  margin-left: -1100px;
   z-index: 1000;
 }
+
+.page-marker-home-nav {
+  background-color: var(--logo-fill);
+  display: absolute;
+  position: fixed;
+  height: 10px;
+  width: 100%;
+  top: 70px;
+  margin-left: 0px;
+  z-index: 1000;
+
+}
+
+.home-page {
+  position: relative;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 94%;
+  height: fit-content;
+  min-height: 600px;
+  margin-top: 70px;
+  padding: 0px;
+  /* border: 6px dashed rgb(106, 106, 106); */
+  background-size: 40px 40px;
+  background-image: var(--background-image);
+}
+
 
 
 .intro {
@@ -25,12 +48,104 @@
   align-items: left;
   margin: 0px;
   width: 100%;
-  top: 180px;
   padding: 0px;
+}
+
+.heading {
+  position: absolute;
+  padding: 0px;
+  left: 40px;
+  top: 20px;
+  text-align: left;
+  width: fit-content;
+  font-size: 1.4rem;
+  background-color: var(--background-color);
 }
 
 
 
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* .skill-list{
+  margin: 0;
+  padding: 0;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.5rem;
+} */
+
+.skill-line {
+  margin: 0;
+  padding: 0;
+  justify-content: left;
+  align-items: left;
+  display: inline-block;
+  text-align: left;
+
+}
+
+
+.shapes {
+  width: 250px;
+  height: 160px;
+  position: absolute;
+  top: 480px;
+  left: 18px;
+  z-index: 1000;
+}
+
+.trapezoid {
+  position: absolute;
+  border-bottom: 90px solid #a1281a;
+  ;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  height: 0px;
+  width: 145px;
+  bottom: 0px;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 35px;
+  right: 15px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid var(--link-color);
+}
+
+.circle {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  right: 68px;
+  bottom: 64px;
+  background-color: #2d3e90;
+  border-radius: 50%;
+  border: 4px solid var(--link-color-opposite);
+}
+
+.square {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 12px;
+  left: 42px;
+  background-color: var(--background-color-opposite);
+  border: 4px solid var(--background-color);
+}
 
 @media (max-width: 800px) {
 
@@ -40,10 +155,85 @@
     display: absolute;
     position: fixed;
     height: 35px;
-    width: 230px;
-    top: 11px;
-    margin-left: 29px;
-
+    width: 130px;
+    top: 6px;
+    margin-left: -301px;
   }
+
+  .page-marker-home-nav {
+    top: 64px;
+    margin-left: 0px;
+    z-index: 1000;
+  }
+
+  .home-page {
+    height: 700px;
+  }
+
+  .heading {
+    position: absolute;
+    padding: 0px;
+    left: 18px;
+    top: 18px;
+    text-align: left;
+    width: fit-content;
+    font-size: 1.4rem;
+    background-color: var(--background-color);
+  }
+
+  .content-home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+    align-items: center;
+    width: 94%;
+    top: 92px;
+    gap: 40px;
+  }
+
+  .intro-home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    bottom: 0px;
+    background-color: var(--background-color);
+  }
+
+  .tech-stack {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0px;
+    width: 300px;
+    height: 200px;
+    top: 0px;
+  }
+
+  .skill-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0px;
+    width: 120px;
+    top: 0px;
+  }
+
+
+  .shapes {
+    width: 250px;
+    height: 160px;
+    position: absolute;
+    top: 502px;
+    left: 18px;
+    z-index: 1000;
+  }
+
 
 }

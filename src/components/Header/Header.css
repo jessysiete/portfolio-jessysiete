@@ -19,8 +19,8 @@
   margin-top: 12px;
   margin-left: 12px;
   position: fixed;
-  height: 48px;
-  width: auto;
+  height: 38px;
+  width: fit-content;
   color: var(--logo-fill);
   z-index: 1000;
 }
@@ -38,7 +38,7 @@
   display: absolute;
   position: fixed;
   height: 42px;
-  width: 276px;
+  width: 140px;
   top: 12px;
   margin-left: 32px;
   z-index: 1000;
@@ -48,16 +48,16 @@
   display: absolute;
   position: fixed;
   border-bottom: 4px solid var(--logo-fill);
-  width: 276px;
+  width: 140px;
   margin-left: 32px;
   z-index: 1000;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .Header {
     display: flex;
     position: fixed;
-    height: 98px;
+    height: 72px;
     z-index: 1000;
 
   }
@@ -65,10 +65,10 @@
     display: absolute;
     position: fixed;
     border-bottom: 4px solid var(--logo-fill);
-    width: 230px;
+    width: 130px;
     height: 35px;
-    top: 11px;
-    margin-left: 29px;
+    top: 6px;
+    margin-left: 34px;
     z-index: 1000;
 
   }
@@ -78,8 +78,8 @@
 
   .App-logo {
     position: fixed;
-    height: 40px;
-    width: auto;
+    height: 28px;
+    width: fit-content;
     cursor: pointer;
   }
 }

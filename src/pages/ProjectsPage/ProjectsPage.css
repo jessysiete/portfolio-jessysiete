@@ -10,11 +10,12 @@
   /* background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px); */
   background-image: var(--background-image);
 }
+
 .page-marker-projects {
   background-color: #4e6851;
   display: absolute;
   position: fixed;
-  height: 8px;
+  height:10px;
   width: 100%;
   top: 70px;
   margin-left: 0px;
@@ -47,7 +48,7 @@
   top: 12px;
   text-align: left;
   width: fit-content;
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   background-color: var(--background-color);
 }
 
@@ -118,11 +119,20 @@
   }
  
 .page-marker-projects {
-  top: 112px;
+  top: 64px;
   margin-left: 0px;
   z-index: 1000;
 }
-
+.heading {
+  position: absolute;
+  padding: 0px;
+  left: 18px;
+  top: 64px;
+  text-align: left;
+  width: fit-content;
+  font-size: 1.4rem;
+  background-color: var(--background-color);
+}
 }
 
 @media (max-width: 600px) {
@@ -143,8 +153,7 @@
     margin-left: 50%;
     margin-right: 50%;
     padding: 0px 0px 0px 0px;
-    
+
   }
 
-}
 }

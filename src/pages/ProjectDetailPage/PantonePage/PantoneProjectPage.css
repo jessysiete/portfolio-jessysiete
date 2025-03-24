@@ -12,16 +12,48 @@
   margin-left: 0px;
   z-index: 1000;
 }
+
+.page-title-pantone {
+  background-color: var(--project-page-title-bar);
+  position: fixed;
+  height: 64px;
+  width: 100%;
+  top: 78px;
+  margin-left: 0px;
+  z-index: 1;
+}
+
+.project-title {
+  position: fixed;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 100px;
+  top: 12px;
+  z-index: 1;
+}
+
+.title-tagline {
+  position: relative;
+  margin-left: 378px;
+  top: -184px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
 .project-page {
   position: relative;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin-top: 54px;
+  width: 94%;
+  height: fit-content;
+  min-height: 3600px;
+  margin-top: 104px;
   padding: 0px;
   border: 6px dashed rgb(106, 106, 106);
   background-size: 40px 40px;
@@ -31,7 +63,6 @@
 
 .pantone-hero-section {
   position: relative;
-  padding: 0px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,8 +73,9 @@
   height: auto;
   min-height: 620px;
   box-sizing: border-box;
-  padding: 34px 20px;
+  padding: 0px 20px;
   gap: 60px;
+  top: -300px;
 }
 
 .hero-left {
@@ -55,22 +87,10 @@
   margin: 0;
 }
 
-.project-title {
-  position: relative;
-  margin-top: 0px;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-.title-tagline {
-  font-size: 1.85rem;
-  font-weight: bold;
-}
-
 .main-image {
   width: 350px;
   height: 350px;
+  top: -68px;
   align-self: center;
   margin-bottom: 40px;
   border: 2px solid var(--link-color);
@@ -98,6 +118,7 @@
 }
 
 .project-subtitle {
+  top: -42px;
   margin: 0;
   margin-left: 0px;
   height: fit-content;
@@ -168,7 +189,6 @@
   max-width: 100%;
   margin: 0px;
   text-align: left;
-
 }
 
 .overview-title {
@@ -484,4 +504,135 @@
 
 @media (max-width: 1200px) {}
 
-@media (max-width: 600px) {}
+@media (max-width: 820px) {
+  .page-marker-pantone {
+    top: 64px;
+  }
+
+  .page-title-pantone {
+    top: 114px;
+  }
+
+  .project-title {
+    font-weight: bold;
+    margin-right: auto;
+    margin-left: 30px;
+    top: 12px;
+    z-index: 1;
+  }
+
+  .title-tagline {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 76px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .project-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pantone-hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    min-width: unset;
+    height: auto;
+    min-height: 1120px;
+    box-sizing: border-box;
+    top: 120px;
+  }
+
+  .hero-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+
+  }
+
+  .project-subtitle {
+    position: relative;
+    width: 100%;
+    top: 98px;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    padding: 20px 0px;
+  
+  }
+
+  .hero-text {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    height: fit-content;
+  }
+
+  .project-summary {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 140px;
+    height: fit-content;
+  }
+
+
+.pantone-image-gallery {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  height: 120px;
+  margin-top: -150px;
+}
+
+.gallery-thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, opacity 0.2s;
+}
+
+.gallery-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.gallery-thumbnail.selected {
+  border: 3px solid var(--link-color);
+  opacity: 1;
+}
+
+
+.overview-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 100%;
+  top: 34px;
+  text-align: left;
+}
+
+
+}

@@ -1,25 +1,30 @@
 :root {
-  --background-color: #f6ebda;
+  --background-color: #ebdfcc;
+  --background-color-opposite: #141414;
   --text-color: #383838;
   --primary-color: #764300;
   --logo-fill: #03227f;
   --link-color: #4e6851;
+  --link-color-opposite: #fbc359;
   --pintern-logo: var(--pintern-logo-light);
   --pintern-logo-light: url('../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-light.svg');
   --pintern-logo-dark: url('../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-dark.svg');
   --background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
-
+  --project-page-title-bar: rgb(212, 210, 202);
 }
 
 /* dark mode */
 [theme="dark"] {
   --background-color: #141414;
+  --background-color-opposite: #ebdfcc;
   --text-color: #EEEDE7;
   --primary-color: #799AFA;
   --logo-fill: #c0c0c0;
   --link-color: #fbc359;
+  --link-color-opposite: #4e6851;
   --pintern-logo: var(--pintern-logo-dark);
   --background-image: radial-gradient(circle, #4a4a4a 1px, rgba(163, 163, 163, 0) 1px);
+  --project-page-title-bar: rgb(67, 67, 67);
 
 }
 

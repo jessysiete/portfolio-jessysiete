@@ -24,14 +24,18 @@ export default function PantoneProjectPage() {
     <>
       <div className="project-page">
         <div className="page-marker-pantone"></div>
+        <div className="page-title-pantone">
+      <h1 className="project-title">Pantone 14k Pendant</h1>
+        </div>
+        <h2 className="title-tagline">Wearable Color Swatch</h2>
         <CloseProject />
         <section className="pantone-hero-section">
     <div className="hero-left">
-      <h1 className="project-title">Pantone 14k <br/><span className="title-tagline">A Wearable Color Swatch</span></h1>
       <div className="main-image">
         <img src={[selectedImage]} alt="Main Project Visual" />
       </div>
     </div> 
+    <div className="hero-right">
     <div className="hero-text">
       <div className="project-subtitle">
         A dynamic jewelry piece that adapts to its wearer's style by framing textures and colors as a living Pantone swatch.
@@ -47,7 +51,7 @@ export default function PantoneProjectPage() {
           />
         ))}
       </section>
-
+<div className="project-summary">
       <ul className="summary-list">
         <li className="summary-heading"><strong>Quick Project Summary</strong></li>
         <li className="summary-item"><strong>Medium:</strong> Jewelry Design (14K Gold Pendant)</li>
@@ -56,9 +60,11 @@ export default function PantoneProjectPage() {
         <li className="summary-item"><strong>Collaboration:</strong> Designed by me, CAD + Jewelry Production by Twiz</li>
         <li className="summary-item"><strong>Key Themes:</strong> Interactive Design, Material Exploration, Human-Centered Aesthetics</li>
       </ul>
+      </div>
 
     </div>
-          </section>
+    </div>
+    </section>
 
 
 
