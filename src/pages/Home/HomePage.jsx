@@ -8,21 +8,17 @@ export default function HomePage() {
       <div className="home-page">
         <div className="page-marker-home"></div>
         <div className="page-marker-home-nav"></div>
-
-        <h1 className="heading">
-          Hello, I'm <span className="name">Jessica</span> 👋🏼
-        </h1>
         <div className="content-home">
-          <p className="intro-home">
-            Welcome to my online space where I combine my digital and analog
+          <div className="intro-home">
+            Hello, I'm Jessica. Welcome to my online space where I combine my digital and analog
             projects. As a committed life-long learner, I'm passionate about
             filling my curiosities and interests with knowledge and deliberate
             practice. 
-            </p>
+            </div>
             
 
           <div className="tech-stack" aria-label="list of skills that Jessica Mendez provides">
-          Skills & Tech
+            <li className="skill-line-heading">Skills & Tech Stack</li>
           <ul className="skill-list"> 
             <li className="skill-line">HTML5</li>
             <li className="skill-line">CSS3</li>
@@ -33,10 +29,22 @@ export default function HomePage() {
             <li className="skill-line">Vite</li>
             <li className="skill-line">NextJS</li>
             <li className="skill-line">NodeJS</li>
+            <li className="skill-line">Git Version Control</li>
+            <li className="skill-line">ExpressJS</li>
             <li className="skill-line">GraphQL</li>
+            <li className="skill-line">TailwindCSS</li>
+            <li className="skill-line">Bootstrap</li>
+            <li className="skill-line">Figma</li>
+            <li className="skill-line">Heroku</li>
             <li className="skill-line">Docker</li>
             <li className="skill-line">MongoDB</li>
-            <li className="skill-line">Git</li>
+            <li className="skill-line">Atlassian Jira</li>
+            <li className="skill-line">Asana</li>
+            <li className="skill-line">Lattice</li>
+            <li className="skill-line">Zendesk</li>
+            <li className="skill-line">Salesforce</li>
+            <li className="skill-line">Hubspot</li>
+            <li className="skill-line">Visual Studio Code</li>
           </ul>
 </div>
 

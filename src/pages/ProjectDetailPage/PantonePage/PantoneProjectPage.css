@@ -55,10 +55,10 @@
   min-height: 3600px;
   margin-top: 104px;
   padding: 0px;
+  padding-bottom: 110px;
   border: 6px dashed rgb(106, 106, 106);
   background-size: 40px 40px;
   background-image: var(--background-image);
-
 }
 
 .pantone-hero-section {
@@ -191,11 +191,11 @@
   text-align: left;
 }
 
-.overview-title {
+/* .overview-title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
-}
+} */
 
 .overview-text {
   font-size: 1.25rem;
@@ -227,7 +227,7 @@
   color: var(--text-color);
 }
 
-.concept-images {
+.concept-image-section {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -273,7 +273,7 @@
   color: var(--text-color);
 }
 
-.prototyping-images {
+.prototype-image-section {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -283,6 +283,7 @@
   width: 400px;
   height: 200px;
 }
+
 
 
 .prototype-image {
@@ -481,11 +482,17 @@
   font-size: 1.5rem;
 }
 
+.final-notes-section {
+  font-size: 1.25rem;
+
+}
 .final-notes-line {
   margin: 0;
   padding: 0;
   justify-content: left;
   align-items: left;
+  font-size: 1.25rem;
+
   display: inline-block;
   text-align: left;
 
@@ -505,12 +512,15 @@
 @media (max-width: 1200px) {}
 
 @media (max-width: 820px) {
+  .project-page { 
+    height: fit-content;
+  }
   .page-marker-pantone {
     top: 64px;
   }
 
   .page-title-pantone {
-    top: 114px;
+    top: 72px;
   }
 
   .project-title {
@@ -525,9 +535,10 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 76px;
+    top: 42px;
     font-size: 1.2rem;
     font-weight: bold;
+    background-color: var(--background-color);
   }
   
   .project-page {
@@ -547,7 +558,7 @@
     height: auto;
     min-height: 1120px;
     box-sizing: border-box;
-    top: 120px;
+    top: 90px;
   }
 
   .hero-right {
@@ -568,6 +579,8 @@
     width: 100%;
     top: 98px;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     text-align: center;
     height: fit-content;
@@ -629,10 +642,140 @@
   display: flex;
   flex-direction: column;
   width: auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 100%;
   top: 34px;
   text-align: left;
 }
+.project-content {
+  padding: 0px 24px;
+}
 
+.concept-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  top: 70px;
+  text-align: left;
+}
+.concept-image-section {
+  top: -60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+
+.prototyping-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  top: 106px;
+  text-align: left;
+}
+
+.prototype-image-section {
+  position: relative;
+  top: -60px;
+  width: fit-content;
+  padding: 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.collaboration-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  top: 142px;
+  text-align: left;
+}
+
+.collaboration-image-section {
+  width: 100%;
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collaboration-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 44px;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.execution-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  top: 212px;
+  text-align: left;
+}
+
+.final-images {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 232px;
+  width: 400px;
+  height: 200px;
+}
+
+.final-notes-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  top: 200px;
+  text-align: left;
+}
+
+.final-notes-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.execution-title .collaboration-title .prototyping-title .concept-title .overview-title {
+font-size: 1.6rem;
+}
 
 }
