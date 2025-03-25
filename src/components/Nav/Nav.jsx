@@ -1,15 +1,9 @@
 import './Nav.css';
 import Pdf from '../../assets/Documents/resume.pdf';
 import { Link, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 export default function Nav() {
   const location = useLocation();
-
-  useEffect(() => {
-    // Store the current path in localStorage to persist active state
-    localStorage.setItem("activeNav", location.pathname);
-  }, [location]);
 
   return (
     <nav className="menu">
@@ -17,7 +11,7 @@ export default function Nav() {
         <li className="menu-item-projects">
           <Link 
             to="/projects" 
-            className={`menu-link ${location.pathname === "/projects" ? "active" : ""}`}
+            className={`menu-link ${location.pathname.startsWith("/projects") ? "active" : ""}`}
           >
             Projects
           </Link>
