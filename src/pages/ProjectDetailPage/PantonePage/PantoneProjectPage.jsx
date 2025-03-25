@@ -252,7 +252,6 @@ export default function PantoneProjectPage() {
             <br/>
             <br/>
             <br/>
-            <br/>
             {/* <ul className="final-notes-list">
               <li className="final-notes-heading">
                 <strong>Key Takeaways & Technical Relevance</strong>

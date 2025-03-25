@@ -11,7 +11,7 @@ export default function Nav() {
         <li className="menu-item-projects">
           <Link 
             to="/projects" 
-            className={`menu-link ${location.pathname.startsWith("/projects") ? "active" : ""}`}
+            className={`menu-link ${location.pathname.includes("/projects") ? "active" : ""}`}
           >
             Projects
           </Link>

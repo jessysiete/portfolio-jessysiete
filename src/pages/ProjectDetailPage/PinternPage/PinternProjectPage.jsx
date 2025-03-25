@@ -14,7 +14,8 @@ export default function ThePinternProjectPage() {
 
   return (
     <>
-      <div className="Projects-Page">
+      <div className="page-marker-pintern"></div>
+      <div className="pintern-projects-page">
         <section className="hero-section">
           <div className="main-image">
             <img src={selectedImage} alt="Main Project Visual" />
