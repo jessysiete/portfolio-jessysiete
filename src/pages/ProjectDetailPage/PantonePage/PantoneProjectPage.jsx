@@ -27,33 +27,33 @@ export default function PantoneProjectPage() {
         <div className="page-title-pantone">
           <h1 className="project-title">Pantone 14k Pendant</h1>
         </div>
-        <h2 className="title-tagline">Wearable Color Swatch</h2>
         <CloseProject />
         <section className="pantone-hero-section">
           <div className="hero-left">
             <div className="main-image">
               <img src={[selectedImage]} alt="Main Project Visual" />
             </div>
-          </div>
-          <div className="hero-right">
-            <div className="hero-text">
-              <div className="project-subtitle">
-                A dynamic jewelry piece that adapts to its wearer's style by
-                framing textures and colors as a living Pantone swatch.
-              </div>
-              <section className="pantone-image-gallery">
+              <div className="p-image-gallery">
                 {images.map((image, index) => (
                   <img
                     key={index}
                     src={image}
                     alt={`Pantone 14K variant ${index + 1}`}
-                    className={`gallery-thumbnail ${
+                    className={`g-thumbnail ${
                       selectedImage === image ? "selected" : ""
                     }`}
                     onClick={() => setSelectedImage(image)}
                   />
                 ))}
-              </section>
+              </div>
+          </div>
+          <div className="hero-right">
+        <h2 className="title-tagline">Wearable Color Swatch</h2>
+              <div className="pantone-project-subtitle">
+                A dynamic jewelry piece that adapts to its wearer's style by
+                framing textures and colors as a living Pantone swatch.
+              </div>
+            <div className="hero-text">
               <div className="project-summary">
                 <ul className="summary-list">
                   <li className="summary-heading">
@@ -140,18 +140,6 @@ export default function PantoneProjectPage() {
               committing to final materials. The process mirrored the way I test
               physical product ideas before refining them for mass production.
             </p>
-            <div className="prototype-image-section">
-              <img
-                className="concept-image"
-                src={pantoneInspo1}
-                alt="Pantone 14K Concept"
-              />
-              <img
-                className="concept-image"
-                src={pantoneInspo2}
-                alt="Pantone 14K Concept 1"
-              />
-            </div>
             <ul className="notes-list">
               <li className="note-line">
                 I experimented with different cutout shapes before deciding on
@@ -163,6 +151,18 @@ export default function PantoneProjectPage() {
                 fabrics.
               </li>
             </ul>
+            <div className="prototype-image-section">
+              <img
+                className="prototype-img"
+                src={pantoneInspo1}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="prototype-img"
+                src={pantoneInspo2}
+                alt="Pantone 14K Concept 1"
+              />
+            </div>
           </section>
 
           <section className="collaboration-section">
@@ -188,24 +188,21 @@ export default function PantoneProjectPage() {
                 alt="Pantone 14K prototype 1"
               />
             </div>
-            <ul className="collaboration-list">
-              <li className="collaboration-line">
+            <div className="collab-list">
                 Twiz and I discussed multiple iterations of the digital model to
                 optimize weight and balance.
-              </li>
-              <li className="collaboration-line">
                 I gained had a bit of insight into the jewelry manufacturing
                 process, particularly how CAD files and 3D printers are used for
                 wax mold printing, because I'd worked for 3D Systems in the
                 past. During my time at 3D systems, I learned about their
                 commercial 3D printers and how they were used in the dentistry
                 and jewelry industry. Cool stuff!
-              </li>
-              <li className="collaboration-line">
+
+
                 I experimented with different chain lengths to enhance the
                 pendant's visual effect when worn.
-              </li>
-            </ul>
+
+            </div>
           </section>
           <section className="execution-section">
             <h2 className="execution-title">Execution & Wearable Experience</h2>
@@ -237,7 +234,7 @@ export default function PantoneProjectPage() {
               />
             </div>
             <h2 className="final-notes-title">Final Notes & Reflection</h2>
-            <p className="final-notes-text">
+            <p className="final-notes-t">
               Pantone 14K is more than a piece of jewelry—it’s an experiment in
               interactive design, material exploration, and structured
               problem-solving. This project exemplifies my ability to blend
@@ -247,13 +244,12 @@ export default function PantoneProjectPage() {
               out, and I look forward to exploring more projects that merge my
               love for color, design, and human-centered aesthetics.
             </p>
-            <br/>
-            <br/>
 
 
             <br/>
             <br/>
-
+            <br/>
+            <br/>
             <br/>
             <br/>
             <br/>
