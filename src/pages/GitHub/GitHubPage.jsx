@@ -39,19 +39,30 @@ export default function GitHubProfile() {
   if (!profile) return <p>Loading...</p>;
 
   return (
+    <>
+
+    <div className="page-marker-github"></div>
+    <h1 className="intro">
+      GitHub Profile
+    </h1>
+    <p className="intro">
+      Here's my GitHub profile, brought to you via their API 🌟
+      <br/>
+      You can view my public repositories and more 🚀
+    </p>
     <div className="github-profile">
       {/* Profile Section */}
       <img src={profile.avatar_url} alt={`${profile.login}'s avatar`} className="github-avatar" />
       <h2>{profile.name}</h2>
       <p>Username: {profile.login}</p>
+      <p>Joined GitHub: {new Date(profile.created_at).toLocaleDateString("en-US")}</p>
       <p>Location: {profile.location}</p>
       <p>{profile.bio}</p>
       <p>Followers: {profile.followers}</p>
       <p>Following: {profile.following}</p>
       <p>Public Repos: {profile.public_repos}</p>
       <p>Company: {profile.company}</p>
-      <p>Blog: <a href={profile.blog} target="_blank" rel="noopener noreferrer">{profile.blog}</a></p>
-      <p>Joined GitHub: {new Date(profile.created_at).toLocaleDateString("en-US")}</p>
+      <p>Website: <a href={profile.blog} target="_blank" rel="noopener noreferrer">{profile.blog}</a></p>
       <p>Last Updated: {new Date(profile.updated_at).toLocaleDateString("en-US")}</p>
       <p>
         <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
@@ -76,6 +87,8 @@ export default function GitHubProfile() {
           ))}
         </ul>
       )}
-    </div>
+    </div> {/* End of GitHub Profile */}
+
+    </>
   );
 }
