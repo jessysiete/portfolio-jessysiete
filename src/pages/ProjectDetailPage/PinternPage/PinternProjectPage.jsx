@@ -1,4 +1,5 @@
 import "./PinternProjectPage.css";
+import CloseProject from "../../../components/ButtonCloseProject/CloseProject";
 
 import { useState } from "react";
 
@@ -15,8 +16,92 @@ export default function ThePinternProjectPage() {
   return (
     <>
       <div className="page-marker-pintern"></div>
-      <div className="pintern-projects-page">
-        <section className="hero-section">
+      <div className="pintern-project-page">
+        <div className="page-title-pintern">
+          <h1 className="pintern-project-title">The Pintern</h1>
+          <CloseProject />
+        </div>
+        <div className="pintern-project-content">
+         <div className="pintern-hero-section"></div>
+         <div className="main-image-pintern">
+              <img src={[selectedImage]} alt="Main Project Visual" />
+            </div>
+         <div className="pintern-image-gallery">
+                {images.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image}
+                    alt={`Pantone 14K variant ${index + 1}`}
+                    className={`pintern-g-thumbnail ${
+                      selectedImage === image ? "selected" : ""
+                    }`}
+                    onClick={() => setSelectedImage(image)}
+                  />
+                ))}
+              </div>
+            <h2 className="pintern-title-tagline">From One to Many: Scaling a Small-Format Product</h2> 
+            {/* "Scaling Small: The Business of Enamel Pin Design & Production" */}
+            <div className="pintern-project-subtitle"> 
+            A passion for design meets operational precision. The Pintern is
+              my journey through product design, manufacturing, and
+              branding—blending creativity with logistics to bring small,
+              wearable art to life
+            </div>
+            <ul className="summary-list">
+              <li className="summary-heading">
+                <strong>Quick Project Summary</strong>
+              </li>
+              <li className="summary-item">
+                <strong>Role:</strong> Founder, Designer, E-commerce Manager
+              </li>
+              <li className="summary-item">
+                <strong>Medium:</strong> Enamel Pin Design & Manufacturing
+              </li>
+              <li className="summary-item">
+                <strong>Tools:</strong> Adobe Photoshop, Adobe Illustrator,
+                Procreate, Shopify, Etsy
+              </li>
+              <li className="summary-item">
+                <strong>Skills Highlighted:</strong> Graphic Design, Product
+                Manufacturing, Product Marketing, Branding, Operations,
+                E-Commerce, SEO, User Behavior Analysis
+              </li>
+              <li className="summary-item">
+                <strong>Techniques Used:</strong> Material Research,
+                Prototyping, Supplier Negotiation, Digital Marketing
+              </li>
+              <li className="summary-item">
+                <strong>Collaboration:</strong> Designed by me, manufactured in
+                partnership with vetted suppliers
+              </li>
+              <li className="summary-item">
+                <strong>Key Themes:</strong> Iterative Design, Branding, Product
+                Lifecycle Management
+              </li>
+            </ul>
+
+            <div className="pintern-overview-section">
+              <h2 className="pintern-overview-title">Project Overview</h2>
+              <p className="pintern-overview-text">
+                The Pintern was born from my love for design,
+                branding, and small-scale manufacturing. What started as wooden
+                laser-cut pins evolved into a fully developed enamel pin brand.
+                Through this venture, I managed product and packaging design,
+                product lifecyle, sourcing, branding, marketing, and retail
+                logistics—all skills I apply in tech & operations-focused roles.
+              </p>
+            </div> {/* end of pintern-overview-section */} 
+
+            
+
+
+          </div> {/* end of pintern-project-content */}
+
+      </div> {/* end of pintern-project-page */}
+    </>
+  );
+}
+{ /* <section className="hero-section">
           <div className="main-image">
             <img src={selectedImage} alt="Main Project Visual" />
           </div>
@@ -107,11 +192,6 @@ export default function ThePinternProjectPage() {
           </ul>
         </section>
 
-        {/* <section className="overview-section">
-          <h2 className="overview-title">Project Overview</h2>
-          <p className="overview-text">
-          </p>
-        </section> */}
 
         <section className="concept-section">
           <h2 className="concept-title">Concept & Idea</h2>
@@ -186,8 +266,13 @@ Step 3: Prototyping & FeedbackBefore production, I worked with manufacturers to 
             technical problem-solving, a crucial asset for roles in **product
             operations, technical solutions, and implementation management**.
           </p>
-        </section>
-      </div>
-    </>
-  );
+        </section> */
+}
+
+{
+  /* <section className="overview-section">
+  <h2 className="overview-title">Project Overview</h2>
+  <p className="overview-text">
+  </p>
+</section> */
 }

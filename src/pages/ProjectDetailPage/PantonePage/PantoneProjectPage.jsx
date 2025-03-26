@@ -30,7 +30,7 @@ export default function PantoneProjectPage() {
         <CloseProject />
         <section className="pantone-hero-section">
           <div className="hero-left">
-            <div className="main-image">
+            <div className="pantone-main-image">
               <img src={[selectedImage]} alt="Main Project Visual" />
             </div>
               <div className="p-image-gallery">
