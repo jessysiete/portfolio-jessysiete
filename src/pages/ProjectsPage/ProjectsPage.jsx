@@ -15,14 +15,7 @@ export default function ProjectsPage() {
       <div className="content">
       {/* <h1 className="heading">Personal Projects</h1> */}
       <p className="about">
-        A tinkerer by nature, my passion for turning ideas into tangible
-items begins here. Combining imagination, design tools, a
-laser CNC, & power tools, I give life to home goods and apparel
-accessories. Featured projects range from sculptural works, textile
-manipulation, graphic design, and a small e-commerce business I spun
-up during my downtime. I also learned how to code in 2024 so I built
-this website with VSCode and published it to the internet directly from my 
-command line. 🤓👩🏼‍💻
+      As a natural tinkerer, I thrive on turning ideas into tangible creations. In my spare time, I combine my imagination with design tools, laser CNC machines, and power tools to bring home goods and apparel accessories to life. My featured projects span sculptural works, textile manipulation, graphic design, and even a small e-commerce business I built from the ground up. In 2024, I dove into coding and designed this portfolio website myself, using VSCode and publishing it directly from the command line. These hands-on projects reflect my passion for design and technology, which I’m eager to bring into a technical role at a design-focused organization. 🤓👩🏼‍💻
       </p>
 
       <section className="projects-grid">

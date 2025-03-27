@@ -37,7 +37,7 @@
   padding: 0px 15px 0px 15px;
   align-items: center;
   height: 1000px;
-  width: 94%;
+  width: 98%;
 }
 
 
@@ -54,10 +54,10 @@
 
 .about {
   position: relative;
-  margin-left: 0px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 400px;
-  max-width: 500px;
+  max-width: 700px;
   width: fit-content;
   top: 70px;
   height: fit-content;
@@ -137,7 +137,7 @@
 
 @media (max-width: 600px) {
   .projects-body {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 120px 0px;
     height: 1200px;
   }
   
