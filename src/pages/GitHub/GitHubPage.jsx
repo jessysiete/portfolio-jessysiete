@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './GitHubPage.css';
 
 export default function GitHubProfile() {
   const [profile, setProfile] = useState(null);
@@ -42,51 +43,69 @@ export default function GitHubProfile() {
     <>
 
     <div className="page-marker-github"></div>
-    <h1 className="intro">
-      GitHub Profile
-    </h1>
-    <p className="intro">
+
+    <p className="gh-intro">
       Here's my GitHub profile, brought to you via their API 🌟
       <br/>
       You can view my public repositories and more 🚀
     </p>
     <div className="github-profile">
       {/* Profile Section */}
+      <div className="gh-profile">
+        <div className="gh-profile-header">
       <img src={profile.avatar_url} alt={`${profile.login}'s avatar`} className="github-avatar" />
-      <h2>{profile.name}</h2>
-      <p>Username: {profile.login}</p>
-      <p>Joined GitHub: {new Date(profile.created_at).toLocaleDateString("en-US")}</p>
-      <p>Location: {profile.location}</p>
+      <div className="gh-profile-name">
+      <h2 className="gh-name">{profile.name}</h2>
+      <p className="gh-username">{profile.login}</p>
+      <p className="gh-email">{profile.email}</p>
+      <p className="gh-website"><a href={profile.blog} target="_blank" rel="noopener noreferrer">{profile.blog}</a></p>
+      <p>Joined GitHub: {new Date(profile.created_at).toLocaleDateString("en-US")} &nbsp;🎄</p>
+      </div> {/* End of profile Name */}
+</div> {/* End of Profile Header */}
+
+<div className="gh-profile-info">
+      <p className="gh-location">📍 {profile.location}</p>
       <p>{profile.bio}</p>
-      <p>Followers: {profile.followers}</p>
-      <p>Following: {profile.following}</p>
-      <p>Public Repos: {profile.public_repos}</p>
-      <p>Company: {profile.company}</p>
-      <p>Website: <a href={profile.blog} target="_blank" rel="noopener noreferrer">{profile.blog}</a></p>
+      <p>Followers: {profile.followers} | Following: {profile.following}</p>
       <p>Last Updated: {new Date(profile.updated_at).toLocaleDateString("en-US")}</p>
       <p>
         <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
           View GitHub Profile
         </a>
       </p>
+      </div> {/* End of Profile Info */}
+      </div> {/* End of Profile Section */}
 
       {/* Repos Section */}
-      <h3>Public Repositories</h3>
+      <div className="repo-section">
       {repos.length === 0 ? (
         <p>No public repositories found.</p>
       ) : (
         <ul className="repo-list">
+          <h3>Public Repositories: {profile.public_repos}</h3>
           {repos.map((repo) => (
             <li key={repo.id} className="repo-item">
-              <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+              <a className="repo-name" href={repo.html_url} target="_blank" rel="noopener noreferrer">
                 <strong>{repo.name}</strong>
               </a>
-              {repo.description && <p>{repo.description}</p>}
-              <p>⭐ {repo.stargazers_count} | 🍴 {repo.forks_count} | 🛠️ {repo.language}</p>
+              {/* &nbsp; */}
+              {
+              repo.description && 
+              <p className="repo-description">
+                {repo.description}
+                </p>}
+              <p className="repo-language">
+                {/* ⭐ {repo.stargazers_count} | 
+                🍴 {repo.forks_count} |  */}
+                &nbsp;
+                &nbsp;
+         <span>🛠️ {repo.language}</span>
+                </p>
             </li>
           ))}
         </ul>
       )}
+      </div> {/* End of Repos Section */}
     </div> {/* End of GitHub Profile */}
 
     </>
