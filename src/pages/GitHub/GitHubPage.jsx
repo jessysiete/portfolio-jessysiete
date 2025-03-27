@@ -77,35 +77,35 @@ export default function GitHubProfile() {
       </div> {/* End of Profile Section */}
 
       {/* Repos Section */}
-      <div className="repo-section">
-      {repos.length === 0 ? (
-        <p>No public repositories found.</p>
-      ) : (
-        <ul className="repo-list">
-          <h3>Public Repositories: {profile.public_repos}</h3>
-          {repos.map((repo) => (
-            <li key={repo.id} className="repo-item">
-              <a className="repo-name" href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                <strong>{repo.name}</strong>
-              </a>
-              {/* &nbsp; */}
-              {
-              repo.description && 
-              <p className="repo-description">
-                {repo.description}
-                </p>}
-              <p className="repo-language">
-                {/* ⭐ {repo.stargazers_count} | 
-                🍴 {repo.forks_count} |  */}
-                &nbsp;
-                &nbsp;
-         <span>🛠️ {repo.language}</span>
-                </p>
-            </li>
-          ))}
-        </ul>
-      )}
-      </div> {/* End of Repos Section */}
+{/* Repos Section */}
+<div className="repo-section">
+  {repos.length === 0 ? (
+    <p>No public repositories found.</p>
+  ) : (
+    <ul className="repo-list">
+    <h3 className="repo-section-title">Public Repositories: {profile.public_repos}</h3>
+    <li className="repo-item repo-header">
+      <span className="repo-name"><strong>Repository Name</strong></span>
+      <span className="repo-description"><strong>Description</strong></span>
+      <span className="repo-language"><strong>Language</strong></span>
+    </li>
+    {repos.map((repo) => (
+      <li key={repo.id} className="repo-item">
+        <a className="repo-name" href={repo.html_url} target="_blank" rel="noopener noreferrer">
+          {repo.name}
+        </a>
+        <span className="repo-description">
+          {repo.description ? repo.description : "No description available"}
+        </span>
+        <span className="repo-language">
+          {repo.language ? `🛠️ ${repo.language}` : "N/A"}
+        </span>
+      </li>
+    ))}
+  </ul>
+  )}
+</div>
+
     </div> {/* End of GitHub Profile */}
 
     </>
