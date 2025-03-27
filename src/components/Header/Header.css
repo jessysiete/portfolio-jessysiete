@@ -35,21 +35,20 @@
 .page-marker-home-hover {
   background-color: transparent;
   border-bottom: 4px transparent;
-  display: absolute;
   position: fixed;
   height: 42px;
-  width: 140px;
-  top: 12px;
+  width: 220px;
+  top: 8px;
   margin-left: 32px;
   z-index: 1000;
 }
 
 .page-marker-home-hover:hover {
-  display: absolute;
+
   position: fixed;
   border-bottom: 4px solid var(--logo-fill);
-  width: 140px;
-  margin-left: 32px;
+  width: 212px;
+  margin-left: 28px;
   z-index: 1000;
 }
 
@@ -61,14 +60,21 @@
     z-index: 1000;
 
   }
+
+  .page-marker-home-hover {
+    height: 46px;
+    width: 150px;
+ 
+  }
+
   .page-marker-home-hover:hover {
     display: absolute;
     position: fixed;
     border-bottom: 4px solid var(--logo-fill);
-    width: 130px;
+    width: 152px;
     height: 35px;
     top: 6px;
-    margin-left: 34px;
+    margin-left: 28px;
     z-index: 1000;
 
   }
