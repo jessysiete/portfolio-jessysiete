@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <div className="projects-body">
         <div className="page-marker-projects"></div>
       <div className="content">
-      <h1 className="heading">Personal Projects</h1>
+      {/* <h1 className="heading">Personal Projects</h1> */}
       <p className="about">
         A tinkerer by nature, my passion for turning ideas into tangible
 items begins here. Combining imagination, design tools, a
@@ -29,9 +29,9 @@ command line. 🤓👩🏼‍💻
         <div className="one"><PantoneCard /></div>
         <div className="two"><PinternCard /></div>
         <div className="four"><SimonCard /></div>
-        <div className="three"><GraphicsCard /></div>
+        {/* <div className="three"><GraphicsCard /></div>
         <div className="five"><TextilesCard /></div>
-        <div className="six"><GalleryCard /></div>
+        <div className="six"><GalleryCard /></div> */}
         </section>
         </div>
       </div>
