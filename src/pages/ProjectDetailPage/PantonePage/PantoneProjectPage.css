@@ -7,8 +7,8 @@
   display: absolute;
   position: fixed;
   height: 8px;
-  width: 100%;
-  top: 70px;
+  width: 110%;
+  top: 94px;
   margin-left: 0px;
   z-index: 1000;
 }
@@ -554,10 +554,11 @@
   .project-page { 
     height: fit-content;
     padding-top: 60px;
-    width: 90%;
+    width: 100%;
   }
   .page-marker-pantone {
-    top: 64px;
+    top: 84px;
+    width: 110%;
   }
 
   .page-title-pantone {

@@ -3,8 +3,8 @@
   display: absolute;
   position: fixed;
   height: 8px;
-  width: 100%;
-  top: 70px;
+  width: 110%;
+  top: 94px;
   margin-left: 0px;
   z-index: 1000;
 }
@@ -153,6 +153,11 @@
 @media (max-width: 1240px) {}
 
 @media (max-width: 820px) {
+  .page-marker-pintern {
+    width: 110%;
+    top: 84px;
+  
+  }
 
   .pintern-project-page {
     position: relative;

@@ -13,8 +13,8 @@
   display: absolute;
   position: fixed;
   height: 10px;
-  width: 100%;
-  top: 70px;
+  width: 110%;
+  top: 94px;
   margin-left: 0px;
   z-index: 1000;
 }
@@ -42,7 +42,7 @@ color: #FBC359
 
 @media (max-width: 820px) {
   .page-marker-resume {
-    top: 64px;
+    top: 84px;
     margin-left: 0px;
     z-index: 1000;
   }

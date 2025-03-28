@@ -1,7 +1,7 @@
 .Header {
   display: inline-flex;
   flex-direction: row;
-  height: 72px;
+  height: 102px;
   width: 100%;
   padding: 0 0;
   position: fixed;
@@ -19,7 +19,7 @@
   padding-top: 8px;
   padding-left: 8px;
   position: fixed;
-  height: 58px;
+  height: 48px;
   width: fit-content;
   color: var(--logo-fill);
   z-index: 1000;
@@ -56,7 +56,7 @@
   .Header {
     display: flex;
     position: fixed;
-    height: 72px;
+    height: 88px;
     z-index: 1000;
 
   }
@@ -84,7 +84,7 @@
 
   .App-logo-sm {
     position: fixed;
-    height: 58px;
+    height: 42px;
     padding-left: 4px;
     padding-top: 4px;
     width: fit-content;
