@@ -29,79 +29,86 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 94%;
-  height: fit-content;
+  width: 98%;
+  height: 100vh;
   min-height: 600px;
-  margin-top: 70px;
+  margin-top: 40px;
   padding: 0px;
   /* border: 6px dashed rgb(106, 106, 106); */
   background-size: 40px 40px;
   background-image: var(--background-image);
 }
 
+.content-home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 0px 15px;
+  align-items: left;
+  width: 94%;
+  height: fit-content;
+  top: 80px;
+  gap: 80px;
+}
+
+.intro-home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  flex-wrap: wrap;
+  margin: 0px;
+  width: 640px;
+  padding: 0px;
+  font-size: 1.6rem;
+}
 
 
-.intro {
+.tech-stack {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: left;
   margin: 0px;
-  width: 100%;
-  padding: 0px;
+  top: 0px;
+  height: fit-content;
+  font-weight: bold;
+
 }
-
-/* .heading {
-  position: absolute;
-  padding: 0px;
-  left: 40px;
-  top: 20px;
-  text-align: left;
-  width: fit-content;
-  font-size: 1.4rem;
+.skill-line-heading {
+  margin: 0;
+  padding: 0;
   background-color: var(--background-color);
-} */
-
-
+  width: fit-content;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
 
 .skill-list {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  font-size: 1.25rem;
-  margin: 0;
-  padding: 0;
-}
-
-
-/* .skill-list{
-  margin: 0;
-  padding: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: left;
   align-items: left;
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  font-size: 1.5rem;
-} */
-
-.skill-line {
-  margin: 0;
-  padding: 0;
-  justify-content: left;
-  align-items: left;
-  display: inline-block;
-  text-align: left;
-
+  gap: 2px 32px;
+  margin: 0px;
+  width: 520px;
+  top: 0px;
+  font-size: 1.2rem;
 }
-
 
 .shapes {
   width: 210px;
   height: 160px;
-  position: absolute;
-  top: 410px;
+  position: relative;
+  top: -100px;
   /* left: 18px; */
-  right: 8px;
+  left: 408px;
   z-index: 1000;
 }
 
@@ -147,6 +154,51 @@
   border: 4px solid var(--background-color);
 }
 
+@media (max-width: 1024px) {
+
+
+.tech-stack {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0px;
+  /* width: 300px; */
+  /* height: 200px; */
+  top: 200px;
+  left: 14px;
+  font-weight: bold;
+
+}
+.skill-line-heading {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  width: fit-content;
+  justify-content: left;
+  align-items: left;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skill-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  gap: 2px 32px;
+  margin: 0px;
+  width: 620px;
+  top: 0px;
+  font-size: 1rem;
+}
+
+}
+
 @media (max-width: 820px) {
 
   .page-marker-home {
@@ -167,19 +219,9 @@
   }
 
   .home-page {
-    height: 700px;
+
   }
 
-  /* .heading {
-    position: absolute;
-    padding: 0px;
-    left: 18px;
-    top: 18px;
-    text-align: left;
-    width: fit-content;
-    font-size: 1.4rem;
-    background-color: var(--background-color);
-  } */
 
   .content-home {
     position: absolute;
@@ -189,7 +231,7 @@
     align-items: center;
     width: 94%;
     top: 0px;
-    gap: 0px;
+    gap: 140px;
   }
 
   .intro-home {
@@ -201,20 +243,21 @@
     width: 100%;
     padding: 0px;
     bottom: 0px;
-    top: 58px;
+    top: 90px;
     background-color: var(--background-color);
   }
 
   .tech-stack {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: left;
+    align-content: left;
     margin: 0px;
-    /* width: 300px; */
+    width: 100%;
     /* height: 200px; */
-    top: 200px;
-    left: 14px;
+    top: 0px;
+    /* left: 14px; */
     font-weight: bold;
 
   }
@@ -222,7 +265,7 @@
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
-    width: fit-content;
+    width: 100%;
     justify-content: left;
     align-items: left;
     display: flex;
@@ -240,7 +283,8 @@
     align-items: left;
     gap: 2px 32px;
     margin: 0px;
-    width: 420px;
+    padding: 0px;
+    width: 400px;
     top: 0px;
     font-size: 1rem;
   }
