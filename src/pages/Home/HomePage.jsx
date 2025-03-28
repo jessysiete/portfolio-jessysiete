@@ -29,15 +29,15 @@ export default function HomePage() {
             <li className="skill-line">Vite</li>
             <li className="skill-line">NextJS</li>
             <li className="skill-line">NodeJS</li>
-            <li className="skill-line">Git Version Control</li>
             <li className="skill-line">ExpressJS</li>
             <li className="skill-line">GraphQL</li>
             <li className="skill-line">TailwindCSS</li>
             <li className="skill-line">Bootstrap</li>
-            <li className="skill-line">Figma</li>
+            <li className="skill-line">Git Version Control</li>
             <li className="skill-line">Heroku</li>
             <li className="skill-line">Docker</li>
             <li className="skill-line">MongoDB</li>
+            <li className="skill-line">Figma</li>
             <li className="skill-line">Atlassian Jira</li>
             <li className="skill-line">Asana</li>
             <li className="skill-line">Lattice</li>
