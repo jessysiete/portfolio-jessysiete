@@ -33,26 +33,26 @@ export default function PantoneProjectPage() {
             <div className="pantone-main-image">
               <img src={[selectedImage]} alt="Main Project Visual" />
             </div>
-              <div className="p-image-gallery">
-                {images.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Pantone 14K variant ${index + 1}`}
-                    className={`g-thumbnail ${
-                      selectedImage === image ? "selected" : ""
-                    }`}
-                    onClick={() => setSelectedImage(image)}
-                  />
-                ))}
-              </div>
+            <div className="p-image-gallery">
+              {images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`Pantone 14K variant ${index + 1}`}
+                  className={`g-thumbnail ${
+                    selectedImage === image ? "selected" : ""
+                  }`}
+                  onClick={() => setSelectedImage(image)}
+                />
+              ))}
+            </div>
           </div>
           <div className="hero-right">
-        <h2 className="title-tagline">Wearable Color Swatch</h2>
-              <div className="pantone-project-subtitle">
-                A dynamic jewelry piece that adapts to its wearer's style by
-                framing textures and colors as a living Pantone swatch.
-              </div>
+            <h2 className="title-tagline">Wearable Color Swatch</h2>
+            <div className="pantone-project-subtitle">
+              A dynamic jewelry piece that adapts to its wearer's style by
+              framing textures and colors as a living Pantone swatch.
+            </div>
             <div className="hero-text">
               <div className="project-summary">
                 <ul className="summary-list">
@@ -128,41 +128,20 @@ export default function PantoneProjectPage() {
               />
             </div>
           </section>
-           
-          <section className="prototyping-section">
-            <h2 className="prototyping-title">
-              Prototyping & Iteration
-            </h2>
-            <p className="prototyping-text">
+
+          <section className="prototype-section">
+            <h2 className="prototype-title">Prototyping & Iteration</h2>
+            <p className="prototype-text">
               I started with rough prototyping—cutting out cardboard mockups and
               using string to test pendant dimensions and visual weight. This
               hands-on approach allowed me to refine the proportions before
               committing to final materials. The process mirrored the way I test
-              physical product ideas before refining them for mass production.
+              physical product ideas before refining them for mass production. I
+              experimented with different cutout shapes before deciding on the
+              final frame proportions. Testing the pendant in different lighting
+              conditions helped determine how it would interact with various
+              textures and fabrics.
             </p>
-            <ul className="notes-list">
-              <li className="note-line">
-                I experimented with different cutout shapes before deciding on
-                the final frame proportions.
-              </li>
-              <li className="note-line">
-                Testing the pendant in different lighting conditions helped
-                determine how it would interact with various textures and
-                fabrics.
-              </li>
-            </ul>
-            <div className="prototype-image-section">
-              <img
-                className="prototype-img"
-                src={pantoneInspo1}
-                alt="Pantone 14K Concept"
-              />
-              <img
-                className="prototype-img"
-                src={pantoneInspo2}
-                alt="Pantone 14K Concept 1"
-              />
-            </div>
           </section>
 
           <section className="collaboration-section">
@@ -177,11 +156,11 @@ export default function PantoneProjectPage() {
               traditional artistry with modern fabrication.
             </p>
             <div className="collaboration-image-section">
-            <img
+              <img
                 className="concept-image"
                 src={pantoneRender}
                 alt="Pantone 14K prototype 1"
-              />             
+              />
               <img
                 className="concept-image"
                 src={pantoneRender}
@@ -189,19 +168,15 @@ export default function PantoneProjectPage() {
               />
             </div>
             <div className="collab-list">
-                Twiz and I discussed multiple iterations of the digital model to
-                optimize weight and balance.
-                I gained had a bit of insight into the jewelry manufacturing
-                process, particularly how CAD files and 3D printers are used for
-                wax mold printing, because I'd worked for 3D Systems in the
-                past. During my time at 3D systems, I learned about their
-                commercial 3D printers and how they were used in the dentistry
-                and jewelry industry. Cool stuff!
-
-
-                I experimented with different chain lengths to enhance the
-                pendant's visual effect when worn.
-
+              Twiz and I discussed multiple iterations of the digital model to
+              optimize weight and balance. I gained had a bit of insight into
+              the jewelry manufacturing process, particularly how CAD files and
+              3D printers are used for wax mold printing, because I'd worked for
+              3D Systems in the past. During my time at 3D systems, I learned
+              about their commercial 3D printers and how they were used in the
+              dentistry and jewelry industry. Cool stuff! I experimented with
+              different chain lengths to enhance the pendant's visual effect
+              when worn.
             </div>
           </section>
           <section className="execution-section">
@@ -219,7 +194,6 @@ export default function PantoneProjectPage() {
             </p>
           </section>
 
-          
           <section className="final-notes-section">
             <div className="final-images">
               <img
@@ -235,52 +209,22 @@ export default function PantoneProjectPage() {
             </div>
             <h2 className="final-notes-title">Final Notes & Reflection</h2>
             <p className="final-notes-t">
-              Pantone 14K is more than a piece of jewelry—it’s an experiment in
-              interactive design, material exploration, and structured
-              problem-solving. This project exemplifies my ability to blend
-              creative ideation with technical execution, skills that are
-              transferable to product strategy, design thinking, and operations
-              within the tech industry. I'm proud of the way this pendant turned
-              out, and I look forward to exploring more projects that merge my
-              love for color, design, and human-centered aesthetics.
+              Pantone 14K is a fusion of interactive design, material
+              exploration, and problem-solving. This project highlights my
+              ability to combine creative ideation with technical execution,
+              skills that seamlessly translate to product strategy, design
+              thinking, and operations in the tech industry. I'm pleased with
+              how this pendant turned out and look forward to future projects
+              that merge my passion for color, design, and human-centered
+              aesthetics.
             </p>
 
-
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            {/* <ul className="final-notes-list">
-              <li className="final-notes-heading">
-                <strong>Key Takeaways & Technical Relevance</strong>
-              </li>
-              <li className="final-notes-line">
-                Human-Centered Design: The pendant’s adaptability to its wearer
-                mirrors user-driven product customization, a concept relevant in
-                tech and product strategy.
-              </li>
-              <li className="final-notes-line">
-                Rapid Prototyping & Iteration: Using low-fidelity mockups
-                (cardboard), digital modeling (CAD), and physical 3D printing
-                reflects the iterative approach used in software development and
-                product operations.
-              </li>
-
-              <li className="final-notes-line">
-                Collaboration Across Disciplines: Partnering with a jeweler
-                required bridging artistic vision with technical feasibility,
-                much like cross-functional collaboration in tech.
-              </li>
-
-              <li className="final-notes-line">
-                Material & Process Optimization: Consideration of manufacturing
-                constraints, material efficiency, and user experience aligns
-                with the decision-making frameworks used in product management
-                and operational strategy.
-              </li>
-            </ul> */}
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </section>
         </div>
       </div>
