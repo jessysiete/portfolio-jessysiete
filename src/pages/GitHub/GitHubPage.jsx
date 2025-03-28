@@ -13,10 +13,10 @@ export default function GitHubProfile() {
         { /* Fetching Profile and Repos in parallel */ }
         const [profileResponse, reposResponse] = await Promise.all([
           fetch(`https://api.github.com/users/${username}`, {
-            headers: { Authorization: `Bearer ${GITHUB_API_KEY}` },
+            headers: { Authorization: `Bearer ${VITE_GITHUB_API_KEY}` },
           }),
           fetch(`https://api.github.com/users/${username}/repos?sort=updated`, {
-            headers: { Authorization: `Bearer ${GITHUB_API_KEY}` },
+            headers: { Authorization: `Bearer ${VITE_GITHUB_API_KEY}` },
           }),
         ]);
 
