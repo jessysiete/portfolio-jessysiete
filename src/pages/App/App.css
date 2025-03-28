@@ -1,0 +1,72 @@
+:root {
+  --background-color: #ebdfcc;
+  --background-color-opposite: #141414;
+  --text-color: #383838;
+  --primary-color: #a1281a;
+  --nav-active-text: #ebdfcc;
+  --logo-fill: #03227f;
+  --link-color: #4e6851;
+  --link-color-opposite: #fbc359;
+  --pintern-logo: var(--pintern-logo-light);
+  --pintern-logo-light: url('../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-light.svg');
+  --pintern-logo-dark: url('../../../../public/assets/images/project-images/the-pintern/the-pintern-icon-logo-dark.svg');
+  --background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+  --project-page-title-bar: rgb(212, 210, 202);
+}
+
+/* dark mode */
+[theme="dark"] {
+  --background-color: #141414;
+  --background-color-opposite: #ebdfcc;
+  --text-color: #EEEDE7;
+  --nav-active-text: #ebdfcc;
+  --primary-color: #799AFA;
+  --logo-fill: #c0c0c0;
+  --link-color: #fbc359;
+  --link-color-opposite: #4e6851;
+  --pintern-logo: var(--pintern-logo-dark);
+  --background-image: radial-gradient(circle, #4a4a4a 1px, rgba(163, 163, 163, 0) 1px);
+  --project-page-title-bar: rgb(67, 67, 67);
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 670px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  /* align-items: center; */
+  transition: var(--background-color) 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.App-body {
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   width: 100%;
+   /* min-height: 1000px; */
+   /* margin: 140; */
+  } 
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+/* .App-logo {
+  height: 60vmin;
+  pointer-events: none;
+  margin-top: -4vh;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
