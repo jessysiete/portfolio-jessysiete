@@ -1,4 +1,4 @@
-.page-marker-home {
+/* .page-marker-home {
   background-color: var(--logo-fill);
   display: absolute;
   position: fixed;
@@ -7,7 +7,7 @@
   top: 50px;
   left: 28px;
   z-index: 1000;
-}
+} */
 
 .page-marker-home-nav {
   background-color: var(--logo-fill);
