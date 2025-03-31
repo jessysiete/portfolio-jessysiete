@@ -25,7 +25,7 @@ export default function PantoneProjectPage() {
       <div className="project-page">
         <div className="page-marker-pantone"></div>
         <div className="page-title-pantone">
-          <h1 className="project-title">Pantone 14k Pendant</h1>
+          <h1 className="pantone-project-title">Pantone 14k Pendant</h1>
         </div>
         <CloseProject />
         <section className="pantone-hero-section">
