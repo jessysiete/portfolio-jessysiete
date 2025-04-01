@@ -59,6 +59,10 @@ export default function HomePage() {
           <div className="circle"></div>
           <div className="square"></div>
         </div>
+        <p className='bottom-text'>
+         © 2024 Jessysiete</p>
+         <br/>
+         <br/>
       </div>
     </>
   );

@@ -9,7 +9,7 @@ export default function Footer() {
 </Link> */}
       <div className="footer-content">
         <p className='footer-text'>
-          Built with joy 🩶⚙️ &nbsp;&nbsp;&nbsp;&nbsp; © 2024 Jessysiete</p>
+          Built with joy 🩶&nbsp;⚙️ &nbsp;</p>
         <button className="contact"> <a href="mailto:jessica@jessysiete.com?subject=Greetings">Contact</a>
         </button>
 
