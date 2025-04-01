@@ -1,278 +1,294 @@
 import "./PinternProjectPage.css";
-import CloseProject from "../../../components/ButtonCloseProject/CloseProject";
-
 import { useState } from "react";
+import CloseProject from "../../../components/ButtonCloseProject/CloseProject";
+import pinternPins from "../../../../public/assets/images/project-images/the-pintern/pintern-pins.png";
+import pantoneSky from "../../../../public/assets/images/project-images/pantone-pendant/pantone-sky.png";
+import pantoneWorn from "../../../../public/assets/images/project-images/pantone-pendant/pantone-worn.png";
+import pantoneRender from "../../../../public/assets/images/project-images/pantone-pendant/pantone-render.png";
+import pantoneInspo1 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-1.png";
+import pantoneInspo2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-2.png";
+import pantoneMockup from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mockup.png";
+import pantonePrototype1 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-1.png";
+import pantonePrototype2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-2.png";
+import pantonePrototype3 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-3.png";
+import pantone3dPrint from "../../../../public/assets/images/project-images/pantone-pendant/pantone-3d-print.png";
+import pantone3dPrint2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-3d-print2.png";
+import pantoneMold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mold.png";
+import pantoneRawGold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-raw-gold.png";
+import pantoneFinalJess from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess.png";
+import pantoneFinalJess2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess2.png";
 
-export default function ThePinternProjectPage() {
+export default function PinternProjectPage() {
   const images = [
-    "/images/pintern_mockup.jpg",
-    "/images/pintern_sketches.jpg",
-    "/images/pintern_prototypes.jpg",
-    "/images/pintern_final.jpg",
+    pinternPins,
+    pantoneSky,
+    pantoneWorn,
+    pantoneRender,
+    // "/images/pantone14k_final.jpg",
   ];
 
   const [selectedImage, setSelectedImage] = useState(images[0]);
 
   return (
     <>
-      <div className="page-marker-pintern"></div>
-      <div className="pintern-project-page">
+        <div className="page-marker-pintern"></div>
         <div className="page-title-pintern">
           <h1 className="pintern-project-title">The Pintern</h1>
-          <CloseProject />
         </div>
-        <div className="pintern-project-content">
-         <div className="pintern-hero-section"></div>
-         <div className="main-image-pintern">
+        <CloseProject />
+      <div className="pintern-project-page">
+        <section className="pintern-hero-section">
+          <div className="pintern-hero-image">
+            <div className="pintern-main-image">
               <img src={[selectedImage]} alt="Main Project Visual" />
-            </div>
-         <div className="pintern-image-gallery">
-                {images.map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Pantone 14K variant ${index + 1}`}
-                    className={`pintern-g-thumbnail ${
-                      selectedImage === image ? "selected" : ""
-                    }`}
-                    onClick={() => setSelectedImage(image)}
-                  />
-                ))}
               </div>
-            <h2 className="pintern-title-tagline">From One to Many: Scaling a Small-Format Product</h2> 
-            {/* "Scaling Small: The Business of Enamel Pin Design & Production" */}
-            <div className="pintern-project-subtitle"> 
-            A passion for design meets operational precision. The Pintern is
-              my journey through product design, manufacturing, and
-              branding—blending creativity with logistics to bring small,
-              wearable art to life
-            </div>
-            <ul className="summary-list">
-              <li className="summary-heading">
-                <strong>Quick Project Summary</strong>
-              </li>
-              <li className="summary-item">
-                <strong>Role:</strong> Founder, Designer, E-commerce Manager
-              </li>
-              <li className="summary-item">
-                <strong>Medium:</strong> Enamel Pin Design & Manufacturing
-              </li>
-              <li className="summary-item">
-                <strong>Tools:</strong> Adobe Photoshop, Adobe Illustrator,
-                Procreate, Shopify, Etsy
-              </li>
-              <li className="summary-item">
-                <strong>Skills Highlighted:</strong> Graphic Design, Product
-                Manufacturing, Product Marketing, Branding, Operations,
-                E-Commerce, SEO, User Behavior Analysis
-              </li>
-              <li className="summary-item">
-                <strong>Techniques Used:</strong> Material Research,
-                Prototyping, Supplier Negotiation, Digital Marketing
-              </li>
-              <li className="summary-item">
-                <strong>Collaboration:</strong> Designed by me, manufactured in
-                partnership with vetted suppliers
-              </li>
-              <li className="summary-item">
-                <strong>Key Themes:</strong> Iterative Design, Branding, Product
-                Lifecycle Management
-              </li>
-            </ul>
-
-            <div className="pintern-overview-section">
-              <h2 className="pintern-overview-title">Project Overview</h2>
-              <p className="pintern-overview-text">
-                The Pintern was born from my love for design,
-                branding, and small-scale manufacturing. What started as wooden
-                laser-cut pins evolved into a fully developed enamel pin brand.
-                Through this venture, I managed product and packaging design,
-                product lifecyle, sourcing, branding, marketing, and retail
-                logistics—all skills I apply in tech & operations-focused roles.
-              </p>
-            </div> {/* end of pintern-overview-section */} 
-
-            
-
-
-          </div> {/* end of pintern-project-content */}
-
-      </div> {/* end of pintern-project-page */}
-    </>
-  );
-}
-{ /* <section className="hero-section">
-          <div className="main-image">
-            <img src={selectedImage} alt="Main Project Visual" />
-          </div>
-          <div className="hero-text">
-            <h1 className="project-title">
-              The Pintern: Experimentation in Enamel Pin Design
-            </h1>
-            <h2 className="project-subtitle">
-              A passion for design meets operational precision. The Pintern is
-              my journey through product design, manufacturing, and
-              branding—blending creativity with logistics to bring small,
-              wearable art to life
-            </h2>
-            <ul className="summary-list">
-              <li className="summary-heading">
-                <strong>Quick Project Summary</strong>
-              </li>
-              <li className="summary-item">
-                <strong>Role:</strong> Founder, Designer, E-commerce Manager
-              </li>
-              <li className="summary-item">
-                <strong>Medium:</strong> Enamel Pin Design & Manufacturing
-              </li>
-              <li className="summary-item">
-                <strong>Tools:</strong> Adobe Photoshop, Adobe Illustrator,
-                Procreate, Shopify, Etsy
-              </li>
-              <li className="summary-item">
-                <strong>Skills Highlighted:</strong> Graphic Design, Product
-                Manufacturing, Product Marketing, Branding, Operations,
-                E-Commerce, SEO, User Behavior Analysis
-              </li>
-              <li className="summary-item">
-                <strong>Techniques Used:</strong> Material Research,
-                Prototyping, Supplier Negotiation, Digital Marketing
-              </li>
-              <li className="summary-item">
-                <strong>Collaboration:</strong> Designed by me, manufactured in
-                partnership with vetted suppliers
-              </li>
-              <li className="summary-item">
-                <strong>Key Themes:</strong> Iterative Design, Branding, Product
-                Lifecycle Management
-              </li>
-            </ul>
-
-            <section className="image-gallery">
+            <div className="pintern-image-gallery">
               {images.map((image, index) => (
                 <img
                   key={index}
                   src={image}
                   alt={`Pintern variant ${index + 1}`}
-                  className={`gallery-thumbnail ${
+                  className={`pintern-thumbnail ${
                     selectedImage === image ? "selected" : ""
                   }`}
                   onClick={() => setSelectedImage(image)}
                 />
               ))}
-            </section>
+              </div>
+          </div>
+          
+            <div className="pintern-hero-text">
+            <h2 className="pintern-title-tagline">From One to Many: Scaling a Small-Format Product</h2>
+            <div className="pintern-project-subtitle">
+            A passion for design meets operational precision. The Pintern is
+              my journey through product design, manufacturing, and
+              branding—blending creativity with logistics to bring small,
+              wearable art to life
+            </div>
+              <div className="pintern-summary">
+                <ul className="pintern-summary-list">
+                  <li className="pintern-summary-heading">
+                    <strong>Quick Project Summary</strong>
+                  </li>
+                  <li className="pantone-summary-item">
+                    <strong>Medium:</strong> Jewelry Design (14K Gold Pendant)
+                  </li>
+                  <li className="pantone-summary-item">
+                    <strong>Tools:</strong> Adobe Illustrator, Rhino 3D, Laser
+                    Cutter
+                  </li>
+                  <li className="pantone-summary-item">
+                    <strong>Techniques Used:</strong> Rapid Prototyping, CAD
+                    Modeling, 3D Printing, Metal Casting
+                  </li>
+                  <li className="pantone-summary-item">
+                    <strong>Collaboration:</strong> Designed by me, CAD +
+
+                  </li>
+                  <li className="pantone-summary-item">
+                    <strong>Key Themes:</strong> Interactive Design, Material
+                    Exploration, Human-Centered Aesthetics
+                  </li>
+                </ul>
+              </div>
           </div>
         </section>
 
-        <section className="opening-section">
-          <h2 className="opening-title">The Pintern</h2>
-          <p className="opening-text">
-            <strong>The Pintern</strong> was born from my love for design,
-            branding, and small-scale manufacturing. What started as wooden
-            laser-cut pins evolved into a fully developed enamel pin brand.
-            Through this venture, I managed product and packaging design,
-            product lifecyle, sourcing, branding, marketing, and retail
-            logistics—all skills I apply in tech & operations-focused roles.
-          </p>
+        {/* Project Overview Section */}
 
-          <ul className="scope-list">
-            <li className="scope-heading">
-              <strong>Project Scope</strong>
-            </li>
-            <li className="scope-item">Designed and sold custom enamel pins</li>
-            <li className="scope-item">
-              Built and managed a small-scale production pipeline
-            </li>
-            <li className="scope-item">
-              Developed branding, marketing, and packaging for the business{" "}
-            </li>
-            <li className="scope-item">
-              Launched e-commerce storefronts & sold at in-person events{" "}
-            </li>
-          </ul>
-        </section>
+          <section className="pintern-overview-section">
+            <h2 className="overview-title">Project Overview</h2>
+            <p className="pintern-overview-text">
+              <strong>Pantone 14K</strong> is a conceptual jewelry piece that
+              transforms the Pantone color system into a dynamic, wearable
+              experience. Inspired by an enamel pin that framed fabric textures
+              and colors as a Pantone swatch, I designed this pendant to
+              function as a color-adaptive piece of jewelry. The open-frame
+              design allows the wearer's clothing to become the "color" of the
+              pendant, making each wear unique. This project merges my passion
+              for design, material exploration, and prototyping with my
+              technical mindset—leveraging rapid iteration, collaboration with
+              expert artisans, and digital fabrication techniques to bring an
+              abstract idea to life.
+            </p>
+          </section>
+          <section className="concept-section">
+            <h2 className="concept-title">Concept & Idea</h2>
+            <p className="concept-text">
+              While conducting product research for my small business, The
+              Pintern, I came across an enamel pin designed as a Pantone Swatch
+              with a hollow center. The way it interacted with textured garments
+              underneath fascinated me—what if this concept was applied to
+              jewelry? The Pantone color library holds personal significance for
+              me, as I use it extensively in my enamel pin designs to ensure
+              color consistency in manufacturing. This pendant became an
+              extension of my work in color theory, reimagined as a functional
+              and interactive piece of jewelry.
+            </p>
+            <div className="pantone-concept-image-section">
+              <img
+                className="pantone-concept-image"
+                src={pantoneInspo1}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-concept-image"
+                src={pantoneInspo2}
+                alt="Pantone 14K Concept 1"
+              />
+            </div>
+          </section>
+          <section className="pantone-prototyping-section">
+            <h2 className="pantone-prototyping-title">Prototyping & Iteration</h2>
+            <p className="concept-text">
+            I started with a quick mockup in Adobe Photoshop followed by rough prototyping by cutting out cardboard mockups and
+              using string to test pendant dimensions and visual weight. This
+              hands-on approach allowed me to refine the proportions before
+              committing to the final version. The process mirrored the way I test
+              physical product ideas before refining them for mass production and quick iterations when designing digital & backend solutions. I
+              experimented with different cutout shapes before deciding on the
+              final frame proportions. I also explored various chain lengths to
+              enhance the pendant's visual effect when worn. The goal was to
+              create a piece that was comfortable, allowing for everyday wear.
+            </p>
+            <div className="prototyping-image-section">
+              <img
+                className="pantone-prototype-image"
+                src={pantoneMockup}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantonePrototype1}
+                alt="Pantone 14K Concept 1"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantonePrototype2}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantonePrototype3}
+                alt="Pantone 14K Concept 1"
+              />
+            </div>
+          </section>
+
+          <section className="collaboration-section">
+            <h2 className="collaboration-title">
+              Digital Rendering & 3D Modeling{" "}
+            </h2>
+            <p className="collaboration-text">
+              Working with a friend and master jeweler, Twiz, he translated my
+              sketches into a 3D CAD model, ensuring precision in dimensions and
+              structural integrity. This step introduced me to the intersection
+              of jewelry craftsmanship and digital modeling, bridging
+              traditional artistry with modern fabrication.
+              <br />
+              <br />
+              Twiz and I discussed multiple iterations of the digital model to
+              optimize weight and balance. I gained had a bit of insight into
+              the jewelry manufacturing process, particularly how CAD files and
+              3D printers are used for wax mold printing, because I'd worked for
+              3D Systems in the past. During my time at 3D systems, I learned
+              about their commercial 3D printers and how they were used in the
+              dentistry and jewelry industry. Cool stuff! I experimented with
+              different chain lengths to enhance the pendant's visual effect
+              when worn.
+            </p>
+            <div className="pantone-collab-image-section">
+              <img
+                className="pantone-collab-image"
+                src={pantoneRender}
+                alt="Pantone 14K prototype 1"
+              />
+              <img
+                className="pantone-collab-image"
+                src={pantone3dPrint}
+                alt="Pantone 14K prototype 1"
+              />
+              <img
+                className="pantone-collab-image"
+                src={pantone3dPrint2}
+                alt="Pantone 14K prototype 1"
+              />
+              <img
+                className="pantone-collab-image"
+                src={pantoneMold}
+                alt="Pantone 14K prototype 1"
+              />
+            </div>
+
+          </section>
+          <section className="execution-section">
+            <h2 className="execution-title">Execution & Wearable Experience</h2>
+            <p className="execution-text">
+              The final piece was cast in 14K gold and polished to a high shine,
+              maintaining a sleek yet playful minimalist look. The open-frame
+              design allows the wearer's clothing to show through, turning the
+              pendant into a living Pantone swatch. It's designed to be
+              versatile and elevate everyday looks while engaging the wearer
+              (me!) in an interactive experience with color and texture. The
+              pendant's dimensions were carefully calculated to ensure it was
+              lightweight and comfortable to wear, while the gold material added
+              a touch of luxury to the concept.
+            </p>
+          </section>
 
 
-        <section className="concept-section">
-          <h2 className="concept-title">Concept & Idea</h2>
-          <p className="concept-text">
-            My journey into enamel pins started in college, where I designed
-            flyers and branding materials for student organizations. Over time,
-            this evolved into creating wearable designs for organizations to
-            showcase their identity. The Pintern started as an experimental
-            venture—how could I turn **small-scale product ideas** into
-            high-quality, manufacturable designs? Inspired by my love for
-            branding and material experimentation, I began testing different
-            production techniques, refining my skills in **vector illustration,
-            color theory, and enamel application** to bring each concept to
-            life. Inspired by my work in graphic design and experience working
-            with manufacturers in the shoe industry, I saw an opportunity to
-            merge both worlds—resulting in The Pintern.
-          </p>
-        </section>
-
-        <section className="prototyping-section">
-          <h2 className="prototyping-title">
-            Scaling, Prototyping & Iteration
-          </h2>
-          <p className="prototyping-text">
-            I initially created wood-cut pins with my CNC laser but needed a
-            scalable solution. Transitioning to enamel pins allowed me to
-            manufacture at volume while focusing on design and branding. Before
-            finalizing any pin design, I conducted multiple **rounds of
-            prototyping**—testing colors, finishes, and materials to ensure the
-            highest quality outcome. This process mirrored the iterative
-            development cycles used in **product design and software
-            engineering**, emphasizing feedback loops and continuous refinement.
-          </p>
-          📸 Photos & Visuals:
-* Left: Early wooden pins & CNC setup
-* Right: Initial enamel pin sketches
-        </section>
-
-        <section className="design-process-section">
-          <h2 className="design-process-title">Enamel Pin Design Process</h2>
-          <p className="design-process-text">
-          Step 1: Concept & IdeationEach pin started with a purpose—either as a brand collaboration, sorority keepsake, or standalone art piece.
-Step 2: Digital IllustrationUsing Adobe Illustrator, I refined sketches into vector artwork, ensuring proper line weights and color separations for manufacturing.
-Step 3: Prototyping & FeedbackBefore production, I worked with manufacturers to to tweak colors and finishes, ensuring the final product matched the vision.
-          </p>
-          📸 Photos & Interactive Elements:
-* Swipe-through slider of initial sketches vs. final pins
-* GIF of color variations & iterations
-        </section>
+          <section className="pantone-notes-section">
+            <h2 className="pantone-notes-title">Final Notes & Reflection</h2>
+            <p className="pantone-notes-text">
+            Pantone 14K is a fusion of interactive design, material
+              exploration, and problem-solving. This project highlights my
+              ability to combine creative ideation with technical execution,
+              skills that seamlessly translate to product strategy, design
+              thinking, and operations in the tech industry. I'm pleased with
+              how this pendant turned out and look forward to future projects
+              that merge my passion for color, design, and human-centered
+              aesthetics.
+            </p>
+          </section>
 
 
-        <section className="execution-section">
-          <h2 className="execution-title">Execution & Market Release</h2>
-          <p className="execution-text">
-            Once the prototypes met quality standards, I launched the designs on
-            **Etsy and Shopify**, where I optimized product listings using **SEO
-            strategies and user behavior analysis**. This experience provided
-            valuable insights into **consumer psychology, market positioning,
-            and branding**—all crucial skills in product operations and
-            management roles.
-          </p>
-        </section>
-
-
-        <section className="final-notes-section">
-          <h2 className="final-notes-title">Final Notes & Reflection</h2>
-          <p className="final-notes-text">
-            The Pintern was more than a creative project—it was a hands-on case
-            study in **product development, operational strategy, and user
-            engagement**. Managing everything from **supply chain logistics to
-            e-commerce optimization** allowed me to refine my skills in
-            technical problem-solving, a crucial asset for roles in **product
-            operations, technical solutions, and implementation management**.
-          </p>
-        </section> */
+            <div className="pantone-final-image-section">
+            <img
+                className="pantone-prototype-image"
+                src={pantoneRawGold}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantoneFinalJess}
+                alt="Pantone 14K Concept 1"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantoneWorn}
+                alt="Pantone 14K Concept 1"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantoneFinalJess2}
+                alt="Pantone 14K Concept 1"
+              />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </>
+  );
 }
 
-{
-  /* <section className="overview-section">
-  <h2 className="overview-title">Project Overview</h2>
-  <p className="overview-text">
-  </p>
-</section> */
-}
+/*alt-description*/
+//  Inspired by a Pantone Swatch pin, the Pantone 14k pendant
+// is an interactive jewelry piece that frames textures and colors
+// of the wearer's clothing, turning fashion into a living Pantone reference.
+// This project involved rapid prototyping, CAD modeling, and traditional jewelry
+//  casting techniques in collaboration with a master jeweler.
+
+//inspo original blog post: https://theawesomer.com/pantone-pin/523569/

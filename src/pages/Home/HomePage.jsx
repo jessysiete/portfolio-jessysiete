@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="content-home">
           <div className="intro-home">
             <strong className="intro-home-heading">Hello, my name is Jessica</strong>
-            <br/>
+
             Welcome to my online space where I combine my digital and analog
             projects. As a committed life-long learner, I'm passionate about
             filling my curiosities and interests with knowledge and deliberate

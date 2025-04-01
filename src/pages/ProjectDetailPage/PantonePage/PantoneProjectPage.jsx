@@ -42,13 +42,13 @@ export default function PantoneProjectPage() {
             <div className="pantone-main-image">
               <img src={[selectedImage]} alt="Main Project Visual" />
               </div>
-            <div className="p-image-gallery">
+            <div className="pantone-img-gallery">
               {images.map((image, index) => (
                 <img
                   key={index}
                   src={image}
                   alt={`Pantone 14K variant ${index + 1}`}
-                  className={`g-thumbnail ${
+                  className={`pantone-thumbnail ${
                     selectedImage === image ? "selected" : ""
                   }`}
                   onClick={() => setSelectedImage(image)}
@@ -68,25 +68,25 @@ export default function PantoneProjectPage() {
                   <li className="pantone-summary-heading">
                     <strong>Quick Project Summary</strong>
                   </li>
-                  <li className="summary-item">
-                    <strong>Medium:</strong> Jewelry Design (14K Gold Pendant)
+                  <li className="pantone-summary-item">
+                    <span><strong>Medium:</strong> Jewelry Design (14K Gold Pendant)</span>
                   </li>
-                  <li className="summary-item">
-                    <strong>Tools:</strong> Adobe Illustrator, Rhino 3D, Laser
-                    Cutter
+                  <li className="pantone-summary-item">
+                  <span><strong>Tools:</strong> Adobe Illustrator, Rhino 3D, Laser
+                    Cutter</span>
                   </li>
-                  <li className="summary-item">
-                    <strong>Techniques Used:</strong> Rapid Prototyping, CAD
-                    Modeling, 3D Printing, Metal Casting
+                  <li className="pantone-summary-item">
+                  <span><strong>Techniques Used:</strong> Rapid Prototyping, CAD
+                    Modeling, 3D Printing, Metal Casting</span>
                   </li>
-                  <li className="summary-item">
-                    <strong>Collaboration:</strong> Designed by me, CAD +
-                    Jewelry Production by<a className="twiz-website" href="https://twizandco.com/" target="_blank"rel="noopener noreferrer">Twiz</a>
+                  <li className="pantone-summary-item">
+                  <span><strong>Collaboration:</strong> Designed by me, CAD +
+                    Jewelry Production by<a className="twiz-website" href="https://twizandco.com/" target="_blank"rel="noopener noreferrer">Twiz</a></span>
 
                   </li>
-                  <li className="summary-item">
-                    <strong>Key Themes:</strong> Interactive Design, Material
-                    Exploration, Human-Centered Aesthetics
+                  <li className="pantone-summary-item">
+                  <span><strong>Key Themes:</strong> Interactive Design, Material
+                    Exploration, Human-Centered Aesthetics</span>
                   </li>
                 </ul>
               </div>

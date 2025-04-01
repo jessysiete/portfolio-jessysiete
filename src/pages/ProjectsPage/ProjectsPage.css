@@ -28,6 +28,7 @@ align-items: center;  /* centering grid horizontally */
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  line-height: 1.5;
   height: fit-content;
   padding-top: 1rem;
   padding-bottom: 20px;
@@ -72,7 +73,7 @@ align-items: center;  /* centering grid horizontally */
 }
 
 
-@media (min-width: 820px) {
+@media (min-width: 821px) {
   .page-marker-projects {
     background-color: #4e6851;
     display: absolute;

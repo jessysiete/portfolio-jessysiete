@@ -36,13 +36,22 @@ font-size: 1rem;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  height: 950px;
-  padding-bottom: 80px;
+  height: fit-content;
+  padding-bottom: 30px;
 }
+
+
+.pantone-project-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
 
 .pantone-hero-image {
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 .pantone-main-image {
@@ -69,7 +78,7 @@ font-size: 1rem;
 }
 
 
-.p-image-gallery {
+.pantone-img-gallery {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -78,7 +87,7 @@ font-size: 1rem;
   padding-bottom: 0px;
 }
 
-.g-thumbnail {
+.pantone-thumbnail {
   width: 55px;
   height: 55px;
   object-fit: contain;
@@ -87,11 +96,11 @@ font-size: 1rem;
   transition: transform 0.2s ease-in-out, opacity 0.2s;
 
 }
-.g-thumbnail:hover {
+.pantone-thumbnail:hover {
   transform: scale(1.1);
 }
 
-.g-thumbnail.selected {
+.pantone-thumbnail.selected {
   border: 3px solid var(--link-color);
   opacity: 1;
 
@@ -111,17 +120,20 @@ font-size: 1rem;
   height: fit-content;
   gap: 1rem;
   padding: 0 1rem;
-  margin-top: -104px;
+  margin-top: 1rem;
 }
 
 
 .pantone-summary {
   height: fit-content;
+  min-width: 364px;
+  font-size: 1.2rem;
+
 }
 .pantone-summary-heading {
   display: flex;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   text-align: left;
   align-content: left;
@@ -137,6 +149,8 @@ font-size: 1rem;
   padding-top: 20px;
   padding-bottom: 20px;
   height: fit-content;
+  font-size: 1.2rem;
+
 }
 
 .twiz-website {
@@ -274,10 +288,14 @@ font-size: 1rem;
   background-color: var(--background-color);
 }
 
-.summary-item {
+.pantone-summary-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
+align-items: flex-start;
+padding: 0;
+text-align: left;
 }
 
 
@@ -294,12 +312,14 @@ font-size: 1rem;
     flex-direction: column;
     align-items: left;
     gap: 1rem;
-    margin-top: -6rem;
+    margin-top: -2rem;
   }
   .pantone-hero-section {
     /* flex-direction: row; */
     /* justify-content: space-between; */
     padding-bottom: 20px;
+    height: 960px;
+
   }
 
   .hero-left,
@@ -323,7 +343,7 @@ font-size: 1rem;
     max-width: 100%;
     padding: 1rem;
   gap: 1rem;
-  padding-top: 40px;
+  padding-top: 4rem;
   font-size: 1rem;
   }
 
@@ -348,14 +368,14 @@ font-size: 1rem;
     height: fit-content;
     gap: 1rem;
     padding: 0 1rem;
-    padding-top: 2rem;
-
+    padding-top: 1rem; 
+    
   }
-.pantone-project-subtitle {
-  max-width: 565px;
-}
-
-
+  .pantone-project-subtitle {
+    max-width: 565px;
+  }
+  
+  
   .pantone-summary-list {
     display: flex;
     flex-direction: column;
@@ -365,12 +385,20 @@ font-size: 1rem;
     padding-bottom: 20px;
     height: fit-content;
   }
+  .pantone-overview-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    margin-top: -3rem;
+  }
+
 }
 
 
 /* === Nav resize  820px) === */
 
-@media (min-width: 820px) {
+@media (min-width: 821px) {
   .page-marker-pantone {
     background-color: #4e6851;
     display: absolute;
@@ -382,7 +410,7 @@ font-size: 1rem;
     right: 0px;
     z-index: 1000;
   }
-
+  
   .page-title-pantone h1 {
     font-size: 1.2rem;
     text-align: left;
@@ -393,46 +421,50 @@ font-size: 1rem;
     margin-left: 20px;
     z-index: 1000;
   }
-
-
-
-  .pantone-project-page {
-    max-width: 100%;
-    padding: 1rem;
-  gap: 1rem;
-  padding-top: 120px;
-  font-size: 1rem;
-  }
   
 
+  
+  
 }
 
 
 
 
-/* === Large Screens (lg: 1024px) === */
-/* @media (min-width: 1024px) {
-  .project-page {
-    max-width: 900px;
+/*=== Large Screens (lg: 1024px) === */
+@media (min-width: 1024px) {
+  .pantone-project-page {
+    padding-top: 160px;
+    /* max-width: 1000px; */
     margin: 0 auto;
-  }
 
+  }
+  
   .pantone-hero-section {
     align-items: flex-start;
+    height: fit-content;    
+  }
+  .pantone-hero-text {
+    padding-top: 0rem; 
   }
 
+  
   .hero-left img {
     max-width: 500px;
   }
-} */
+
+
+  .pantone-overview-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+}
 
 /* === Extra Large Screens (xl: 1280px) === */
-/* @media (min-width: 1280px) {
-  .project-page {
-    max-width: 1200px;
-  }
+ @media (min-width: 1280px) {
 
-  .page-title-pantone h1 {
-    font-size: 2.5rem;
-  }
-} */
+
+}
