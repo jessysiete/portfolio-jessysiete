@@ -1,41 +1,49 @@
 .Project-Card {
-position: relative;
-display: inline-flex;
-flex-direction: row;
-width: 300px;
-height: 248px;
-border: 2px solid var(--link-color);
-border-radius: 10px;
-/* padding: 10px; */
-align-items: center;
-justify-content: center;
-/* background-color: rgb(217, 217, 217); */
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  height: 222px;
+  border: 2px solid var(--link-color);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.card-title{
+/* Card Title */
+.card-title {
   position: absolute;
   margin-top: 174px;
   padding: 10px;
   font-size: 14px;
 }
 
-.card-image{
+/* Card Image */
+.card-image {
   position: relative;
-  margin-bottom: 30px;
-  width: 185px;
-  height: 180px;
-  /* border: 2px solid var(--link-color); */
+  margin-bottom: 36px;
+  width: 265px;
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   border-radius: 10px;
   background-color: var(--background-color);
 }
 
-.image-pantone{
+/* Image Variants */
+.image-pantone {
   height: 100%;
-  margin: 0 20%;
+  object-fit: contain;
   border-radius: 10px;
+  align-self: center;
+  align-content: center;
+  margin: 0 32%;
+
+
 }
 
-.image-simon{
+.image-simon {
   height: 100%;
   object-fit: contain;
   width: 100%;
@@ -53,86 +61,28 @@ justify-content: center;
   border-radius: 10px;
 }
 
-
+/* Links */
 a {
   text-decoration: none;
   color: var(--link-color);
 }
 
-@media (max-width: 1024px) {
+/* md: Tablets (≥768px) */
+@media (min-width: 768px) {
   .Project-Card {
-  width: 280px;
-  height: 222px;
+    width: 280px;
+    height: 222px;
   }
-
-  .card-image{
-    position: relative;
-    margin-bottom: 36px;
-    height: 140px;
-    background-color: var(--background-color);
-  }
-  
-  .card-title{
-    position: absolute;
-    padding: 10px;
-  }
-
-  .image-pantone{
-    height: 100%;
-    margin: 0 20%;
-    border-radius: 10px;
-  }
-
-  .image-pintern {
-    width: 100%;
-    height: 80%;
-    margin-top: 18px;
-    background-image: var(--pintern-logo);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
 }
 
-  }
-
-
-
-@media (max-width: 600px) {
+/* lg: Laptops (≥1024px) */
+@media (min-width: 1024px) {
   .Project-Card {
-  width: 440px;
-  height: 222px;
+    width: 300px;
+    height: 248px;
   }
 
-  .card-image{
-    position: relative;
-    margin-bottom: 36px;
-    height: 140px;
-    background-color: var(--background-color);
+  .card-image {
+    height: 180px;
   }
-  
-  .card-title{
-    position: absolute;
-    padding: 10px;
-  }
-
-  .image-pantone{
-    height: 100%;
-    margin: 0 20%;
-    border-radius: 10px;
-  }
-
-  .image-pintern {
-    width: 100%;
-    height: 80%;
-    margin-top: 18px;
-    background-image: var(--pintern-logo);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 10px;
 }
-
-
-
-  }
