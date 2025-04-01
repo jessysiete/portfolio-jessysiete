@@ -8,6 +8,15 @@ import pantoneRender from "../../../../public/assets/images/project-images/panto
 import pantoneInspo1 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-1.png";
 import pantoneInspo2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-2.png";
 import pantoneMockup from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mockup.png";
+import pantonePrototype1 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-1.png";
+import pantonePrototype2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-2.png";
+import pantonePrototype3 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-3.png";
+import pantone3dPrint from "../../../../public/assets/images/project-images/pantone-pendant/pantone-3d-print.png";
+import pantone3dPrint2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-3d-print2.png";
+import pantoneMold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mold.png";
+import pantoneRawGold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-raw-gold.png";
+import pantoneFinalJess from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess.png";
+import pantoneFinalJess2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess2.png";
 
 export default function PantoneProjectPage() {
   const images = [
@@ -22,17 +31,17 @@ export default function PantoneProjectPage() {
 
   return (
     <>
-      <div className="project-page">
         <div className="page-marker-pantone"></div>
         <div className="page-title-pantone">
           <h1 className="pantone-project-title">Pantone 14k Pendant</h1>
         </div>
         <CloseProject />
+      <div className="pantone-project-page">
         <section className="pantone-hero-section">
-          <div className="hero-left">
+          <div className="pantone-hero-image">
             <div className="pantone-main-image">
               <img src={[selectedImage]} alt="Main Project Visual" />
-            </div>
+              </div>
             <div className="p-image-gallery">
               {images.map((image, index) => (
                 <img
@@ -45,18 +54,18 @@ export default function PantoneProjectPage() {
                   onClick={() => setSelectedImage(image)}
                 />
               ))}
-            </div>
+              </div>
           </div>
-          <div className="hero-right">
-            <h2 className="title-tagline">Wearable Color Swatch</h2>
+          
+            <div className="pantone-hero-text">
+            <h2 className="pantone-title-tagline">Wearable Color Swatch</h2>
             <div className="pantone-project-subtitle">
               A dynamic jewelry piece that adapts to its wearer's style by
               framing textures and colors as a living Pantone swatch.
             </div>
-            <div className="hero-text">
-              <div className="project-summary">
-                <ul className="summary-list">
-                  <li className="summary-heading">
+              <div className="pantone-summary">
+                <ul className="pantone-summary-list">
+                  <li className="pantone-summary-heading">
                     <strong>Quick Project Summary</strong>
                   </li>
                   <li className="summary-item">
@@ -72,7 +81,8 @@ export default function PantoneProjectPage() {
                   </li>
                   <li className="summary-item">
                     <strong>Collaboration:</strong> Designed by me, CAD +
-                    Jewelry Production by Twiz
+                    Jewelry Production by<a className="twiz-website" href="https://twizandco.com/" target="_blank"rel="noopener noreferrer">Twiz</a>
+
                   </li>
                   <li className="summary-item">
                     <strong>Key Themes:</strong> Interactive Design, Material
@@ -80,13 +90,12 @@ export default function PantoneProjectPage() {
                   </li>
                 </ul>
               </div>
-            </div>
           </div>
         </section>
 
         {/* Project Overview Section */}
-        <div className="project-content">
-          <section className="overview-section">
+
+          <section className="pantone-overview-section">
             <h2 className="overview-title">Project Overview</h2>
             <p className="overview-text">
               <strong>Pantone 14K</strong> is a conceptual jewelry piece that
@@ -115,33 +124,54 @@ export default function PantoneProjectPage() {
               extension of my work in color theory, reimagined as a functional
               and interactive piece of jewelry.
             </p>
-            <div className="concept-image-section">
+            <div className="pantone-concept-image-section">
               <img
-                className="concept-image"
+                className="pantone-concept-image"
                 src={pantoneInspo1}
                 alt="Pantone 14K Concept"
               />
               <img
-                className="concept-image"
+                className="pantone-concept-image"
                 src={pantoneInspo2}
                 alt="Pantone 14K Concept 1"
               />
             </div>
           </section>
-
-          <section className="prototype-section">
-            <h2 className="prototype-title">Prototyping & Iteration</h2>
-            <p className="prototype-text">
-              I started with rough prototyping—cutting out cardboard mockups and
+          <section className="pantone-prototyping-section">
+            <h2 className="pantone-prototyping-title">Prototyping & Iteration</h2>
+            <p className="concept-text">
+            I started with a quick mockup in Adobe Photoshop followed by rough prototyping by cutting out cardboard mockups and
               using string to test pendant dimensions and visual weight. This
               hands-on approach allowed me to refine the proportions before
-              committing to final materials. The process mirrored the way I test
-              physical product ideas before refining them for mass production. I
+              committing to the final version. The process mirrored the way I test
+              physical product ideas before refining them for mass production and quick iterations when designing digital & backend solutions. I
               experimented with different cutout shapes before deciding on the
-              final frame proportions. Testing the pendant in different lighting
-              conditions helped determine how it would interact with various
-              textures and fabrics.
+              final frame proportions. I also explored various chain lengths to
+              enhance the pendant's visual effect when worn. The goal was to
+              create a piece that was comfortable, allowing for everyday wear.
             </p>
+            <div className="prototyping-image-section">
+              <img
+                className="pantone-prototype-image"
+                src={pantoneMockup}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantonePrototype1}
+                alt="Pantone 14K Concept 1"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantonePrototype2}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantonePrototype3}
+                alt="Pantone 14K Concept 1"
+              />
+            </div>
           </section>
 
           <section className="collaboration-section">
@@ -154,20 +184,8 @@ export default function PantoneProjectPage() {
               structural integrity. This step introduced me to the intersection
               of jewelry craftsmanship and digital modeling, bridging
               traditional artistry with modern fabrication.
-            </p>
-            <div className="collaboration-image-section">
-              <img
-                className="concept-image"
-                src={pantoneRender}
-                alt="Pantone 14K prototype 1"
-              />
-              <img
-                className="concept-image"
-                src={pantoneRender}
-                alt="Pantone 14K prototype 1"
-              />
-            </div>
-            <div className="collab-list">
+              <br />
+              <br />
               Twiz and I discussed multiple iterations of the digital model to
               optimize weight and balance. I gained had a bit of insight into
               the jewelry manufacturing process, particularly how CAD files and
@@ -177,7 +195,30 @@ export default function PantoneProjectPage() {
               dentistry and jewelry industry. Cool stuff! I experimented with
               different chain lengths to enhance the pendant's visual effect
               when worn.
+            </p>
+            <div className="pantone-collab-image-section">
+              <img
+                className="pantone-collab-image"
+                src={pantoneRender}
+                alt="Pantone 14K prototype 1"
+              />
+              <img
+                className="pantone-collab-image"
+                src={pantone3dPrint}
+                alt="Pantone 14K prototype 1"
+              />
+              <img
+                className="pantone-collab-image"
+                src={pantone3dPrint2}
+                alt="Pantone 14K prototype 1"
+              />
+              <img
+                className="pantone-collab-image"
+                src={pantoneMold}
+                alt="Pantone 14K prototype 1"
+              />
             </div>
+
           </section>
           <section className="execution-section">
             <h2 className="execution-title">Execution & Wearable Experience</h2>
@@ -194,22 +235,11 @@ export default function PantoneProjectPage() {
             </p>
           </section>
 
-          <section className="final-notes-section">
-            <div className="final-images">
-              <img
-                className="final-image"
-                src="/images/pantone14k_final1.jpg"
-                alt="Pantone 14K Final 1"
-              />
-              <img
-                className="final-image"
-                src="/images/pantone14k_final2.jpg"
-                alt="Pantone 14K Final 2"
-              />
-            </div>
-            <h2 className="final-notes-title">Final Notes & Reflection</h2>
-            <p className="final-notes-t">
-              Pantone 14K is a fusion of interactive design, material
+
+          <section className="pantone-notes-section">
+            <h2 className="pantone-notes-title">Final Notes & Reflection</h2>
+            <p className="pantone-notes-text">
+            Pantone 14K is a fusion of interactive design, material
               exploration, and problem-solving. This project highlights my
               ability to combine creative ideation with technical execution,
               skills that seamlessly translate to product strategy, design
@@ -218,16 +248,37 @@ export default function PantoneProjectPage() {
               that merge my passion for color, design, and human-centered
               aesthetics.
             </p>
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
           </section>
+
+
+            <div className="pantone-final-image-section">
+            <img
+                className="pantone-prototype-image"
+                src={pantoneRawGold}
+                alt="Pantone 14K Concept"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantoneFinalJess}
+                alt="Pantone 14K Concept 1"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantoneWorn}
+                alt="Pantone 14K Concept 1"
+              />
+              <img
+                className="pantone-prototype-image"
+                src={pantoneFinalJess2}
+                alt="Pantone 14K Concept 1"
+              />
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
-      </div>
     </>
   );
 }

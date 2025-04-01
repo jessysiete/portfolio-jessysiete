@@ -3,8 +3,8 @@
   display: inline-block;
   width: 22px;
   height: 22px;
-  right: 4px;
-  top: 2px;
+  right: 12px;
+  top: 6px;
   padding: 2px;
 }
 
@@ -56,8 +56,8 @@ input:checked + .toggle-switch:after {
   /* box-shadow: 5px 5px 0 0 #f2d51c; Moon color */
   /* Position the overlay to cover part of the white circle;
      adjust the offset (here, -8px) to control the crescent’s thickness */
-  left: calc(6px + 20px - 30px);
-  bottom: 2px;
+  left: calc(6px + 20px - 32px);
+  bottom: -1px;
   border-radius: 50%;
   background-color: var(--background-color);
   /* background-color: #29346e; matches the toggle switch background */
