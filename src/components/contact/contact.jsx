@@ -1,6 +1,6 @@
 import logoEmail from '../../assets/logo-email.svg';
 import logoGH from '../../assets/logo-github.svg';
-import './contact.css';
+import './Contact.css';
 
 export default function Contact() {
 return (

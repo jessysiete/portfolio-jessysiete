@@ -8,6 +8,7 @@
   --text-color: #383838;
   --primary-color: #a1281a;
   --nav-active-text: #ebdfcc;
+  --contact-button-color: #2d3e90;
   --logo-fill: #03227f;
   --link-color: #4e6851;
   --link-color-opposite: #fbc359;
@@ -27,6 +28,7 @@
   --primary-color: #799AFA;
   --logo-fill: #c0c0c0;
   --link-color: #fbc359;
+  --contact-button-color: #2d3e90;
   --link-color-opposite: #4e6851;
   --pintern-logo: var(--pintern-logo-dark);
   --background-image: radial-gradient(circle, #4a4a4a 1px, rgba(163, 163, 163, 0) 1px);
