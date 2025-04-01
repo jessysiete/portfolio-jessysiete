@@ -5,7 +5,7 @@ gap: 1rem;
 padding-top: 100px;
 font-size: 1rem;
 align-items: center;  /* centering grid horizontally */
-
+}
 
 .page-marker-projects {
   background-color: #4e6851;
@@ -40,7 +40,6 @@ align-items: center;  /* centering grid horizontally */
   grid-template-columns: 1fr;
   /* grid-template-rows: repeat(6, 1fr); */
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 12px;
   column-gap: 12px;
   margin: 20px auto 0 auto;
   height: fit-content;
@@ -54,6 +53,8 @@ align-items: center;  /* centering grid horizontally */
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    row-gap: 12px;
     column-gap: 2px;
     height: 632px;
     top: 20px;
@@ -78,7 +79,8 @@ align-items: center;  /* centering grid horizontally */
 
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-rows: repeat(1, 1fr);
     column-gap: 1px;
     min-width: 910px;
     max-width: 998px;
