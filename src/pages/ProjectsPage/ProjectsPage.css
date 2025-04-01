@@ -38,7 +38,8 @@ align-items: center;  /* centering grid horizontally */
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  /* grid-template-rows: repeat(6, 1fr); */
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 12px;
   column-gap: 12px;
   margin: 20px auto 0 auto;
