@@ -5,12 +5,14 @@ import ProjectsPage from "../ProjectsPage/ProjectsPage";
 export default function HomePage() {
   return (
     <>
-      <div className="home-page">
         <div className="page-marker-home"></div>
         <div className="page-marker-home-nav"></div>
+      <div className="home-page">
         <div className="content-home">
           <div className="intro-home">
-            Hello, I'm Jessica. Welcome to my online space where I combine my digital and analog
+            <strong className="intro-home-heading">Hello, my name is Jessica</strong>
+            <br/>
+            Welcome to my online space where I combine my digital and analog
             projects. As a committed life-long learner, I'm passionate about
             filling my curiosities and interests with knowledge and deliberate
             practice. 
@@ -18,44 +20,39 @@ export default function HomePage() {
             
 
           <div className="tech-stack" aria-label="list of skills that Jessica Mendez provides">
-            <li className="skill-line-heading">Skills & Tech Stack</li>
-          <ul className="skill-list"> 
-            <li className="skill-line">HTML5</li>
-            <li className="skill-line">CSS3</li>
-            <li className="skill-line">JavaScript</li>
-            <li className="skill-line">Python</li>
-            <li className="skill-line">SQL</li>
-            <li className="skill-line">React</li>
-            <li className="skill-line">Vite</li>
-            <li className="skill-line">NextJS</li>
-            <li className="skill-line">NodeJS</li>
-            <li className="skill-line">ExpressJS</li>
-            <li className="skill-line">GraphQL</li>
-            <li className="skill-line">TailwindCSS</li>
-            <li className="skill-line">Bootstrap</li>
-            <li className="skill-line">Git Version Control</li>
-            <li className="skill-line">Heroku</li>
-            <li className="skill-line">Docker</li>
-            <li className="skill-line">MongoDB</li>
-            <li className="skill-line">Figma</li>
-            <li className="skill-line">Atlassian Jira</li>
-            <li className="skill-line">Asana</li>
-            <li className="skill-line">Lattice</li>
-            <li className="skill-line">Zendesk</li>
-            <li className="skill-line">Salesforce</li>
-            <li className="skill-line">Hubspot</li>
-            <li className="skill-line">Visual Studio Code</li>
+          <ul className="skills-list" > 
+            <li className="skill-item-heading">Skills & Tech Stack</li>
+            <li className="skill-item">HTML5</li>
+            <li className="skill-item">CSS3</li>
+            <li className="skill-item">JavaScript</li>
+            <li className="skill-item">Python</li>
+            <li className="skill-item">SQL</li>
+            <li className="skill-item">React</li>
+            <li className="skill-item">Vite</li>
+            <li className="skill-item">NextJS</li>
+            <li className="skill-item">NodeJS</li>
+            <li className="skill-item">ExpressJS</li>
+            <li className="skill-item">GraphQL</li>
+            <li className="skill-item">TailwindCSS</li>
+            <li className="skill-item">Bootstrap</li>
+            <li className="skill-item">Git Control</li>
+            <li className="skill-item">Heroku</li>
+            <li className="skill-item">Docker</li>
+            <li className="skill-item">MongoDB</li>
+            <li className="skill-item">Figma</li>
+            <li className="skill-item">Jira</li>
+            <li className="skill-item">Confluence</li>
+            <li className="skill-item">Asana</li>
+            <li className="skill-item">Lattice</li>
+            <li className="skill-item">Zendesk</li>
+            <li className="skill-item">Salesforce</li>
+            <li className="skill-item">Hubspot</li>
+            <li className="skill-item">VS Code</li>
           </ul>
 </div>
 
 
-
-
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="shapes">
           <div className="trapezoid"></div>
           <div className="triangle"></div>
