@@ -16,7 +16,6 @@ import pantone3dPrint2 from "../../../../public/assets/images/project-images/pan
 import pantoneMold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mold.png";
 import pantoneRawGold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-raw-gold.png";
 import pantoneFinalJess from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess.png";
-import pantoneFinalJess2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess2.png";
 
 export default function PantoneProjectPage() {
   const images = [
@@ -267,11 +266,7 @@ export default function PantoneProjectPage() {
                 src={pantoneWorn}
                 alt="Pantone 14K Concept 1"
               />
-              <img
-                className="pantone-prototype-image"
-                src={pantoneFinalJess2}
-                alt="Pantone 14K Concept 1"
-              />
+     
             </div>
             <br />
             <br />

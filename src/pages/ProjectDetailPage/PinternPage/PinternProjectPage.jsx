@@ -10,23 +10,17 @@ import pinternGreekEnamel from "../../../../public/assets/images/project-images/
 import pinternVector from "../../../../public/assets/images/project-images/the-pintern/pintern-vector-design.png";
 import pinternVector2 from "../../../../public/assets/images/project-images/the-pintern/pintern-vector-design-2.png";
 import pinternPinLit from "../../../../public/assets/images/project-images/the-pintern/pintern-pin-lit.png";
+import pinternBook from "../../../../public/assets/images/project-images/the-pintern/pintern-book-pin-game.png";
+import pinternBook2 from "../../../../public/assets/images/project-images/the-pintern/pintern-book-pin-game-back.png";
+import pinternLogoVideo from "../../../../public/assets/images/project-images/the-pintern/pintern-logo-design.mp4";
+import pinternBuzzfeed from "../../../../public/assets/images/project-images/the-pintern/pintern-feature-buzzfeed.png";
+import pinternOrderPackages from "../../../../public/assets/images/project-images/the-pintern/pintern-order-packages.png";
+import pinternEtsyAnalytics from "../../../../public/assets/images/project-images/the-pintern/pintern-etsy-analytics-2001.png";
+import pinternLaserCut from "../../../../public/assets/images/project-images/the-pintern/pintern-laser-cut.mp4";
 
-
-import pantoneSky from "../../../../public/assets/images/project-images/pantone-pendant/pantone-sky.png";
-import pantoneWorn from "../../../../public/assets/images/project-images/pantone-pendant/pantone-worn.png";
-import pantoneRender from "../../../../public/assets/images/project-images/pantone-pendant/pantone-render.png";
-import pantoneInspo1 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-1.png";
-import pantoneInspo2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-inspo-2.png";
-import pantoneMockup from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mockup.png";
-import pantonePrototype1 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-1.png";
-import pantonePrototype2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-2.png";
-import pantonePrototype3 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-prototype-3.png";
-import pantone3dPrint from "../../../../public/assets/images/project-images/pantone-pendant/pantone-3d-print.png";
-import pantone3dPrint2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-3d-print2.png";
 import pantoneMold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-mold.png";
 import pantoneRawGold from "../../../../public/assets/images/project-images/pantone-pendant/pantone-raw-gold.png";
 import pantoneFinalJess from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess.png";
-import pantoneFinalJess2 from "../../../../public/assets/images/project-images/pantone-pendant/pantone-final-jess2.png";
 
 export default function PinternProjectPage() {
   const images = [
@@ -153,26 +147,27 @@ export default function PinternProjectPage() {
         <section className="pintern-concept-section">
           <h2 className="pintern-concept-title">The beginning</h2>
           <p className="pintern-concept-text">
-            The Pintern was born from my passion for design, branding, and
-            small-scale manufacturing. What started as wooden laser-cut pins
-            evolved into a fully developed enamel pin brand. I'd gained valuable
-            insights into product development and manufacturing processes while
-            working in the footwear industry and during a brief stint at a
-            luxury bespoke eyewear company. This experience fueled my desire to
-            create a line of enamel pins that would resonate with consumers. I
-            wanted to design pieces that were not only visually appealing but
-            also playful, and sometimes meaningful. The Pintern is a culmination
-            of my interests in design, branding, and product development.
-            <br />
-            <br />
             My journey into enamel pins started in college, where I designed
             flyers and branding materials for student organizations. Over time,
             this evolved into creating wooden pins and necklace pendants for
             organizations to showcase their identity. The Pintern started as an
-            experimental venture— how could I turn my small-scale handmade
-            products into high-quality, manufacturable designs? I began
-            researching pin making and e-commerce platforms, and I quickly
-            realized the potential for a scalable product line.
+            experimental venture when I began wondering how I could turn my
+            small-scale handmade products into high-quality, manufacturable
+            designs. I started researching pin making and e-commerce platforms,
+            and I quickly realized the potential for a scalable product line.
+            <br />
+            <br />
+            My experiences in the footwear industry and a brief stint at a
+            luxury bespoke eyewear company gave me valuable insights into
+            product development, brand management, and manufacturing. These
+            roles deepened my confidence in design and my understanding of a
+            product’s lifecycle. Inspired by this knowledge—and my growing
+            collection of enamel pins from work events, Disney World and
+            Comic-Con—I created The Pintern. I wanted to explore enamel pins as
+            a form of self-expression and build a brand that was both fun and
+            meaningful. The Pintern is the culmination of my love for small, but
+            mighty messaging, combined with my passion for design, branding, and
+            product development.
           </p>
           <div className="pintern-concept-image-section">
             <img
@@ -193,11 +188,12 @@ export default function PinternProjectPage() {
             I initially created wood-cut pins with my CNC laser but needed a
             scalable solution. Transitioning to enamel pins allowed me to
             manufacture at volume while focusing on design and branding. Before
-            finalizing any pin design, I'd conduct mockup variants on Photoshop
-            and test with color combinations, finishes, sizing to ensure the
-            highest quality outcome. This process mirrors the iterative
-            development cycles used in product and feature design as well as web development,
-             emphasizing feedback loops and continuous refinement.
+            finalizing any pin design, I conducted mockup variants in Photoshop
+            and tested different color combinations, finishes, and sizes to
+            ensure the highest quality outcome. This process reflects the
+            iterative development cycles used in product and feature design as
+            well as web development, emphasizing feedback loops and continuous
+            refinement.
           </p>
           <div className="pintern-prototyping-image-section">
             <img
@@ -215,7 +211,6 @@ export default function PinternProjectPage() {
               src={pinternPinLit}
               alt="Pintern 14K Concept"
             />
-  
           </div>
         </section>
 
@@ -224,175 +219,179 @@ export default function PinternProjectPage() {
             Collaborating with Manufacturers
           </h2>
           <p className="pintern-design-text">
-            I used this guide by Pin Lord, a popular pin maker and pin blogger, to find
-            my first manufacturer. I reached out to multiple suppliers,
-            comparing their offerings, prices, and turn around times. I also sought feedback from
-            friends and family to refine my designs. The
-            process of selecting a manufacturer was crucial, as it directly
-            impacted the quality and cost of the final product. I focused on
-            finding a supplier that had positive reviews in community forums. I also prioritized
-            manufacturers that offered a range of finishes and materials, allowing
-            me to experiment with different design elements. 
-            This experience
-            drilled the importance of supplier relationships and how they can
-            impact the overall success of a product. I learned to negotiate
-            effectively, communicate my vision clearly, and build strong
-            partnerships with manufacturers. 
+            I used{" "}
+            <a
+              href="https://www.pinlordshop.com/blogs/the-ultimate-guide-to-making-and-selling-enamel-pins"
+              target="_blank"
+            >
+              this detailed guide
+            </a>{" "}
+            and a{" "}
+            <a
+              href="https://www.pinlordshop.com/blogs/the-ultimate-guide-to-making-and-selling-enamel-pins"
+              target="_blank"
+            >
+              book
+            </a>{" "}
+            by Eduardo Morales, a well-known pin maker and blogger, to learn
+            about designing, selling, and manufacturing enamel pins. I
+            researched multiple suppliers, comparing their offerings, prices,
+            and turnaround times. Seeking feedback from friends and family
+            helped refine my designs. Choosing the right manufacturer was
+            crucial since it directly affected both quality and cost. I
+            prioritized suppliers with positive community reviews and those
+            offering a variety of finishes and materials, allowing me to
+            experiment with different design elements. This experience
+            reinforced the importance of strong supplier relationships and how
+            they influence a product’s success. I learned to negotiate
+            effectively, communicate my vision clearly, and build lasting
+            partnerships with manufacturers.
             <br />
             <br />
-            The design process involved several key steps:
-            Step 1: Concept & Ideation- Each pin started with a purpose, either as
-            a sorority keepsake, pop culture reference, or an originally designed piece.
-
-            Step 2: Digital Illustration- Using Adobe Illustrator, I refined
-            sketches into vector artwork, ensuring proper line weights and color
-            separations for manufacturing. 
-            
-            Step 3: Prototyping & Feedback- Before
-            production, I worked with manufacturers to to tweak colors and
-            finishes, ensuring the final product matched the vision.
-
-            Step 4: Production- Once the designs were finalized, I placed
-            orders with manufacturers. I learned to manage production timelines,
-            quality control, and logistics. This involved coordinating with
-            suppliers, tracking shipments, and ensuring that the final products
-            met my quality standards.
-
-            Step 5: Packaging & Branding- I designed custom packaging that
-            reflected the brand identity of The Pintern. This included
-            designing the pin cards, packaging materials, and branding elements
-            that would be used in the final product. I also created a brand
-            identity for The Pintern, including a logo and color palette that
-            reflected the playful and creative nature of the brand. This
-            involved designing a logo, selecting colors, and creating a brand
-            style guide that would be used across all marketing materials.
-            I also created a website and social media presence for The Pintern,
-            which included designing graphics and promotional materials that
-            would be used to promote the brand. This involved creating a
-            cohesive visual identity that would be used across all platforms,
-            including the website, social media, and packaging materials. 
-
+            <ul className="pintern-design-list">
+              <li className="pintern-design-heading">
+                <strong>The design process involved several key steps:</strong>
+              </li>
+              <li className="pintern-design-item">
+                <span>
+                  {" "}
+                  <strong> Concept & Ideation - </strong>Each pin started with a
+                  purpose, either as a sorority keepsake, pop culture reference,
+                  or an originally designed piece.
+                </span>
+              </li>
+              <li className="pintern-design-item">
+                <span>
+                  <strong>Digital Illustration -</strong> Using Adobe
+                  Illustrator, I refined sketches into vector artwork, ensuring
+                  proper line weights and color separations for manufacturing.
+                </span>
+              </li>
+              <li className="pintern-design-item">
+                <span>
+                  <strong>Prototyping & Feedback - </strong> Before production,
+                  I worked with manufacturers to to tweak colors and finishes,
+                  ensuring the final product matched the vision.
+                </span>
+              </li>
+              <li className="pintern-design-item">
+                <span>
+                  <strong>Packaging & Branding -</strong> I designed custom
+                  packaging and branding for The Pintern to create a cohesive
+                  and playful identity. This included pin cards, packaging
+                  materials, and key brand elements. I developed the logo, color
+                  palette, and style guide to ensure consistency across all
+                  marketing materials. To establish a strong visual presence, I
+                  also designed the website, social media graphics, and
+                  promotional materials, reinforcing the brand’s identity across
+                  platforms.
+                </span>
+              </li>
+            </ul>
           </p>
           <div className="pintern-design-image-section">
             <img
               className="pintern-design-image"
-              src={pantoneRender}
-              alt="Pintern 14K prototype 1"
+              src={pinternBook}
+              alt="Pin Game Strong book cover"
             />
             <img
               className="pintern-design-image"
-              src={pantone3dPrint}
-              alt="Pintern 14K prototype 1"
+              src={pinternBook2}
+              alt="Pin Game Strong back book cover"
             />
-            <img
-              className="pintern-design-image"
-              src={pantone3dPrint2}
-              alt="Pintern 14K prototype 1"
-            />
-            <img
-              className="pintern-design-image"
-              src={pantoneMold}
-              alt="Pintern 14K prototype 1"
-            />
+            <video className="pintern-design-image" controls>
+              <source
+                src={pinternLogoVideo}
+                type="video/mp4"
+                alt="Designing The Pintern icon logo"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </section>
 
         <section className="pintern-production-section">
           <h2 className="pintern-production-title">
-            Production & Manufacturing
+            Marketing & Sales: Launching the Pins
           </h2>
           <p className="pintern-production-text">
-            Once the prototypes met quality standards, I launched the designs on
-            **Etsy and Shopify**, where I optimized product listings using **SEO
-            strategies and user behavior analysis**. This experience provided
-            valuable insights into **consumer psychology, market positioning,
-            and branding**—all crucial skills in product operations and
-            management roles.
-
-
-             Quality Control- I received samples from the
-            manufacturers and conducted quality checks. This involved
-            inspecting the pins for defects, ensuring that the colors matched
-            the approved designs, and checking the overall finish.       
-                 
-            Marketing & Sales- I launched the pins on Etsy and
-            Shopify, using SEO strategies and user behavior analysis to optimize
-            product listings. This experience provided valuable insights into
-            consumer psychology, market positioning, and branding—skills that are
-            crucial in product operations and management roles.
-
+            After receiving each batch of pins from the manufacturer, I
+            conducted thorough quality checks to ensure they met my standards.
+            This involved inspecting metal and enamel finishes, verifying color
+            accuracy, and identifying defects. I typically accounted for 5-12%
+            of the order being defective and unsellable. If defects exceeded
+            this threshold, I contacted the manufacturer to negotiate
+            replacements or discounts on future orders.
+            <br />
+            <br />
+            Once inspected and repackaged in custom branding, I launched the
+            pins on Etsy and Shopify. To maximize discoverability, I optimized
+            product listings with SEO strategies, ensuring they reached the
+            right audience. This process deepened my understanding of consumer
+            psychology, market positioning, and branding.
+            <br />
+            <br />
+            Marketing efforts extended to social media, where I created engaging
+            content, designed promotional graphics, and wrote compelling product
+            descriptions. I actively engaged with customers online and expanded
+            visibility by participating in local markets and community events.
+            Setting up booths allowed me to connect with customers directly,
+            gather real-time feedback, and strengthen brand awareness. These
+            experiences reinforced the importance of strategic marketing in
+            driving sales and brand recognition.
           </p>
           <div className="pintern-production-image-section">
             <img
               className="pintern-production-image"
-              src={pantoneRender}
-              alt="Pintern 14K prototype 1"
+              src={pinternBuzzfeed}
+              alt="The Pintern featured on Buzzfeed's 'Best Gifts for the techie in your life'"
             />
             <img
               className="pintern-production-image"
-              src={pantone3dPrint}
-              alt="Pintern 14K prototype 1"
+              src={pinternEtsyAnalytics}
+              alt="Etsy Analytics from The Pintern 2021"
             />
-            <img
-              className="pintern-production-image"
-              src={pantone3dPrint2}
-              alt="Pintern 14K prototype 1"
-            />
-            <img
-              className="pintern-production-image"
-              src={pantoneMold}
-              alt="Pintern 14K prototype 1"
-            />
+            <video className="pintern-design-image" controls muted>
+              <source
+                src={pinternLaserCut}
+                type="video/mp4"
+                alt="Laser cut of The Pintern type logo"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </section>
-
-        {/* <section className="pintern-execution-section">
-            <h2 className="pintern-execution-title">Execution & Wearable Experience</h2>
-            <p className="pintern-execution-text">
-              The final piece was cast in 14K gold and polished to a high shine,
-              maintaining a sleek yet playful minimalist look. The open-frame
-              design allows the wearer's clothing to show through, turning the
-              pendant into a living Pantone swatch. It's designed to be
-              versatile and elevate everyday looks while engaging the wearer
-              (me!) in an interactive experience with color and texture. The
-              pendant's dimensions were carefully calculated to ensure it was
-              lightweight and comfortable to wear, while the gold material added
-              a touch of luxury to the concept.
-            </p>
-          </section> */}
 
         <section className="pintern-notes-section">
           <h2 className="pintern-notes-title">Final Notes & Reflection</h2>
           <p className="pintern-notes-text">
-            The Pintern was more than a creative project—it was a hands-on case
-            study in **product development, operational strategy, and user
-            engagement**. Managing everything from **supply chain logistics to
-            e-commerce optimization** allowed me to refine my skills in
-            technical problem-solving, a crucial asset for roles in **product
-            operations, technical solutions, and implementation management**.
+            The Pintern was more than just a creative project—it was a
+            comprehensive case study in product development, operational
+            strategy, customer experience, and user engagement. From managing
+            vendor logistics to optimizing e-commerce processes, I gained
+            invaluable hands-on experience that refined my skills in product
+            marketing, consumer behavior, and business operations. <br />
+            <br />
+            This journey pushed me to not only improve my design and branding
+            abilities but also to think critically about how each decision, from
+            manufacturing to marketing, directly impacted the customer
+            experience. The process of building a brand from the ground up
+            reinforced the importance of agility, strategic planning, and the
+            continuous need for adaptation in today’s fast-paced market. <br />
+            <br />
+            Ultimately, The Pintern helped me grow both professionally and
+            personally. It taught me how to balance creativity with practicality
+            and how to leverage feedback and data to drive decisions, setting
+            the foundation for future projects and entrepreneurial endeavors.
           </p>
         </section>
 
         <div className="pintern-final-image-section">
           <img
             className="pintern-prototype-image"
-            // src={pinternRawGold}
-            alt="pintern 14K Concept"
-          />
-          <img
-            className="pintern-prototype-image"
-            // src={pinternFinalJess}
-            alt="pintern 14K Concept 1"
-          />
-          <img
-            className="pintern-prototype-image"
-            // src={pinternWorn}
-            alt="pintern 14K Concept 1"
-          />
-          <img
-            className="pintern-prototype-image"
-            // src={pinternFinalJess2}
-            alt="pintern 14K Concept 1"
+            src={pinternOrderPackages}
+            alt="The Pintern Order Packages"
           />
         </div>
         <br />
