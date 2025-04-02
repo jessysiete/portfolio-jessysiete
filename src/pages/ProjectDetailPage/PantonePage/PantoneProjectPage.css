@@ -138,6 +138,7 @@ font-size: 1rem;
   text-align: left;
   align-content: left;
 }
+
 .pantone-summary-list {
   display: flex;
   flex-direction: column;

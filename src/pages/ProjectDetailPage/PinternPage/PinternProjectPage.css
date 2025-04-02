@@ -101,9 +101,11 @@ font-size: 1rem;
 .pintern-title-tagline {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 }
+
 
 .pintern-hero-text {
   display: flex;
@@ -117,14 +119,10 @@ font-size: 1rem;
 .pintern-project-subtitle {
   font-size: 1.2rem;
   line-height: 1.6;
+  padding: 0 .5rem;
+}
 }
 
-.pintern-overview-text {
-font-size: 1.25rem;
-  line-height: 1.6;
-  text-align: left;
-  
-}
 
 
 .pintern-summary {
@@ -143,42 +141,64 @@ font-size: 1.25rem;
   text-align: left;
   align-content: left;
 }
+
+
 .pintern-summary-list {
   display: flex;
   flex-direction: column;
   align-items: left;
   text-align: left;
   align-content: left;
-  /* gap: 1rem; */
   flex-wrap: wrap;
   font-size: 1.2rem;
   width: 100%;
   align-items: flex-start;
   padding: 0 1rem;
   height: fit-content;
-
-
-
+  
 }
 
-
-.pintern-project-content {
+.pintern-summary-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 1rem;
-  margin-top: 1rem;
-  font-size: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+align-items: flex-start;
+padding: 0;
+text-align: left;
 }
+
+
 
 .pintern-overview-section {
   display: flex;
   flex-direction: column;
   align-items: left;
-  gap: 1rem;
+  gap: .2rem;
   margin-top: 1rem;
 }
+
+.pintern-overview-text {
+  font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    
+  }
+  
+.pintern-concept-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: .2rem;
+}
+
+
+.pintern-concept-text {
+  font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    
+  }
 
 .pintern-concept-image-section {
   position: relative;
@@ -190,6 +210,7 @@ font-size: 1.25rem;
   margin-top: 2px;
   width: 100%;
   height: 100%;
+  padding-bottom: 40px;
 }
 
 
@@ -206,13 +227,20 @@ font-size: 1.25rem;
 
 
 
-.pintern-prototype-section {
+.pintern-prototyping-section {
   display: flex;
   flex-direction: column;
   align-items: left;
-
 }
-.prototyping-image-section {
+
+.pintern-prototyping-text {
+  font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    
+  }
+
+.pintern-prototyping-image-section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -222,6 +250,7 @@ font-size: 1.25rem;
   margin-top: 2px;
   width: 100%;
   height: 100%;
+  padding-bottom: 40px;
 }
 
 
@@ -235,7 +264,26 @@ font-size: 1.25rem;
   border-radius: 10px;
   background-color: var(--background-color);
 }
-.pintern-collab-image-section {
+
+
+
+.pintern-design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
+
+.pintern-design-text {
+  font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    
+  }
+
+
+
+.pintern-design-image-section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -248,7 +296,49 @@ font-size: 1.25rem;
 }
 
 
-.pintern-collab-image {
+.pintern-design-image {
+  width: 100%;
+  height: 100%;
+  max-height: 432px;
+  max-width: 432px;
+  margin-top: 32px;
+  border: 2px solid var(--link-color);
+  border-radius: 10px;
+  background-color: var(--background-color);
+}
+
+
+
+.pintern-production-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
+
+.pintern-production-text {
+  font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: left;
+    
+  }
+
+
+
+.pintern-production-image-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.pintern-production-image {
   width: 100%;
   height: 100%;
   max-height: 432px;
@@ -289,11 +379,6 @@ font-size: 1.25rem;
   background-color: var(--background-color);
 }
 
-.pantone-summary-item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
 
 
 
