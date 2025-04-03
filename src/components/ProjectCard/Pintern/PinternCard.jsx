@@ -1,7 +1,6 @@
 import "../ProjectCard.css";
 import { Link } from "react-router-dom";
 
-
 export default function PinternCard() {
   return (
     <div className="Project-Card">
@@ -12,7 +11,20 @@ export default function PinternCard() {
       </div>
       <div className="card-image">
         <Link to="/projects/the-pintern">
-          <div className="image-pintern" aria-label="The Pintern logo" />
+          <div className="image-pintern" aria-label="The Pintern logo">
+            <svg
+              width="259"
+              height="154"
+              viewBox="0 0 262 326"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M123.715 0.923914C106.107 1.21146 87.2761 6.66444 66.9824 19.3399C31.2659 46.1696 11.4838 82.5522 3.21682 126.336C-2.27295 151.506 -0.354017 209.434 28.5938 246.631C56.059 301.752 93.0654 318.378 120.668 323.801C131.893 325.914 145.292 326.73 156.908 325.223C331.663 302.549 370.263 24.7813 190.646 7.02352C181.664 6.13544 172.821 7.19515 162.695 8.66024C150.365 3.60164 137.41 0.700269 123.715 0.923914ZM189.326 25.9903C243.327 33.8768 285.77 108.843 253.986 189.352C231.539 243.495 197.625 272.257 165.465 285.225C133.305 298.192 102.899 295.366 87.4688 286.336C98.6879 289.14 130.017 287.813 134.898 275.592C135.496 274.095 136.189 272.508 136.801 270.645C139.713 261.774 143.519 252.092 146.158 243.566C162.275 199.129 178.068 154.044 194.539 110.316C196.776 103.477 189.582 102.009 187.908 105.674C180.61 121.656 147.703 198.878 122.615 254.619C92.1051 248.848 70.7718 222.462 69.127 171.736C70.5442 97.5662 103.642 42.3412 154.746 37.2813C171.87 36.1757 186.687 42.4872 199.285 55.9278C207.34 64.1066 209.667 55.3881 207.053 49.3184C205.188 44.9892 201.787 36.7766 189.326 25.9903ZM219.332 135.063C209.076 134.972 198.847 141.374 190.889 152.449C182.014 164.702 174.065 191.706 193.598 204.69C208.321 210.256 221.741 204.096 233.119 187.363C245.592 167.071 243.937 144.841 227.904 136.705C225.077 135.622 222.204 135.088 219.332 135.063Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
         </Link>
       </div>
     </div>
@@ -20,5 +32,5 @@ export default function PinternCard() {
 }
 
 // {
-  /* <img className="pintern" src={pinternLogo} alt="A round shape with a semi-circle protruding from its left side and a small oval on the inside right. A pictogram of an abstract rubber clasp for enamel pins." /> */
+/* <img className="pintern" src={pinternLogo} alt="A round shape with a semi-circle protruding from its left side and a small oval on the inside right. A pictogram of an abstract rubber clasp for enamel pins." /> */
 // }
