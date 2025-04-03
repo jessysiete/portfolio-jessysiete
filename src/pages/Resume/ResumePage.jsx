@@ -8,7 +8,8 @@ export default function ResumePage() {
     <>
         <div className="page-marker-resume"></div>
       <div className="resume-page">
-          <a href={Pdf} target="blank" rel="noopener noreferrer">
+          <a href={Pdf} target="blank" rel="noopener noreferrer"
+          className="resume-link">
         <button className="view-resume-button">
             View PDF Resume
         </button>

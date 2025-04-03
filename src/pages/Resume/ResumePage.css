@@ -32,13 +32,26 @@
   width: 200px;
   height: 32px;
   top: 144px;
-  padding: 0px;
+  padding: 2px 8px;
   background-color: #2d3e90;
+  color: #FBC359;
   font-weight: bold;
 }
-.button-link{
-color: #FBC359;
-text-align: center;
+
+.view-resume-button:hover {
+  cursor: pointer;
+}
+
+.resume-link {
+  color: #FBC359;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 

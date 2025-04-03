@@ -165,6 +165,11 @@
   margin-bottom: 20px;
 } 
 
+.gh-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .gh-email {
   margin: 0px;
   padding: 0px;
