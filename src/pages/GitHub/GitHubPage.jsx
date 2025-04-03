@@ -69,9 +69,11 @@ export default function GitHubProfile() {
 
 <div className="gh-profile-info">
       <p className="gh-bio">{profile.bio}</p>
-        <button className="gh-button"><a href={profile.html_url} target="_blank" rel="noopener noreferrer">
+     <a href={profile.html_url} target="_blank" rel="noopener noreferrer">
+     <button className="gh-button">
           View on GitHub
-        </a></button>
+          </button>
+        </a>
       <p className="gh-email"> ✉️ {profile.email}</p>
       <p className="gh-website">🔗 <a href={profile.blog} target="_blank" rel="noopener noreferrer">{profile.blog}</a></p>
       <p className="gh-follow">👤 Followers: {profile.followers} | Following: {profile.following}</p>
