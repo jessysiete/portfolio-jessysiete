@@ -110,9 +110,9 @@ export default function PantoneProjectPage() {
               abstract idea to life.
             </p>
           </section>
-          <section className="concept-section">
+          <section className="pantone-concept-section">
             <h2 className="concept-title">Concept & Idea</h2>
-            <p className="concept-text">
+            <p className="pantone-concept-text">
               While conducting product research for my small business, The
               Pintern, I came across an enamel pin designed as a Pantone Swatch
               with a hollow center. The way it interacted with textured garments
@@ -173,7 +173,7 @@ export default function PantoneProjectPage() {
             </div>
           </section>
 
-          <section className="collaboration-section">
+          <section className="pantone-collaboration-section">
             <h2 className="collaboration-title">
               Digital Rendering & 3D Modeling{" "}
             </h2>

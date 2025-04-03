@@ -180,6 +180,8 @@ font-size: 1rem;
   margin-top: 1rem;
 }
 
+.
+
 .pantone-concept-image-section {
   position: relative;
   display: flex;
@@ -205,12 +207,22 @@ font-size: 1rem;
 }
 
 
-
-.pantone-prototype-section {
+.pantone-concept-section {
   display: flex;
   flex-direction: column;
   align-items: left;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
 
+
+
+.pantone-prototyping-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 .prototyping-image-section {
   position: relative;
@@ -259,7 +271,15 @@ font-size: 1rem;
   background-color: var(--background-color);
 }
 
-
+.pantone-collaboration-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
 
 .pantone-notes-section {
   font-size: 1.25rem;
@@ -437,6 +457,8 @@ text-align: left;
     padding-top: 160px;
     /* max-width: 1000px; */
     margin: 0 auto;
+    padding-left: 8rem;
+    padding-right: 8rem;
 
   }
   

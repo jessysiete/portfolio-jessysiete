@@ -359,6 +359,7 @@ text-align: left;
   display: flex;
   flex-direction: column;
   align-items: left;
+  margin-top: 2rem;
 
 }
 
@@ -400,6 +401,7 @@ text-align: left;
 .pintern-notes-section {
   font-size: 1.25rem;
   line-height: 1.6;
+  margin-top: 2rem;
 }
 .pintern-final-image-section {
   position: relative;
@@ -496,7 +498,7 @@ text-align: left;
     height: fit-content;
     gap: 1rem;
     padding: 0 1rem;
-    padding-top: 6rem;
+    padding-top: 18rem;
 
   }
 .pintern-project-subtitle {
@@ -519,7 +521,7 @@ text-align: left;
     flex-direction: column;
     align-items: left;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 12rem;
   }
 
 }
@@ -561,6 +563,8 @@ text-align: left;
   .pintern-project-page {
     padding-top: 160px;
     margin: 0 auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .pintern-hero-section {
