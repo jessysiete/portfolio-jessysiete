@@ -5,7 +5,8 @@
   padding-top: 110px;
   padding-bottom: 80px;
 font-size: 1rem;
-align-items: center;  /* centering grid horizontally */
+align-items: center; 
+overflow-y: 0px;
 }
 
 .page-marker-projects {
