@@ -6,7 +6,7 @@ export default function CloseProject() {
 
   const handleClose = () => {
     // Perform navigation to '/projects', which triggers a component re-render
-    navigate('/projects');
+    navigate('/#projects');
   };
 
   return (

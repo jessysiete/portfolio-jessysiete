@@ -21,12 +21,14 @@
   z-index: 1000;
 }
 
-.App-logo:hover {
-  /* border-bottom: 4px solid var(--logo-fill); */
-  /* border-bottom: 4px solid var(--logo-fill); */
 
-
+.jm-logo:hover {
+  height: 38px;
+  box-sizing: border-box;
+  border-bottom: 4px solid var(--logo-fill);
 }
+
+
 
 /* .page-marker-home-hover {
   background-color: transparent;
@@ -39,14 +41,14 @@
   z-index: 1000;
 } */
 
-.page-marker-home-hover:hover {
+/* .page-marker-home-hover:hover {
 
   position: fixed;
   border-bottom: 4px solid var(--logo-fill);
   width: 212px;
   margin-left: 28px;
   z-index: 1000;
-}
+} */
 
 @media (min-width: 821px) {
   .Header {
@@ -57,13 +59,8 @@
 
   }
 
-  .page-marker-home-hover {
-    height: 46px;
-    width: 150px;
- 
-  }
 
-  .page-marker-home-hover:hover {
+  /* .page-marker-home-hover:hover {
     display: absolute;
     position: fixed;
     border-bottom: 4px solid var(--logo-fill);
@@ -73,9 +70,7 @@
     margin-left: 28px;
     z-index: 1000;
 
-  }
-
-  
+  } */
   
 
   .jm-logo {
@@ -86,9 +81,13 @@
     width: fit-content;
     cursor: pointer;
   }
-}
 
 
-.Project-link {
-  color: #ff4df9;
+  .jm-logo:hover {
+    height: 42px;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--logo-fill);
+  }
+
+
 }

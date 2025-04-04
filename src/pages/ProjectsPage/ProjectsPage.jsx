@@ -13,7 +13,7 @@ export default function ProjectsPage() {
       <div className="projects-page">
         <div className="page-marker-projects"></div>
           {/* <h1 className="heading">Personal Projects</h1> */}
-          <section className="projects-about-section">
+          <section id="projects">
             As a natural tinkerer, I thrive on turning ideas into tangible
             creations. In my spare time, I combine my imagination with design
             tools, laser CNC machines, and power tools to bring home goods and
