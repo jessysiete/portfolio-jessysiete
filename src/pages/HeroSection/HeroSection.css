@@ -1,0 +1,209 @@
+/* === Mobile First (Default) === */
+.home-page {
+  max-width: 100%;
+  padding: 1rem;
+gap: 1rem;
+padding-top: 100px;
+font-size: 1rem;
+}
+
+.page-marker-home {
+  background-color: var(--logo-fill);
+  display: absolute;
+  position: fixed;
+  height: 6px;
+  width: 110%;
+  top: 44px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+.page-marker-home-nav {
+  background-color: var(--logo-fill);
+  display: absolute;
+  position: fixed;
+  height: 6px;
+  width: 110%;
+  top: 84px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+
+.intro-home-heading {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  /* margin-bottom: 1rem; */
+  text-align: left;
+  align-self: start;
+}
+
+.intro-home {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  align-items: center;
+  gap: 1rem;
+  height: fit-content;
+  padding-bottom: 60px;
+  max-width: 600px;
+}
+
+.tech-stack {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  max-width: 520px;
+  text-align: left;
+  padding-bottom: 20px;
+  height: 440px;
+}
+
+.skills-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates two equal columns */
+  gap: 10px; /* Adjust spacing between items */
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  list-style-type: none; /* Removes default bullet points */
+}
+
+.skill-item-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  grid-column: span 3; /* Makes the heading span both columns */
+}
+
+.skill-item {
+  text-align: left;
+  justify-self: start;
+}
+
+
+.shapes {
+  width: 280px;
+  height: 210px;
+  position: relative;
+  left: 8px;
+  z-index: 1000;
+  padding-bottom: 20px;
+  margin-top: 0px;
+
+}
+
+.trapezoid {
+  position: absolute;
+  border-bottom: 90px solid #a1281a;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  height: 0px;
+  width: 285px;
+  bottom: 60px;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 95px;
+  left: 200px;
+  border-left: 55px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 75px solid var(--link-color);
+}
+
+.circle {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  left: 136px;
+  bottom: 128px;
+  background-color: #2d3e90;
+  border: 4px solid var(--background-color);
+  border-radius: 50%;
+}
+
+.square {
+  position: absolute;
+  height: 50px;
+  width: 30px;
+  bottom: 78px;
+  left: 82px;
+  background-color: var(--background-color-opposite);
+  border: 4px solid var(--link-color-opposite);
+}
+
+.bottom-text {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-size: .8rem;
+}
+
+
+
+/* === Small Screens (sm: 640px) === */
+@media (min-width: 640px) {
+
+}
+
+/* === Medium Screens (md: 768px) === */
+@media (min-width: 768px) {
+
+  
+}
+
+
+/* === Nav resize (md: 820px) === */
+
+@media (min-width: 821px) {
+ 
+.page-marker-home {
+  background-color: var(--logo-fill);
+  display: absolute;
+  position: fixed;
+  height: 6px;
+  width: 110%;
+  top: 54px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+.page-marker-home-nav {
+  background-color: var(--logo-fill);
+  display: absolute;
+  position: fixed;
+  height: 6px;
+  width: 110%;
+  top: 94px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+}
+  
+
+}
+
+
+
+
+/* === Large Screens (lg: 1024px) === */
+/* @media (min-width: 1024px) {
+} */
+
+/* === Extra Large Screens (xl: 1280px) === */
+/* @media (min-width: 1280px) {
+
+} */

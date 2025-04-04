@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import './GitHubPage.css';
+import './GitHubSection.css';
 
-export default function GitHubProfile() {
+export default function GitHubP() {
   const [profile, setProfile] = useState(null);
   const [repos, setRepos] = useState([]); // State to store repositories
   const username = "siguejessy"; // Replace with your GitHub username
