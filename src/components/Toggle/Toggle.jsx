@@ -28,7 +28,7 @@ const ThemeToggle = () => {
       type="checkbox" 
       id="theme-toggle" 
       onChange={toggleTheme} 
-      checked={theme === 'dark'} 
+      checked={theme === 'light'} 
     />
     {/* Label styled as the switch, associated with the checkbox */}
     <label className="toggle-switch" htmlFor="theme-toggle"></label>

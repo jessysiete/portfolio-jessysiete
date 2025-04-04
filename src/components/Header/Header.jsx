@@ -9,7 +9,7 @@ export default function Header() {
       {/* Logo SVG (using inline SVG for full CSS control) */}
       <Link className="link"to="/">
       <svg
-        className="App-logo-sm"
+        className="jm-logo"
         width="233"
         height="40"
         viewBox="0 0 233 40"
