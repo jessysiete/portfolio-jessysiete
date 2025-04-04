@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import HeroSection from "../HeroSection/HeroSection";
 import GitHubSection from "../GitHubSection/GitHubPage";
 import ProjectsPage from "../ProjectsPage/ProjectsPage";
-import Resume from "../Resume/ResumePage";
 export default function HomePage() {
   return (
     <>
@@ -13,8 +12,11 @@ export default function HomePage() {
         <HeroSection />
         <GitHubSection />
         <ProjectsPage />
-        <Resume />
-
+        <p className='text'>
+        Built with joy 🩶&nbsp;⚙️ &nbsp;</p>
+        <br />
+        <br />
+        <br />
       </div>
     </>
   );
