@@ -12,8 +12,8 @@ export default function HomePage() {
         <HeroSection />
         <GitHubSection />
         <ProjectsPage />
-        <p className='text'>
-        Built with joy 🩶&nbsp;⚙️ &nbsp;</p>
+        <p className='bottom-text'>
+        Built with joy 🩶&nbsp;⚙️ &nbsp;  © 2024 Jessysiete</p>
         <br />
         <br />
         <br />

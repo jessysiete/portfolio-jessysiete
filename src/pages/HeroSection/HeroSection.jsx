@@ -5,21 +5,17 @@ import ProjectsPage from "../ProjectsPage/ProjectsPage";
 export default function HeroPage() {
   return (
     <>
-        {/* <div className="page-marker-home"></div>
-        <div className="page-marker-home-nav"></div> */}
         <section id="hero">
       <div className="home-page">
         <div className="content-home">
           <div className="intro-home">
             <strong className="intro-home-heading">Hello, my name is Jessica</strong>
-
-            Welcome to my online space where I combine my digital and analog
+            Welcome to my online space where I feature my coding and offline
             projects. As a committed life-long learner, I'm passionate about
             filling my curiosities and interests with knowledge and deliberate
             practice. 
             </div>
-            
-
+          
           <div className="tech-stack" aria-label="list of skills that Jessica Mendez provides">
           <ul className="skills-list" > 
             <li className="skill-item-heading">Skills & Tech Stack</li>
@@ -59,12 +55,6 @@ export default function HeroPage() {
           <div className="square"></div>
         </div>
 
-
-        
-        <p className='bottom-text'>
-         © 2024 Jessysiete</p>
-         <br/>
-         <br/>
       </div>
         </section>
     </>

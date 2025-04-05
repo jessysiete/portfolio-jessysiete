@@ -1,7 +1,7 @@
 .Header {
   display: inline-flex;
   flex-direction: row;
-  height: 102px;
+  height: 47px;
   width: 100%;
   padding: 0 0;
   position: fixed;
@@ -30,13 +30,7 @@
 
 
 @media (min-width: 821px) {
-  .Header {
-    display: flex;
-    position: fixed;
-    height: 88px;
-    z-index: 1000;
 
-  }
 
 
   .jm-logo {

@@ -8,10 +8,10 @@ export default function Nav() {
   const [activeSection, setActiveSection] = useState("");
   
   useEffect(() => {
-    // Only run on home page
+    // only run on home page
     if (!isHome) return;
 
-    // Create a function to handle section visibility and update URL
+    // function to handle section visibility and update URL
     const handleScroll = () => {
       // Get all sections
       const sections = document.querySelectorAll("section");
@@ -101,6 +101,8 @@ export default function Nav() {
   // page marker color based on active section
   const getPageMarkerStyles = () => {
     switch(activeSection) {
+      case 'hero':
+        return { backgroundColor: '#17357a' }; 
       case 'github-profile':
         return { backgroundColor: '#a1281a' }; 
       case 'projects':
@@ -115,6 +117,9 @@ export default function Nav() {
     
       <nav className="menu">
         <ul className="menu-list">
+          <li className="nav-menu-item-about">
+            <a href="#hero" className="menu-link">J. Mendez</a>
+          </li>
           <li className="nav-menu-item-github">
             <a href="#github-profile" className="menu-link">GitHub</a>
           </li>
