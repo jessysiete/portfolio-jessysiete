@@ -11,6 +11,8 @@ export default function ProjectsPage() {
   return (
     <>
           <section id="projects">
+            <br />
+            <br />
       <div className="projects-page">
         {/* <div className="page-marker-projects"></div> */}
           {/* <h1 className="heading">Personal Projects</h1> */}
