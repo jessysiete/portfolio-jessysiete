@@ -82,7 +82,7 @@ export default function Nav() {
         if (targetElement) {
           // Update active section from click
           setActiveSection(href.substring(1));
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          targetElement.scrollIntoView({ behavior: 'instant' });
         }
       }
     };
