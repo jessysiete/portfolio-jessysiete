@@ -51,7 +51,7 @@ export default function GitHubProfile() {
 <span className="intro-text">  Brought to you via GitHub's API&nbsp;🚀
       </span></p>
       {/* Profile Section */}
-    <div className="github-profile-page">
+    <div className="github-profile-pg">
       <div className="gh-profile-main">
         <div className="gh-profile-header">
           <div className="gh-profile-avi-location">
