@@ -5,60 +5,125 @@ import './Nav.css';
 export default function Nav() {
   const location = useLocation();
   const isHome = location.pathname === "/";
-  const [activeSection, setActiveSection] = useState(null); // 👈 track active section
-
+  const [activeSection, setActiveSection] = useState("");
+  
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".menu-link");
+    // Only run on home page
+    if (!isHome) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          const id = entry.target.getAttribute("id");
-          const navItem = document.querySelector(`.menu-link[href="#${id}"]`);
-
-          if (entry.isIntersecting) {
-            setActiveSection(id); // 👈 update active section
-
-            // Remove old `.active`, add new one
+    // Create a function to handle section visibility and update URL
+    const handleScroll = () => {
+      // Get all sections
+      const sections = document.querySelectorAll("section");
+      
+      // Find the section closest to the top of the viewport
+      let currentSection = null;
+      let minDistance = Infinity;
+      
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const distance = Math.abs(rect.top);
+        
+        // Consider the section visible if it's near the top of the viewport
+        if (distance < minDistance && rect.top <= 100) {
+          minDistance = distance;
+          currentSection = section;
+        }
+      });
+      
+      // Update URL if we found a visible section
+      if (currentSection) {
+        const id = currentSection.getAttribute("id");
+        if (id) {
+          // Update active section state
+          setActiveSection(id);
+          
+          if (window.location.hash !== `#${id}`) {
+            // Update URL without scrolling
+            window.history.replaceState(null, '', `#${id}`);
+            
+            // Update active class
+            const navLinks = document.querySelectorAll(".menu-link");
+            const currentLink = document.querySelector(`.menu-link[href="#${id}"]`);
+            
             navLinks.forEach(link => link.classList.remove("active"));
-            if (navItem) navItem.classList.add("active");
+            if (currentLink) {
+              currentLink.classList.add("active");
+            }
           }
-        });
-      },
-      {
-        root: null,
-        rootMargin: "0px 0px -60% 0px",
-        threshold: 0.3,
+        }
       }
-    );
+    };
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Run once on mount to set initial state
+    handleScroll();
+    
+    // Clean up when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isHome, location.pathname]);
 
-    sections.forEach(section => observer.observe(section));
-    return () => observer.disconnect();
-  }, []);
+  // Add click handlers for smooth scrolling
+  useEffect(() => {
+    if (!isHome) return;
+    
+    const navLinks = document.querySelectorAll(".menu-link");
+    
+    const handleClick = (e) => {
+      e.preventDefault();
+      const href = e.currentTarget.getAttribute('href');
+      
+      if (href.startsWith('#')) {
+        const targetElement = document.querySelector(href);
+        if (targetElement) {
+          // Update active section from click
+          setActiveSection(href.substring(1));
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', handleClick);
+    });
+    
+    return () => {
+      navLinks.forEach(link => {
+        link.removeEventListener('click', handleClick);
+      });
+    };
+  }, [isHome]);
 
-  // 👇 Define dynamic colors
-  const markerColors = {
-    "github-profile": "#a1281a",  // red
-    "projects": "#4e6851",        // green
+  // page marker color based on active section
+  const getPageMarkerStyles = () => {
+    switch(activeSection) {
+      case 'github-profile':
+        return { backgroundColor: '#a1281a' }; 
+      case 'projects':
+        return { backgroundColor: '#4e6851' }; 
+      default:
+        return { backgroundColor: '#c3c3c3', opacity: 1 }; 
+    }
   };
 
   return (
-    <nav className="menu">
-      <ul className="menu-list">
-        <li className="nav-menu-item-github">
-          <a href="#github-profile" className="menu-link">GitHub</a>
-        </li>
-        <li className="nav-menu-item-projects">
-          <a href="#projects" className="menu-link">Projects</a>
-        </li>
-      </ul>
-
-      {/* 👇 Apply color based on active section */}
-      <div
-        className="section-marker"
-        style={{ backgroundColor: markerColors[activeSection] || "#ccc" }}
-      ></div>
-    </nav>
+    <>
+    
+      <nav className="menu">
+        <ul className="menu-list">
+          <li className="nav-menu-item-github">
+            <a href="#github-profile" className="menu-link">GitHub</a>
+          </li>
+          <li className="nav-menu-item-projects">
+            <a href="#projects" className="menu-link">Projects</a>
+          </li>
+        </ul>
+      <div className="full-width-section-marker" style={getPageMarkerStyles()}></div>
+      </nav>
+    </>
   );
 }

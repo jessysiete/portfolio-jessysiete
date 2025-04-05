@@ -1,7 +1,7 @@
 import "./HomePage.css";
 import { Link } from "react-router-dom";
 import HeroSection from "../HeroSection/HeroSection";
-import GitHubSection from "../GitHubSection/GitHubPage";
+import GitHubSection from "../GitHubProfileSection/GitHubProfileSection";
 import ProjectsPage from "../ProjectsPage/ProjectsPage";
 export default function HomePage() {
   return (

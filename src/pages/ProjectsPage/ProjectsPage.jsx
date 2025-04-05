@@ -10,10 +10,10 @@ import GalleryCard from "../../components/ProjectCard/Gallery/GalleryCard";
 export default function ProjectsPage() {
   return (
     <>
+          <section id="projects">
       <div className="projects-page">
         {/* <div className="page-marker-projects"></div> */}
           {/* <h1 className="heading">Personal Projects</h1> */}
-          <section id="projects">
             As a natural tinkerer, I thrive on turning ideas into tangible
             creations. In my spare time, I combine my imagination with design
             tools, laser CNC machines, and power tools to bring home goods and
@@ -40,8 +40,8 @@ export default function ProjectsPage() {
         <div className="five"><TextilesCard /></div>
         <div className="six"><GalleryCard /></div> */}
           </section>
-        </section>
         </div>
+        </section>
     </>
   );
 }
