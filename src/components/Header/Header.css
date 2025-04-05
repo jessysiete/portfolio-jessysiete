@@ -15,7 +15,7 @@
   padding-top: 8px;
   padding-left: 8px;
   position: fixed;
-  height: 34px;
+  height: 32px;
   width: fit-content;
   color: var(--logo-fill);
   z-index: 1000;
@@ -23,32 +23,11 @@
 
 
 .jm-logo:hover {
-  height: 38px;
+  height: 36px;
   box-sizing: border-box;
   border-bottom: 4px solid var(--logo-fill);
 }
 
-
-
-/* .page-marker-home-hover {
-  background-color: transparent;
-  border-bottom: 4px transparent;
-  position: fixed;
-  height: 42px;
-  width: 220px;
-  top: 8px;
-  margin-left: 32px;
-  z-index: 1000;
-} */
-
-/* .page-marker-home-hover:hover {
-
-  position: fixed;
-  border-bottom: 4px solid var(--logo-fill);
-  width: 212px;
-  margin-left: 28px;
-  z-index: 1000;
-} */
 
 @media (min-width: 821px) {
   .Header {
@@ -60,23 +39,10 @@
   }
 
 
-  /* .page-marker-home-hover:hover {
-    display: absolute;
-    position: fixed;
-    border-bottom: 4px solid var(--logo-fill);
-    width: 152px;
-    height: 35px;
-    top: 6px;
-    margin-left: 28px;
-    z-index: 1000;
-
-  } */
-  
-
   .jm-logo {
     position: fixed;
     height: 38px;
-    padding-left: 4px;
+    padding-left: 8px;
     padding-top: 4px;
     width: fit-content;
     cursor: pointer;

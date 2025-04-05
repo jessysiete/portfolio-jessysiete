@@ -5,8 +5,8 @@ import ProjectsPage from "../ProjectsPage/ProjectsPage";
 export default function HeroPage() {
   return (
     <>
-        <div className="page-marker-home"></div>
-        <div className="page-marker-home-nav"></div>
+        {/* <div className="page-marker-home"></div>
+        <div className="page-marker-home-nav"></div> */}
         <section id="hero">
       <div className="home-page">
         <div className="content-home">
@@ -66,7 +66,7 @@ export default function HeroPage() {
          <br/>
          <br/>
       </div>
-      </section>
+        </section>
     </>
   );
 }

@@ -11,7 +11,7 @@ export default function ProjectsPage() {
   return (
     <>
       <div className="projects-page">
-        <div className="page-marker-projects"></div>
+        {/* <div className="page-marker-projects"></div> */}
           {/* <h1 className="heading">Personal Projects</h1> */}
           <section id="projects">
             As a natural tinkerer, I thrive on turning ideas into tangible
@@ -25,7 +25,6 @@ export default function ProjectsPage() {
             projects reflect my passion for design and technology, which I’m
             eager to bring into a technical role at a design-focused
             organization. 👩🏼‍💻
-          </section>
 
           <section className="projects-grid">
             <div className="one">
@@ -41,6 +40,7 @@ export default function ProjectsPage() {
         <div className="five"><TextilesCard /></div>
         <div className="six"><GalleryCard /></div> */}
           </section>
+        </section>
         </div>
     </>
   );

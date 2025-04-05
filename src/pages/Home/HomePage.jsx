@@ -6,8 +6,8 @@ import ProjectsPage from "../ProjectsPage/ProjectsPage";
 export default function HomePage() {
   return (
     <>
-        <div className="page-marker-home"></div>
-        <div className="page-marker-home-nav"></div>
+        {/* <div className="page-marker-home"></div> */}
+        {/* <div className="page-marker-home-nav"></div> */}
       <div className="portfolio-page">
         <HeroSection />
         <GitHubSection />

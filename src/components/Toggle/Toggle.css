@@ -3,7 +3,7 @@
   display: inline-block;
   width: 22px;
   height: 22px;
-  left: 176px;
+  right: 8px;
   top: 6px;
   padding: 2px;
 }
@@ -72,11 +72,11 @@ input:checked + .toggle-switch:after {
 .toggle-switch.round:before {
   border-radius: 50%;
 }
-
+/* 
 @media (min-width: 821px) {
   .toggle-container {
-    left: 216px;
+    right: 8px;
     top: 6px;
     padding: 2px;
   }
-}
+} */
