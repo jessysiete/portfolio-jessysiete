@@ -16,54 +16,33 @@
 padding: 0px 0px;
 width: 98%;
 height: 100%;
-margin-left: 12px;
+margin-left: auto;
+margin-right: auto;
+padding: 0px 12px;
 display: inline-flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
 }
 
-.footer-text {
-  display: inline-flex;
-  flex-direction: row;
-  margin-left: 2px;
-}
 
-.contact {
-  margin-right: 20px; 
-  margin-bottom: 2px; 
-  padding: 6px 14px;
+
+.footer-button {
+  margin-bottom: 6px; 
+  width: fit-content;
+  padding: 6px 32px;
   background-color: var(--contact-button-color);
   color: white;
   border: none;
+  justify-content: space-between;
   border-radius: 4px;
   cursor: pointer;
   align-content: right;
-  width: auto;
-}
-
-.contact a {
-  color: inherit;
-  text-decoration: none;
   font-weight: bold;
+
 }
 
-
-/* @media (max-width: 600px) { */
-  /* .Header {
-    display: flex;
-    position: fixed;
-    height: 98px;
-    z-index: 1000;
-  }
-  
-  .App-logo {
-    position: fixed;
-    height: 40px;
-    width: auto;
-  }
+.footer-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-
-.Project-link {
-  color: #ff4df9;
-} */

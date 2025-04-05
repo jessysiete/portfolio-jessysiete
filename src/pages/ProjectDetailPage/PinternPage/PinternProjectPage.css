@@ -13,9 +13,9 @@ overflow-y: 0px;
   background-color: #4e6851;
   display: absolute;
   position: fixed;
-  height: 38px;
+  height: 40px;
   width: 110%;
-  top: 78px;
+  top: 46px;
   left: 0px;
   right: 0px;
   z-index: 1000;
@@ -28,7 +28,7 @@ overflow-y: 0px;
   position: fixed;
   height: 4px;
   width: 100%;
-  top: 74px;
+  top: 40px;
   margin-left: 20px;
   z-index: 1000;
 }
@@ -532,29 +532,7 @@ text-align: left;
 /* === Nav resize  820px) === */ 
 
 @media (min-width: 821px) {
-  .page-marker-pintern {
-    background-color: #4e6851;
-    display: absolute;
-    position: fixed;
-    height: 38px;
-    width: 110%;
-    top: 94px;
-    left: 0px;
-    right: 0px;
-    z-index: 1000;
-  }
-
-  .page-title-pintern h1 {
-    font-size: 1.2rem;
-    text-align: left;
-    position: fixed;
-    height: 4px;
-    width: 100%;
-    top: 90px;
-    margin-left: 20px;
-    z-index: 1000;
-  }
-
+ 
 }
 
 
