@@ -50,8 +50,8 @@ export default function GitHubProfile() {
 </svg>
 <span className="intro-text">  Brought to you via GitHub's API&nbsp;🚀
       </span></p>
-    <div className="github-profile-page">
       {/* Profile Section */}
+    <div className="github-profile-page">
       <div className="gh-profile-main">
         <div className="gh-profile-header">
           <div className="gh-profile-avi-location">

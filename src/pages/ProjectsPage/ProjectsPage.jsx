@@ -41,6 +41,9 @@ export default function ProjectsPage() {
         <div className="six"><GalleryCard /></div> */}
           </section>
         </div>
+        <br />
+        <br />
+        <br />
         </section>
     </>
   );

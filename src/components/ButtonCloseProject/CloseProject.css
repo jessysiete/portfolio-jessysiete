@@ -3,8 +3,8 @@
   align-items: center; /* Ensure the "X" is centered */
   justify-content: center; /* Ensure the "X" is centered */
   position: fixed;
-  right: 6%;
-  top: 100px;
+  right: 4%;
+  top: 52px;
   padding: 10px;
   cursor: pointer;
   z-index: 1000;
@@ -20,11 +20,5 @@
 
 .close:hover {
   background-color: #90372d;
-}
-
-@media (max-width: 820px) {
-  .close {
-    top: 84px;
-    right: 4%;
-  }
+  transform: scale(1.2);
 }
