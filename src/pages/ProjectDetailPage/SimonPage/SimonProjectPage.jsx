@@ -19,7 +19,7 @@ export default function SimonProjectPage() {
           <div className="simon-hero-image">
             <iframe
               className="simon-game"
-              src="https://siguejessy.github.io/virtual-simon/"
+              src="https://jessysiete.github.io/virtual-simon/"
               title="Simon Game"
             ></iframe>
           </div>
