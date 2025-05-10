@@ -4,7 +4,7 @@ import './GitHubProfileSection.css';
 export default function GitHubProfile() {
   const [profile, setProfile] = useState(null);
   const [repos, setRepos] = useState([]); // State to store repositories
-  const username = "siguejessy"; // Replace with your GitHub username
+  const username = "jessysiete"; // Replace with your GitHub username
   const GITHUB_API_KEY = import.meta.env.VITE_GITHUB_API_KEY; // Access token from .env file
   
   useEffect(() => {
