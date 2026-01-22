@@ -1,3 +1,23 @@
+.gh-no-profile {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  place-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 94%;
+  font-weight: bold;
+  max-width: 400px;
+  padding: 8px;
+  top: 0px;
+  background-color: var(--error-color);
+  border-radius: 12px;
+  color: var(--text-color);
+}
+
 .gh-intro {
   position: relative;
   display: flex;

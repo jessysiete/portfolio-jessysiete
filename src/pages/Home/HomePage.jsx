@@ -10,7 +10,17 @@ export default function HomePage() {
         {/* <div className="page-marker-home-nav"></div> */}
       <div className="portfolio-page">
         <HeroSection />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <GitHubSection />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <ProjectsPage />
         <p className='bottom-text'>
         Built with joy 🩶&nbsp;⚙️ &nbsp;  © 2024 Jessysiete</p>

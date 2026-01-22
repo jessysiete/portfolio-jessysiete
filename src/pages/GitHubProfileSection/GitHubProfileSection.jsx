@@ -37,7 +37,9 @@ export default function GitHubProfile() {
     fetchGitHubData();
   }, [GITHUB_API_KEY]);
 
-  if (!profile) return <p>Loading...</p>;
+  if (!profile) return <p className="gh-no-profile"> 😵 No Github Profile Found 
+  <br /> 
+  </p>; // REPLACE WITH A MESSAGE FOR THE SITE NOT ABLE TO FETCH THE PROFILE DATA AT THE MOMENT
 
   return (
     <>
