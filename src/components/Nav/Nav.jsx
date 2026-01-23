@@ -107,6 +107,8 @@ export default function Nav() {
         return { backgroundColor: '#a1281a' }; 
       case 'projects':
         return { backgroundColor: '#4e6851' }; 
+      case 'widgets':
+        return { backgroundColor: '#4f1f50' };
       default:
         return { backgroundColor: '#c3c3c3', opacity: 1 }; 
     }
@@ -125,6 +127,9 @@ export default function Nav() {
           </li>
           <li className="nav-menu-item-projects">
             <a href="#projects" className="menu-link">Projects</a>
+          </li>
+              <li className="nav-menu-item-widgets">
+            <a href="#widgets" className="menu-link">Widgets</a>
           </li>
         </ul>
       <div className="full-width-section-marker" style={getPageMarkerStyles()}></div>

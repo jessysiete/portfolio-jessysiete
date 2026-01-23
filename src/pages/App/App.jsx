@@ -10,6 +10,7 @@ import HomePage from '../Home/HomePage';
 import PantoneProjectPage from '../ProjectDetailPage/PantonePage/PantoneProjectPage';
 import PinternProjectPage from '../ProjectDetailPage/PinternPage/PinternProjectPage';
 import SimonProjectPage from '../ProjectDetailPage/SimonPage/SimonProjectPage';
+import WidgetsPage from '../WidgetsPage/WidgetsPage';
 // 
 
 export default function App() {
@@ -21,9 +22,12 @@ export default function App() {
       <Route path="/*" element={<Navigate to="/" />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/projects" element={<Navigate to="/#projects" replace />}/>
+      <Route path="/widgets" element={<WidgetsPage />} />
+      {/* <Route path="/widgets" element={<Navigate to="/#widgets" replace />}/> */}
       <Route path="/projects/pantone14k" element={<PantoneProjectPage />} />
       <Route path="/projects/the-pintern" element={<PinternProjectPage />} />
       <Route path="/projects/virtual-simon" element={<SimonProjectPage />} />
+
       {/* <Route path="/github" element={<GitHubPage />} /> */}
       {/* <Route path="/resume" element={<ResumePage />} /> */}
       </Routes>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import HeroSection from "../HeroSection/HeroSection";
 import GitHubSection from "../GitHubProfileSection/GitHubProfileSection";
 import ProjectsPage from "../ProjectsPage/ProjectsPage";
+import WidgetsPage from "../WidgetsPage/WidgetsPage";
 export default function HomePage() {
   return (
     <>
@@ -22,6 +23,14 @@ export default function HomePage() {
         <br />
         <br />
         <ProjectsPage />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <WidgetsPage />
+        <br />
+        <br />
         <p className='bottom-text'>
         Built with joy 🩶&nbsp;⚙️ &nbsp;  © 2024 Jessysiete</p>
         <br />

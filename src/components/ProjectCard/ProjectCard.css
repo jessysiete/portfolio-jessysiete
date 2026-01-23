@@ -50,6 +50,28 @@
   border-radius: 10px;
 }
 
+.image-project1 {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-project2 {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.image-project4 {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .image-pintern {
   width: 100%;
   height: 100%;
