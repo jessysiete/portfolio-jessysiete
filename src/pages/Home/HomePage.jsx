@@ -23,7 +23,7 @@ export default function HomePage() {
         <br />
         <ProjectsPage />
         <p className='bottom-text'>
-        Built with joy 🩶&nbsp;⚙️ &nbsp;  © 2024 Jessysiete</p>
+        Built with joy 🩶&nbsp;⚙️ &nbsp;  © 2026 Jessysiete</p>
         <br />
         <br />
         <br />
